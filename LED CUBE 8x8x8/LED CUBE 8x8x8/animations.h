@@ -16,14 +16,12 @@
 
 #define count_of_anims 4
 
-const extern uint8_t __flash anim1[10][8][9];
-const extern uint8_t __flash anim2[19][8][9];
-const extern uint8_t __flash anim3[55][8][9];
-const extern uint8_t __flash anim4[51][8][9];
-const extern uint8_t __flash anim5[14][8][9];
+uint8_t anim1(uint8_t frame, uint8_t layer, uint8_t position);
+uint8_t anim2(uint8_t frame, uint8_t layer, uint8_t position);
+uint8_t anim3(uint8_t frame, uint8_t layer, uint8_t position);
+uint8_t anim4(uint8_t frame, uint8_t layer, uint8_t position);
+
 extern uint8_t anim, frame, layer, position, frame_repeats, anim_repeats;
-extern const uint8_t anims_frames[count_of_anims+1];
-extern const uint8_t frame_in_anim_repeats[count_of_anims+1];
-extern const uint8_t anims_repeats[count_of_anims+1];
+
 
 #endif /* ANIMATIONS_H_ */
