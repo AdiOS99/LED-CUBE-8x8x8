@@ -14,12 +14,14 @@
 #include <avr/interrupt.h>
 #include <stdbool.h>
 
-#define count_of_anims 4
+#define COUNT_OF_ANIMS 4
 
-uint8_t anim1(uint8_t frame, uint8_t layer, uint8_t position);
-uint8_t anim2(uint8_t frame, uint8_t layer, uint8_t position);
-uint8_t anim3(uint8_t frame, uint8_t layer, uint8_t position);
-uint8_t anim4(uint8_t frame, uint8_t layer, uint8_t position);
+void anim1(void);	//parameters for animation functions are declared in variables below
+void anim2(void);
+void anim3(void);
+void anim4(void);
+
+extern void ( * anims[COUNT_OF_ANIMS])();
 
 extern uint8_t anim, frame, layer, position, frame_repeats, anim_repeats;
 

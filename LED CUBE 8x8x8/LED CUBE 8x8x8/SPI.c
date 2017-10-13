@@ -33,34 +33,7 @@ void SPI_set_SS_line(const bool x)	//	For x:
 ISR(SPI_STC_vect)
 {
 	SPI_set_SS_line(0);
-	if (position>=9)
-	{
-		layer++;
-	}else
-	{
-		SPI_set_SS_line(1);
-		switch(anim)
-		{
-			case 1:
-				SPDR=anim1[frame][layer][position];
-				break;
-			case 2:
-				SPDR=anim2[frame][layer][position];
-				break;
-			case 3:
-				SPDR=anim3[frame][layer][position];
-				break;
-			case 4:
-				SPDR=anim4[frame][layer][position];
-				break;
-			case 5:
-				SPDR=anim5[frame][layer][position];
-				break;
-
-		}
-	}
-	position++;
-
+	anims[anim]();
 }
 
 

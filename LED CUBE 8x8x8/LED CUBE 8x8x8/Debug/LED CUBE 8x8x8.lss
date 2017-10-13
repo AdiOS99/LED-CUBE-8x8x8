@@ -3,63 +3,60 @@ LED CUBE 8x8x8.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .text         00002e6c  00000000  00000000  00000094  2**1
+  0 .text         00002a52  00000000  00000000  00000094  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .data         00000010  00800060  00002e6c  00002f00  2**0
+  1 .data         0000000a  00800060  00002a52  00002ae6  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  2 .bss          00000005  00800070  00800070  00002f10  2**0
+  2 .bss          00000004  0080006a  0080006a  00002af0  2**0
                   ALLOC
-  3 .comment      00000030  00000000  00000000  00002f10  2**0
+  3 .comment      00000030  00000000  00000000  00002af0  2**0
                   CONTENTS, READONLY
-  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00002f40  2**2
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00002b20  2**2
                   CONTENTS, READONLY
-  5 .debug_aranges 00000090  00000000  00000000  00002f7c  2**0
+  5 .debug_aranges 000000b0  00000000  00000000  00002b5c  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_info   00000a64  00000000  00000000  0000300c  2**0
+  6 .debug_info   00000a65  00000000  00000000  00002c0c  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_abbrev 0000070b  00000000  00000000  00003a70  2**0
+  7 .debug_abbrev 00000794  00000000  00000000  00003671  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_line   00000546  00000000  00000000  0000417b  2**0
+  8 .debug_line   000006bc  00000000  00000000  00003e05  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_frame  0000012c  00000000  00000000  000046c4  2**2
+  9 .debug_frame  00000180  00000000  00000000  000044c4  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    000003de  00000000  00000000  000047f0  2**0
+ 10 .debug_str    000003f1  00000000  00000000  00004644  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    00000196  00000000  00000000  00004bce  2**0
+ 11 .debug_loc    00000196  00000000  00000000  00004a35  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges 00000048  00000000  00000000  00004d64  2**0
+ 12 .debug_ranges 00000070  00000000  00000000  00004bcb  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
 
 00000000 <__vectors>:
-       0:	0c 94 1e 15 	jmp	0x2a3c	; 0x2a3c <__ctors_end>
-       4:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-       8:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-       c:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-      10:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-      14:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-      18:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-      1c:	0c 94 36 16 	jmp	0x2c6c	; 0x2c6c <__vector_7>
-      20:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-      24:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-      28:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-      2c:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-      30:	0c 94 59 15 	jmp	0x2ab2	; 0x2ab2 <__vector_12>
-      34:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-      38:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-      3c:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-      40:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-      44:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-      48:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-      4c:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
-      50:	0c 94 3b 15 	jmp	0x2a76	; 0x2a76 <__bad_interrupt>
+       0:	0c 94 26 13 	jmp	0x264c	; 0x264c <__ctors_end>
+       4:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+       8:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+       c:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+      10:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+      14:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+      18:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+      1c:	0c 94 fa 14 	jmp	0x29f4	; 0x29f4 <__vector_7>
+      20:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+      24:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+      28:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+      2c:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+      30:	0c 94 c1 14 	jmp	0x2982	; 0x2982 <__vector_12>
+      34:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+      38:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+      3c:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+      40:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+      44:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+      48:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+      4c:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
+      50:	0c 94 43 13 	jmp	0x2686	; 0x2686 <__bad_interrupt>
 
 00000054 <__trampolines_end>:
-      54:	00 00       	nop
-      56:	00 00       	nop
-      58:	00 00       	nop
-      5a:	00 01       	movw	r0, r0
+	...
       5c:	01 00       	.word	0x0001	; ????
       5e:	00 00       	nop
       60:	00 00       	nop
@@ -80,407 +77,347 @@ Disassembly of section .text:
 	...
       92:	40 00       	.word	0x0040	; ????
       94:	00 00       	nop
-      96:	00 00       	nop
+      96:	18 18       	sub	r1, r8
       98:	00 00       	nop
-      9a:	01 80       	ldd	r0, Z+1	; 0x01
-      9c:	00 00       	nop
-      9e:	00 00       	nop
-      a0:	00 00       	nop
-      a2:	01 01       	movw	r0, r2
+      9a:	00 80       	ld	r0, Z
+	...
       a4:	01 00       	.word	0x0001	; ????
       a6:	00 00       	nop
       a8:	00 00       	nop
       aa:	00 00       	nop
       ac:	00 02       	muls	r16, r16
-      ae:	00 00       	nop
-      b0:	00 00       	nop
-      b2:	00 00       	nop
-      b4:	00 01       	movw	r0, r0
+	...
       b6:	04 00       	.word	0x0004	; ????
       b8:	00 00       	nop
       ba:	00 00       	nop
       bc:	00 00       	nop
-      be:	01 08       	sbc	r0, r1
-      c0:	00 00       	nop
-      c2:	00 00       	nop
-      c4:	00 00       	nop
-      c6:	00 01       	movw	r0, r0
+      be:	00 08       	sbc	r0, r0
+	...
       c8:	10 00       	.word	0x0010	; ????
       ca:	00 00       	nop
       cc:	00 00       	nop
       ce:	00 00       	nop
-      d0:	01 20       	and	r0, r1
-	...
+      d0:	00 20       	and	r0, r0
+      d2:	00 00       	nop
+      d4:	00 18       	sub	r0, r0
+      d6:	18 00       	.word	0x0018	; ????
+      d8:	00 00       	nop
       da:	40 00       	.word	0x0040	; ????
-      dc:	00 00       	nop
-      de:	00 00       	nop
-      e0:	00 01       	movw	r0, r0
-      e2:	01 80       	ldd	r0, Z+1	; 0x01
-      e4:	00 00       	nop
-      e6:	00 00       	nop
-      e8:	00 01       	movw	r0, r0
-      ea:	01 01       	movw	r0, r2
+      dc:	00 3c       	cpi	r16, 0xC0	; 192
+      de:	24 24       	eor	r2, r4
+      e0:	3c 00       	.word	0x003c	; ????
+      e2:	00 80       	ld	r0, Z
+	...
       ec:	01 00       	.word	0x0001	; ????
       ee:	00 00       	nop
       f0:	00 00       	nop
       f2:	00 00       	nop
       f4:	00 02       	muls	r16, r16
-      f6:	00 00       	nop
-      f8:	00 00       	nop
-      fa:	00 00       	nop
-      fc:	01 00       	.word	0x0001	; ????
+	...
       fe:	04 00       	.word	0x0004	; ????
      100:	00 00       	nop
      102:	00 00       	nop
-     104:	00 01       	movw	r0, r0
+     104:	00 00       	nop
      106:	00 08       	sbc	r0, r0
-     108:	00 00       	nop
-     10a:	00 00       	nop
-     10c:	00 00       	nop
-     10e:	01 00       	.word	0x0001	; ????
+	...
      110:	10 00       	.word	0x0010	; ????
      112:	00 00       	nop
-     114:	00 00       	nop
-     116:	00 01       	movw	r0, r0
+     114:	18 18       	sub	r1, r8
+     116:	00 00       	nop
      118:	00 20       	and	r0, r0
-	...
+     11a:	00 00       	nop
+     11c:	3c 24       	eor	r3, r12
+     11e:	24 3c       	cpi	r18, 0xC4	; 196
+     120:	00 00       	nop
      122:	40 00       	.word	0x0040	; ????
-     124:	00 00       	nop
-     126:	00 00       	nop
-     128:	01 01       	movw	r0, r2
-     12a:	01 80       	ldd	r0, Z+1	; 0x01
-     12c:	00 00       	nop
-     12e:	00 00       	nop
-     130:	01 01       	movw	r0, r2
-     132:	01 01       	movw	r0, r2
+     124:	7e 42       	sbci	r23, 0x2E	; 46
+     126:	42 42       	sbci	r20, 0x22	; 34
+     128:	42 7e       	andi	r20, 0xE2	; 226
+     12a:	00 80       	ld	r0, Z
+	...
      134:	01 00       	.word	0x0001	; ????
      136:	00 00       	nop
      138:	00 00       	nop
      13a:	00 00       	nop
      13c:	00 02       	muls	r16, r16
-     13e:	00 00       	nop
-     140:	00 00       	nop
-     142:	00 01       	movw	r0, r0
-     144:	00 01       	movw	r0, r0
+	...
      146:	04 00       	.word	0x0004	; ????
      148:	00 00       	nop
      14a:	00 00       	nop
-     14c:	01 00       	.word	0x0001	; ????
-     14e:	01 08       	sbc	r0, r1
+     14c:	00 00       	nop
+     14e:	00 08       	sbc	r0, r0
      150:	00 00       	nop
-     152:	00 00       	nop
-     154:	00 01       	movw	r0, r0
-     156:	00 01       	movw	r0, r0
+     152:	00 18       	sub	r0, r0
+     154:	18 00       	.word	0x0018	; ????
+     156:	00 00       	nop
      158:	10 00       	.word	0x0010	; ????
-     15a:	00 00       	nop
-     15c:	00 00       	nop
-     15e:	01 00       	.word	0x0001	; ????
-     160:	01 20       	and	r0, r1
+     15a:	00 3c       	cpi	r16, 0xC0	; 192
+     15c:	24 24       	eor	r2, r4
+     15e:	3c 00       	.word	0x003c	; ????
+     160:	00 20       	and	r0, r0
+     162:	00 7e       	andi	r16, 0xE0	; 224
+     164:	42 42       	sbci	r20, 0x22	; 34
+     166:	42 42       	sbci	r20, 0x22	; 34
+     168:	7e 00       	.word	0x007e	; ????
+     16a:	40 ff       	sbrs	r20, 0
+     16c:	81 81       	ldd	r24, Z+1	; 0x01
+     16e:	81 81       	ldd	r24, Z+1	; 0x01
+     170:	81 81       	ldd	r24, Z+1	; 0x01
+     172:	ff 80       	ldd	r15, Y+7	; 0x07
 	...
-     16a:	40 00       	.word	0x0040	; ????
-     16c:	00 00       	nop
-     16e:	00 01       	movw	r0, r0
-     170:	01 01       	movw	r0, r2
-     172:	01 80       	ldd	r0, Z+1	; 0x01
-     174:	00 00       	nop
-     176:	00 01       	movw	r0, r0
-     178:	01 01       	movw	r0, r2
-     17a:	01 01       	movw	r0, r2
      17c:	01 00       	.word	0x0001	; ????
      17e:	00 00       	nop
      180:	00 00       	nop
      182:	00 00       	nop
      184:	00 02       	muls	r16, r16
-     186:	00 00       	nop
-     188:	00 00       	nop
-     18a:	01 00       	.word	0x0001	; ????
-     18c:	01 00       	.word	0x0001	; ????
+	...
      18e:	04 00       	.word	0x0004	; ????
      190:	00 00       	nop
-     192:	00 01       	movw	r0, r0
-     194:	00 01       	movw	r0, r0
+     192:	18 18       	sub	r1, r8
+     194:	00 00       	nop
      196:	00 08       	sbc	r0, r0
      198:	00 00       	nop
-     19a:	00 00       	nop
-     19c:	01 00       	.word	0x0001	; ????
-     19e:	01 00       	.word	0x0001	; ????
+     19a:	3c 24       	eor	r3, r12
+     19c:	24 3c       	cpi	r18, 0xC4	; 196
+     19e:	00 00       	nop
      1a0:	10 00       	.word	0x0010	; ????
-     1a2:	00 00       	nop
-     1a4:	00 01       	movw	r0, r0
-     1a6:	00 01       	movw	r0, r0
+     1a2:	7e 42       	sbci	r23, 0x2E	; 46
+     1a4:	42 42       	sbci	r20, 0x22	; 34
+     1a6:	42 7e       	andi	r20, 0xE2	; 226
      1a8:	00 20       	and	r0, r0
-	...
+     1aa:	ff 81       	ldd	r31, Y+7	; 0x07
+     1ac:	81 81       	ldd	r24, Z+1	; 0x01
+     1ae:	81 81       	ldd	r24, Z+1	; 0x01
+     1b0:	81 ff       	sbrs	r24, 1
      1b2:	40 00       	.word	0x0040	; ????
      1b4:	00 00       	nop
-     1b6:	01 01       	movw	r0, r2
-     1b8:	01 01       	movw	r0, r2
-     1ba:	01 80       	ldd	r0, Z+1	; 0x01
-     1bc:	00 00       	nop
-     1be:	01 01       	movw	r0, r2
-     1c0:	01 01       	movw	r0, r2
-     1c2:	01 01       	movw	r0, r2
+     1b6:	00 00       	nop
+     1b8:	00 00       	nop
+     1ba:	00 80       	ld	r0, Z
+	...
      1c4:	01 00       	.word	0x0001	; ????
      1c6:	00 00       	nop
      1c8:	00 00       	nop
      1ca:	00 00       	nop
      1cc:	00 02       	muls	r16, r16
      1ce:	00 00       	nop
-     1d0:	00 01       	movw	r0, r0
-     1d2:	00 01       	movw	r0, r0
-     1d4:	00 01       	movw	r0, r0
+     1d0:	00 18       	sub	r0, r0
+     1d2:	18 00       	.word	0x0018	; ????
+     1d4:	00 00       	nop
      1d6:	04 00       	.word	0x0004	; ????
-     1d8:	00 00       	nop
-     1da:	01 00       	.word	0x0001	; ????
-     1dc:	01 00       	.word	0x0001	; ????
-     1de:	01 08       	sbc	r0, r1
-     1e0:	00 00       	nop
-     1e2:	00 01       	movw	r0, r0
-     1e4:	00 01       	movw	r0, r0
-     1e6:	00 01       	movw	r0, r0
-     1e8:	10 00       	.word	0x0010	; ????
-     1ea:	00 00       	nop
-     1ec:	01 00       	.word	0x0001	; ????
-     1ee:	01 00       	.word	0x0001	; ????
-     1f0:	01 20       	and	r0, r1
+     1d8:	00 3c       	cpi	r16, 0xC0	; 192
+     1da:	24 24       	eor	r2, r4
+     1dc:	3c 00       	.word	0x003c	; ????
+     1de:	00 08       	sbc	r0, r0
+     1e0:	00 7e       	andi	r16, 0xE0	; 224
+     1e2:	42 42       	sbci	r20, 0x22	; 34
+     1e4:	42 42       	sbci	r20, 0x22	; 34
+     1e6:	7e 00       	.word	0x007e	; ????
+     1e8:	10 ff       	sbrs	r17, 0
+     1ea:	81 81       	ldd	r24, Z+1	; 0x01
+     1ec:	81 81       	ldd	r24, Z+1	; 0x01
+     1ee:	81 81       	ldd	r24, Z+1	; 0x01
+     1f0:	ff 20       	and	r15, r15
 	...
      1fa:	40 00       	.word	0x0040	; ????
-     1fc:	00 01       	movw	r0, r0
-     1fe:	01 01       	movw	r0, r2
-     200:	01 01       	movw	r0, r2
-     202:	01 80       	ldd	r0, Z+1	; 0x01
-     204:	00 01       	movw	r0, r0
-     206:	01 01       	movw	r0, r2
-     208:	01 01       	movw	r0, r2
-     20a:	01 01       	movw	r0, r2
+     1fc:	00 00       	nop
+     1fe:	00 00       	nop
+     200:	00 00       	nop
+     202:	00 80       	ld	r0, Z
+	...
      20c:	01 00       	.word	0x0001	; ????
      20e:	00 00       	nop
-     210:	00 00       	nop
+     210:	18 18       	sub	r1, r8
      212:	00 00       	nop
      214:	00 02       	muls	r16, r16
      216:	00 00       	nop
-     218:	01 00       	.word	0x0001	; ????
-     21a:	01 00       	.word	0x0001	; ????
-     21c:	01 00       	.word	0x0001	; ????
+     218:	3c 24       	eor	r3, r12
+     21a:	24 3c       	cpi	r18, 0xC4	; 196
+     21c:	00 00       	nop
      21e:	04 00       	.word	0x0004	; ????
-     220:	00 01       	movw	r0, r0
-     222:	00 01       	movw	r0, r0
-     224:	00 01       	movw	r0, r0
+     220:	7e 42       	sbci	r23, 0x2E	; 46
+     222:	42 42       	sbci	r20, 0x22	; 34
+     224:	42 7e       	andi	r20, 0xE2	; 226
      226:	00 08       	sbc	r0, r0
-     228:	00 00       	nop
-     22a:	01 00       	.word	0x0001	; ????
-     22c:	01 00       	.word	0x0001	; ????
-     22e:	01 00       	.word	0x0001	; ????
+     228:	ff 81       	ldd	r31, Y+7	; 0x07
+     22a:	81 81       	ldd	r24, Z+1	; 0x01
+     22c:	81 81       	ldd	r24, Z+1	; 0x01
+     22e:	81 ff       	sbrs	r24, 1
      230:	10 00       	.word	0x0010	; ????
-     232:	00 01       	movw	r0, r0
-     234:	00 01       	movw	r0, r0
-     236:	00 01       	movw	r0, r0
+     232:	00 00       	nop
+     234:	00 00       	nop
+     236:	00 00       	nop
      238:	00 20       	and	r0, r0
 	...
      242:	40 00       	.word	0x0040	; ????
-     244:	01 01       	movw	r0, r2
-     246:	01 01       	movw	r0, r2
-     248:	01 01       	movw	r0, r2
-     24a:	01 80       	ldd	r0, Z+1	; 0x01
-     24c:	01 01       	movw	r0, r2
-     24e:	01 01       	movw	r0, r2
-     250:	01 01       	movw	r0, r2
-     252:	01 00       	.word	0x0001	; ????
+     244:	00 00       	nop
+     246:	00 00       	nop
+     248:	00 00       	nop
+     24a:	00 80       	ld	r0, Z
+     24c:	00 00       	nop
+     24e:	00 18       	sub	r0, r0
+     250:	18 00       	.word	0x0018	; ????
+     252:	00 00       	nop
      254:	01 00       	.word	0x0001	; ????
-     256:	00 00       	nop
-     258:	00 00       	nop
-     25a:	00 00       	nop
+     256:	00 3c       	cpi	r16, 0xC0	; 192
+     258:	24 24       	eor	r2, r4
+     25a:	3c 00       	.word	0x003c	; ????
      25c:	00 02       	muls	r16, r16
-     25e:	00 01       	movw	r0, r0
-     260:	00 01       	movw	r0, r0
-     262:	00 01       	movw	r0, r0
-     264:	00 00       	nop
-     266:	04 00       	.word	0x0004	; ????
-     268:	01 00       	.word	0x0001	; ????
-     26a:	01 00       	.word	0x0001	; ????
-     26c:	01 00       	.word	0x0001	; ????
-     26e:	00 08       	sbc	r0, r0
-     270:	00 01       	movw	r0, r0
-     272:	00 01       	movw	r0, r0
-     274:	00 01       	movw	r0, r0
-     276:	00 00       	nop
+     25e:	00 7e       	andi	r16, 0xE0	; 224
+     260:	42 42       	sbci	r20, 0x22	; 34
+     262:	42 42       	sbci	r20, 0x22	; 34
+     264:	7e 00       	.word	0x007e	; ????
+     266:	04 ff       	sbrs	r16, 4
+     268:	81 81       	ldd	r24, Z+1	; 0x01
+     26a:	81 81       	ldd	r24, Z+1	; 0x01
+     26c:	81 81       	ldd	r24, Z+1	; 0x01
+     26e:	ff 08       	sbc	r15, r15
+	...
      278:	10 00       	.word	0x0010	; ????
-     27a:	01 00       	.word	0x0001	; ????
-     27c:	01 00       	.word	0x0001	; ????
-     27e:	01 00       	.word	0x0001	; ????
+     27a:	00 00       	nop
+     27c:	00 00       	nop
+     27e:	00 00       	nop
      280:	00 20       	and	r0, r0
 	...
-     28a:	40 01       	movw	r8, r0
-     28c:	01 01       	movw	r0, r2
-     28e:	01 01       	movw	r0, r2
-     290:	01 01       	movw	r0, r2
+     28a:	40 00       	.word	0x0040	; ????
+     28c:	00 00       	nop
+     28e:	00 00       	nop
+     290:	00 00       	nop
      292:	00 80       	ld	r0, Z
-     294:	01 01       	movw	r0, r2
-     296:	01 01       	movw	r0, r2
-     298:	01 01       	movw	r0, r2
-     29a:	00 00       	nop
+	...
      29c:	01 00       	.word	0x0001	; ????
-     29e:	00 00       	nop
-     2a0:	00 00       	nop
-     2a2:	00 00       	nop
+     29e:	00 3c       	cpi	r16, 0xC0	; 192
+     2a0:	3c 3c       	cpi	r19, 0xCC	; 204
+     2a2:	3c 00       	.word	0x003c	; ????
      2a4:	00 02       	muls	r16, r16
-     2a6:	01 00       	.word	0x0001	; ????
-     2a8:	01 00       	.word	0x0001	; ????
-     2aa:	01 00       	.word	0x0001	; ????
-     2ac:	00 00       	nop
-     2ae:	04 01       	movw	r0, r8
-     2b0:	00 01       	movw	r0, r0
-     2b2:	00 01       	movw	r0, r0
-     2b4:	00 00       	nop
-     2b6:	00 08       	sbc	r0, r0
-     2b8:	01 00       	.word	0x0001	; ????
-     2ba:	01 00       	.word	0x0001	; ????
-     2bc:	01 00       	.word	0x0001	; ????
-     2be:	00 00       	nop
-     2c0:	10 01       	movw	r2, r0
-     2c2:	00 01       	movw	r0, r0
-     2c4:	00 01       	movw	r0, r0
+     2a6:	00 7e       	andi	r16, 0xE0	; 224
+     2a8:	42 42       	sbci	r20, 0x22	; 34
+     2aa:	42 42       	sbci	r20, 0x22	; 34
+     2ac:	7e 00       	.word	0x007e	; ????
+     2ae:	04 ff       	sbrs	r16, 4
+     2b0:	81 81       	ldd	r24, Z+1	; 0x01
+     2b2:	81 81       	ldd	r24, Z+1	; 0x01
+     2b4:	81 81       	ldd	r24, Z+1	; 0x01
+     2b6:	ff 08       	sbc	r15, r15
+	...
+     2c0:	10 00       	.word	0x0010	; ????
+     2c2:	00 00       	nop
+     2c4:	00 00       	nop
      2c6:	00 00       	nop
      2c8:	00 20       	and	r0, r0
 	...
-     2d2:	40 01       	movw	r8, r0
-     2d4:	01 01       	movw	r0, r2
-     2d6:	01 01       	movw	r0, r2
-     2d8:	01 00       	.word	0x0001	; ????
+     2d2:	40 00       	.word	0x0040	; ????
+     2d4:	00 00       	nop
+     2d6:	00 00       	nop
+     2d8:	00 00       	nop
      2da:	00 80       	ld	r0, Z
-     2dc:	01 01       	movw	r0, r2
-     2de:	01 01       	movw	r0, r2
-     2e0:	01 00       	.word	0x0001	; ????
-     2e2:	00 00       	nop
+	...
      2e4:	01 00       	.word	0x0001	; ????
-     2e6:	00 00       	nop
-     2e8:	00 00       	nop
-     2ea:	00 00       	nop
+     2e6:	00 3c       	cpi	r16, 0xC0	; 192
+     2e8:	24 24       	eor	r2, r4
+     2ea:	3c 00       	.word	0x003c	; ????
      2ec:	00 02       	muls	r16, r16
-     2ee:	00 01       	movw	r0, r0
-     2f0:	00 01       	movw	r0, r0
-     2f2:	00 00       	nop
-     2f4:	00 00       	nop
-     2f6:	04 00       	.word	0x0004	; ????
-     2f8:	01 00       	.word	0x0001	; ????
-     2fa:	01 00       	.word	0x0001	; ????
-     2fc:	00 00       	nop
-     2fe:	00 08       	sbc	r0, r0
-     300:	00 01       	movw	r0, r0
-     302:	00 01       	movw	r0, r0
-     304:	00 00       	nop
-     306:	00 00       	nop
+     2ee:	00 7e       	andi	r16, 0xE0	; 224
+     2f0:	42 5a       	subi	r20, 0xA2	; 162
+     2f2:	5a 42       	sbci	r21, 0x2A	; 42
+     2f4:	7e 00       	.word	0x007e	; ????
+     2f6:	04 ff       	sbrs	r16, 4
+     2f8:	81 81       	ldd	r24, Z+1	; 0x01
+     2fa:	81 81       	ldd	r24, Z+1	; 0x01
+     2fc:	81 81       	ldd	r24, Z+1	; 0x01
+     2fe:	ff 08       	sbc	r15, r15
+	...
      308:	10 00       	.word	0x0010	; ????
-     30a:	01 00       	.word	0x0001	; ????
-     30c:	01 00       	.word	0x0001	; ????
+     30a:	00 00       	nop
+     30c:	00 00       	nop
      30e:	00 00       	nop
      310:	00 20       	and	r0, r0
 	...
-     31a:	40 01       	movw	r8, r0
-     31c:	01 01       	movw	r0, r2
-     31e:	01 01       	movw	r0, r2
+     31a:	40 00       	.word	0x0040	; ????
+     31c:	00 00       	nop
+     31e:	00 00       	nop
      320:	00 00       	nop
      322:	00 80       	ld	r0, Z
-     324:	01 01       	movw	r0, r2
-     326:	01 01       	movw	r0, r2
-     328:	00 00       	nop
-     32a:	00 00       	nop
+	...
      32c:	01 00       	.word	0x0001	; ????
      32e:	00 00       	nop
      330:	00 00       	nop
      332:	00 00       	nop
      334:	00 02       	muls	r16, r16
-     336:	01 00       	.word	0x0001	; ????
-     338:	01 00       	.word	0x0001	; ????
-     33a:	00 00       	nop
-     33c:	00 00       	nop
-     33e:	04 01       	movw	r0, r8
-     340:	00 01       	movw	r0, r0
-     342:	00 00       	nop
-     344:	00 00       	nop
-     346:	00 08       	sbc	r0, r0
-     348:	01 00       	.word	0x0001	; ????
-     34a:	01 00       	.word	0x0001	; ????
-     34c:	00 00       	nop
-     34e:	00 00       	nop
-     350:	10 01       	movw	r2, r0
-     352:	00 01       	movw	r0, r0
+     336:	00 7e       	andi	r16, 0xE0	; 224
+     338:	7e 66       	ori	r23, 0x6E	; 110
+     33a:	66 7e       	andi	r22, 0xE6	; 230
+     33c:	7e 00       	.word	0x007e	; ????
+     33e:	04 ff       	sbrs	r16, 4
+     340:	81 81       	ldd	r24, Z+1	; 0x01
+     342:	99 99       	sbic	0x13, 1	; 19
+     344:	81 81       	ldd	r24, Z+1	; 0x01
+     346:	ff 08       	sbc	r15, r15
+	...
+     350:	10 00       	.word	0x0010	; ????
+     352:	00 00       	nop
      354:	00 00       	nop
      356:	00 00       	nop
      358:	00 20       	and	r0, r0
 	...
-     362:	40 01       	movw	r8, r0
-     364:	01 01       	movw	r0, r2
-     366:	01 00       	.word	0x0001	; ????
+     362:	40 00       	.word	0x0040	; ????
+     364:	00 00       	nop
+     366:	00 00       	nop
      368:	00 00       	nop
      36a:	00 80       	ld	r0, Z
-     36c:	01 01       	movw	r0, r2
-     36e:	01 00       	.word	0x0001	; ????
-     370:	00 00       	nop
-     372:	00 00       	nop
+	...
      374:	01 00       	.word	0x0001	; ????
      376:	00 00       	nop
      378:	00 00       	nop
      37a:	00 00       	nop
      37c:	00 02       	muls	r16, r16
-     37e:	00 01       	movw	r0, r0
-     380:	00 00       	nop
-     382:	00 00       	nop
-     384:	00 00       	nop
-     386:	04 00       	.word	0x0004	; ????
-     388:	01 00       	.word	0x0001	; ????
-     38a:	00 00       	nop
-     38c:	00 00       	nop
-     38e:	00 08       	sbc	r0, r0
-     390:	00 01       	movw	r0, r0
-     392:	00 00       	nop
-     394:	00 00       	nop
+     37e:	00 7e       	andi	r16, 0xE0	; 224
+     380:	42 42       	sbci	r20, 0x22	; 34
+     382:	42 42       	sbci	r20, 0x22	; 34
+     384:	7e 00       	.word	0x007e	; ????
+     386:	04 ff       	sbrs	r16, 4
+     388:	81 bd       	out	0x21, r24	; 33
+     38a:	a5 a5       	ldd	r26, Z+45	; 0x2d
+     38c:	bd 81       	ldd	r27, Y+5	; 0x05
+     38e:	ff 08       	sbc	r15, r15
+     390:	00 00       	nop
+     392:	00 18       	sub	r0, r0
+     394:	18 00       	.word	0x0018	; ????
      396:	00 00       	nop
      398:	10 00       	.word	0x0010	; ????
-     39a:	01 00       	.word	0x0001	; ????
+     39a:	00 00       	nop
      39c:	00 00       	nop
      39e:	00 00       	nop
      3a0:	00 20       	and	r0, r0
-     3a2:	00 01       	movw	r0, r0
-     3a4:	00 00       	nop
-     3a6:	00 00       	nop
-     3a8:	00 00       	nop
+	...
      3aa:	40 00       	.word	0x0040	; ????
-     3ac:	01 01       	movw	r0, r2
+     3ac:	00 00       	nop
      3ae:	00 00       	nop
      3b0:	00 00       	nop
      3b2:	00 80       	ld	r0, Z
-     3b4:	01 00       	.word	0x0001	; ????
-     3b6:	00 00       	nop
-     3b8:	00 00       	nop
-     3ba:	00 00       	nop
-     3bc:	01 01       	movw	r0, r2
+	...
+     3bc:	01 00       	.word	0x0001	; ????
      3be:	00 00       	nop
      3c0:	00 00       	nop
      3c2:	00 00       	nop
      3c4:	00 02       	muls	r16, r16
-     3c6:	01 00       	.word	0x0001	; ????
-     3c8:	00 00       	nop
-     3ca:	00 00       	nop
-     3cc:	00 00       	nop
-     3ce:	04 01       	movw	r0, r8
-     3d0:	00 00       	nop
-     3d2:	00 00       	nop
-     3d4:	00 00       	nop
-     3d6:	00 08       	sbc	r0, r0
-     3d8:	01 00       	.word	0x0001	; ????
-     3da:	00 00       	nop
-     3dc:	00 00       	nop
+	...
+     3ce:	04 ff       	sbrs	r16, 4
+     3d0:	ff c3       	rjmp	.+2046   	; 0xbd0 <__stack+0x371>
+     3d2:	c3 c3       	rjmp	.+1926   	; 0xb5a <__stack+0x2fb>
+     3d4:	c3 ff       	sbrs	r28, 3
+     3d6:	ff 08       	sbc	r15, r15
+     3d8:	00 00       	nop
+     3da:	3c 24       	eor	r3, r12
+     3dc:	24 3c       	cpi	r18, 0xC4	; 196
      3de:	00 00       	nop
-     3e0:	10 01       	movw	r2, r0
+     3e0:	10 00       	.word	0x0010	; ????
      3e2:	00 00       	nop
-     3e4:	00 00       	nop
+     3e4:	18 18       	sub	r1, r8
      3e6:	00 00       	nop
      3e8:	00 20       	and	r0, r0
-     3ea:	01 00       	.word	0x0001	; ????
-     3ec:	00 00       	nop
-     3ee:	00 00       	nop
-     3f0:	00 00       	nop
-     3f2:	40 01       	movw	r8, r0
+	...
+     3f2:	40 00       	.word	0x0040	; ????
      3f4:	00 00       	nop
      3f6:	00 00       	nop
      3f8:	00 00       	nop
@@ -492,1315 +429,2268 @@ Disassembly of section .text:
      40a:	00 00       	nop
      40c:	00 02       	muls	r16, r16
 	...
-     416:	04 00       	.word	0x0004	; ????
-     418:	00 00       	nop
-     41a:	00 00       	nop
-     41c:	00 00       	nop
-     41e:	00 08       	sbc	r0, r0
-	...
+     416:	04 ff       	sbrs	r16, 4
+     418:	81 81       	ldd	r24, Z+1	; 0x01
+     41a:	81 81       	ldd	r24, Z+1	; 0x01
+     41c:	81 81       	ldd	r24, Z+1	; 0x01
+     41e:	ff 08       	sbc	r15, r15
+     420:	00 7e       	andi	r16, 0xE0	; 224
+     422:	42 42       	sbci	r20, 0x22	; 34
+     424:	42 42       	sbci	r20, 0x22	; 34
+     426:	7e 00       	.word	0x007e	; ????
      428:	10 00       	.word	0x0010	; ????
-     42a:	00 00       	nop
-     42c:	00 00       	nop
-     42e:	00 00       	nop
+     42a:	00 3c       	cpi	r16, 0xC0	; 192
+     42c:	24 24       	eor	r2, r4
+     42e:	3c 00       	.word	0x003c	; ????
      430:	00 20       	and	r0, r0
-	...
+     432:	00 00       	nop
+     434:	00 18       	sub	r0, r0
+     436:	18 00       	.word	0x0018	; ????
+     438:	00 00       	nop
      43a:	40 00       	.word	0x0040	; ????
      43c:	00 00       	nop
      43e:	00 00       	nop
      440:	00 00       	nop
      442:	00 80       	ld	r0, Z
+	...
+     44c:	01 00       	.word	0x0001	; ????
+     44e:	00 00       	nop
+     450:	00 00       	nop
+     452:	00 00       	nop
+     454:	00 02       	muls	r16, r16
+	...
+     45e:	04 00       	.word	0x0004	; ????
+     460:	00 00       	nop
+     462:	00 00       	nop
+     464:	00 00       	nop
+     466:	00 08       	sbc	r0, r0
+     468:	ff 81       	ldd	r31, Y+7	; 0x07
+     46a:	81 81       	ldd	r24, Z+1	; 0x01
+     46c:	81 81       	ldd	r24, Z+1	; 0x01
+     46e:	81 ff       	sbrs	r24, 1
+     470:	10 00       	.word	0x0010	; ????
+     472:	7e 42       	sbci	r23, 0x2E	; 46
+     474:	42 42       	sbci	r20, 0x22	; 34
+     476:	42 7e       	andi	r20, 0xE2	; 226
+     478:	00 20       	and	r0, r0
+     47a:	00 00       	nop
+     47c:	3c 24       	eor	r3, r12
+     47e:	24 3c       	cpi	r18, 0xC4	; 196
+     480:	00 00       	nop
+     482:	40 00       	.word	0x0040	; ????
+     484:	00 00       	nop
+     486:	18 18       	sub	r1, r8
+     488:	00 00       	nop
+     48a:	00 80       	ld	r0, Z
+	...
+     494:	01 00       	.word	0x0001	; ????
+     496:	00 00       	nop
+     498:	00 00       	nop
+     49a:	00 00       	nop
+     49c:	00 02       	muls	r16, r16
+	...
+     4a6:	04 00       	.word	0x0004	; ????
+     4a8:	00 00       	nop
+     4aa:	00 00       	nop
+     4ac:	00 00       	nop
+     4ae:	00 08       	sbc	r0, r0
+     4b0:	ff 81       	ldd	r31, Y+7	; 0x07
+     4b2:	81 81       	ldd	r24, Z+1	; 0x01
+     4b4:	81 81       	ldd	r24, Z+1	; 0x01
+     4b6:	81 ff       	sbrs	r24, 1
+     4b8:	10 00       	.word	0x0010	; ????
+     4ba:	7e 42       	sbci	r23, 0x2E	; 46
+     4bc:	42 42       	sbci	r20, 0x22	; 34
+     4be:	42 7e       	andi	r20, 0xE2	; 226
+     4c0:	00 20       	and	r0, r0
+     4c2:	00 00       	nop
+     4c4:	3c 24       	eor	r3, r12
+     4c6:	24 3c       	cpi	r18, 0xC4	; 196
+     4c8:	00 00       	nop
+     4ca:	40 00       	.word	0x0040	; ????
+     4cc:	00 00       	nop
+     4ce:	18 18       	sub	r1, r8
+     4d0:	00 00       	nop
+     4d2:	00 80       	ld	r0, Z
+	...
+     4dc:	01 00       	.word	0x0001	; ????
+     4de:	00 00       	nop
+     4e0:	00 00       	nop
+     4e2:	00 00       	nop
+     4e4:	00 02       	muls	r16, r16
+	...
+     4ee:	04 00       	.word	0x0004	; ????
+     4f0:	00 00       	nop
+     4f2:	00 00       	nop
+     4f4:	00 00       	nop
+     4f6:	00 08       	sbc	r0, r0
+     4f8:	ff 81       	ldd	r31, Y+7	; 0x07
+     4fa:	81 81       	ldd	r24, Z+1	; 0x01
+     4fc:	81 81       	ldd	r24, Z+1	; 0x01
+     4fe:	81 ff       	sbrs	r24, 1
+     500:	10 00       	.word	0x0010	; ????
+     502:	7e 42       	sbci	r23, 0x2E	; 46
+     504:	42 42       	sbci	r20, 0x22	; 34
+     506:	42 7e       	andi	r20, 0xE2	; 226
+     508:	00 20       	and	r0, r0
+     50a:	00 00       	nop
+     50c:	3c 3c       	cpi	r19, 0xCC	; 204
+     50e:	3c 3c       	cpi	r19, 0xCC	; 204
+     510:	00 00       	nop
+     512:	40 00       	.word	0x0040	; ????
+     514:	00 00       	nop
+     516:	00 00       	nop
+     518:	00 00       	nop
+     51a:	00 80       	ld	r0, Z
+	...
+     524:	01 00       	.word	0x0001	; ????
+     526:	00 00       	nop
+     528:	00 00       	nop
+     52a:	00 00       	nop
+     52c:	00 02       	muls	r16, r16
+	...
+     536:	04 00       	.word	0x0004	; ????
+     538:	00 00       	nop
+     53a:	00 00       	nop
+     53c:	00 00       	nop
+     53e:	00 08       	sbc	r0, r0
+     540:	ff 81       	ldd	r31, Y+7	; 0x07
+     542:	81 81       	ldd	r24, Z+1	; 0x01
+     544:	81 81       	ldd	r24, Z+1	; 0x01
+     546:	81 ff       	sbrs	r24, 1
+     548:	10 00       	.word	0x0010	; ????
+     54a:	7e 42       	sbci	r23, 0x2E	; 46
+     54c:	5a 5a       	subi	r21, 0xAA	; 170
+     54e:	42 7e       	andi	r20, 0xE2	; 226
+     550:	00 20       	and	r0, r0
+     552:	00 00       	nop
+     554:	3c 24       	eor	r3, r12
+     556:	24 3c       	cpi	r18, 0xC4	; 196
+     558:	00 00       	nop
+     55a:	40 00       	.word	0x0040	; ????
+     55c:	00 00       	nop
+     55e:	00 00       	nop
+     560:	00 00       	nop
+     562:	00 80       	ld	r0, Z
+	...
+     56c:	01 00       	.word	0x0001	; ????
+     56e:	00 00       	nop
+     570:	00 00       	nop
+     572:	00 00       	nop
+     574:	00 02       	muls	r16, r16
+	...
+     57e:	04 00       	.word	0x0004	; ????
+     580:	00 00       	nop
+     582:	00 00       	nop
+     584:	00 00       	nop
+     586:	00 08       	sbc	r0, r0
+     588:	ff 81       	ldd	r31, Y+7	; 0x07
+     58a:	81 99       	sbic	0x10, 1	; 16
+     58c:	99 81       	ldd	r25, Y+1	; 0x01
+     58e:	81 ff       	sbrs	r24, 1
+     590:	10 00       	.word	0x0010	; ????
+     592:	7e 7e       	andi	r23, 0xEE	; 238
+     594:	66 66       	ori	r22, 0x66	; 102
+     596:	7e 7e       	andi	r23, 0xEE	; 238
+     598:	00 20       	and	r0, r0
+	...
+     5a2:	40 00       	.word	0x0040	; ????
+     5a4:	00 00       	nop
+     5a6:	00 00       	nop
+     5a8:	00 00       	nop
+     5aa:	00 80       	ld	r0, Z
+	...
+     5b4:	01 00       	.word	0x0001	; ????
+     5b6:	00 00       	nop
+     5b8:	00 00       	nop
+     5ba:	00 00       	nop
+     5bc:	00 02       	muls	r16, r16
+	...
+     5c6:	04 00       	.word	0x0004	; ????
+     5c8:	00 00       	nop
+     5ca:	18 18       	sub	r1, r8
+     5cc:	00 00       	nop
+     5ce:	00 08       	sbc	r0, r0
+     5d0:	ff 81       	ldd	r31, Y+7	; 0x07
+     5d2:	bd a5       	ldd	r27, Y+45	; 0x2d
+     5d4:	a5 bd       	out	0x25, r26	; 37
+     5d6:	81 ff       	sbrs	r24, 1
+     5d8:	10 00       	.word	0x0010	; ????
+     5da:	7e 42       	sbci	r23, 0x2E	; 46
+     5dc:	42 42       	sbci	r20, 0x22	; 34
+     5de:	42 7e       	andi	r20, 0xE2	; 226
+     5e0:	00 20       	and	r0, r0
+	...
+     5ea:	40 00       	.word	0x0040	; ????
+     5ec:	00 00       	nop
+     5ee:	00 00       	nop
+     5f0:	00 00       	nop
+     5f2:	00 80       	ld	r0, Z
+	...
+     5fc:	01 00       	.word	0x0001	; ????
+     5fe:	00 00       	nop
+     600:	00 00       	nop
+     602:	00 00       	nop
+     604:	00 02       	muls	r16, r16
+     606:	00 00       	nop
+     608:	00 18       	sub	r0, r0
+     60a:	18 00       	.word	0x0018	; ????
+     60c:	00 00       	nop
+     60e:	04 00       	.word	0x0004	; ????
+     610:	00 3c       	cpi	r16, 0xC0	; 192
+     612:	24 24       	eor	r2, r4
+     614:	3c 00       	.word	0x003c	; ????
+     616:	00 08       	sbc	r0, r0
+     618:	ff ff       	.word	0xffff	; ????
+     61a:	c3 c3       	rjmp	.+1926   	; 0xda2 <__stack+0x543>
+     61c:	c3 c3       	rjmp	.+1926   	; 0xda4 <__stack+0x545>
+     61e:	ff ff       	.word	0xffff	; ????
+     620:	10 00       	.word	0x0010	; ????
+     622:	00 00       	nop
+     624:	00 00       	nop
+     626:	00 00       	nop
+     628:	00 20       	and	r0, r0
+	...
+     632:	40 00       	.word	0x0040	; ????
+     634:	00 00       	nop
+     636:	00 00       	nop
+     638:	00 00       	nop
+     63a:	00 80       	ld	r0, Z
+	...
+     644:	01 00       	.word	0x0001	; ????
+     646:	00 00       	nop
+     648:	18 18       	sub	r1, r8
+     64a:	00 00       	nop
+     64c:	00 02       	muls	r16, r16
+     64e:	00 00       	nop
+     650:	3c 24       	eor	r3, r12
+     652:	24 3c       	cpi	r18, 0xC4	; 196
+     654:	00 00       	nop
+     656:	04 00       	.word	0x0004	; ????
+     658:	7e 42       	sbci	r23, 0x2E	; 46
+     65a:	42 42       	sbci	r20, 0x22	; 34
+     65c:	42 7e       	andi	r20, 0xE2	; 226
+     65e:	00 08       	sbc	r0, r0
+     660:	ff 81       	ldd	r31, Y+7	; 0x07
+     662:	81 81       	ldd	r24, Z+1	; 0x01
+     664:	81 81       	ldd	r24, Z+1	; 0x01
+     666:	81 ff       	sbrs	r24, 1
+     668:	10 00       	.word	0x0010	; ????
+     66a:	00 00       	nop
+     66c:	00 00       	nop
+     66e:	00 00       	nop
+     670:	00 20       	and	r0, r0
+	...
+     67a:	40 00       	.word	0x0040	; ????
+     67c:	00 00       	nop
+     67e:	00 00       	nop
+     680:	00 00       	nop
+     682:	00 80       	ld	r0, Z
+     684:	00 00       	nop
+     686:	00 18       	sub	r0, r0
+     688:	18 00       	.word	0x0018	; ????
+     68a:	00 00       	nop
+     68c:	01 00       	.word	0x0001	; ????
+     68e:	00 3c       	cpi	r16, 0xC0	; 192
+     690:	24 24       	eor	r2, r4
+     692:	3c 00       	.word	0x003c	; ????
+     694:	00 02       	muls	r16, r16
+     696:	00 7e       	andi	r16, 0xE0	; 224
+     698:	42 42       	sbci	r20, 0x22	; 34
+     69a:	42 42       	sbci	r20, 0x22	; 34
+     69c:	7e 00       	.word	0x007e	; ????
+     69e:	04 ff       	sbrs	r16, 4
+     6a0:	81 81       	ldd	r24, Z+1	; 0x01
+     6a2:	81 81       	ldd	r24, Z+1	; 0x01
+     6a4:	81 81       	ldd	r24, Z+1	; 0x01
+     6a6:	ff 08       	sbc	r15, r15
+	...
+     6b0:	10 00       	.word	0x0010	; ????
+     6b2:	00 00       	nop
+     6b4:	00 00       	nop
+     6b6:	00 00       	nop
+     6b8:	00 20       	and	r0, r0
+	...
+     6c2:	40 00       	.word	0x0040	; ????
+     6c4:	00 00       	nop
+     6c6:	00 00       	nop
+     6c8:	00 00       	nop
+     6ca:	00 80       	ld	r0, Z
+     6cc:	00 00       	nop
+     6ce:	00 18       	sub	r0, r0
+     6d0:	18 00       	.word	0x0018	; ????
+     6d2:	00 00       	nop
+     6d4:	01 00       	.word	0x0001	; ????
+     6d6:	00 3c       	cpi	r16, 0xC0	; 192
+     6d8:	24 24       	eor	r2, r4
+     6da:	3c 00       	.word	0x003c	; ????
+     6dc:	00 02       	muls	r16, r16
+     6de:	00 7e       	andi	r16, 0xE0	; 224
+     6e0:	42 42       	sbci	r20, 0x22	; 34
+     6e2:	42 42       	sbci	r20, 0x22	; 34
+     6e4:	7e 00       	.word	0x007e	; ????
+     6e6:	04 ff       	sbrs	r16, 4
+     6e8:	81 81       	ldd	r24, Z+1	; 0x01
+     6ea:	81 81       	ldd	r24, Z+1	; 0x01
+     6ec:	81 81       	ldd	r24, Z+1	; 0x01
+     6ee:	ff 08       	sbc	r15, r15
+	...
+     6f8:	10 00       	.word	0x0010	; ????
+     6fa:	00 00       	nop
+     6fc:	00 00       	nop
+     6fe:	00 00       	nop
+     700:	00 20       	and	r0, r0
+	...
+     70a:	40 00       	.word	0x0040	; ????
+     70c:	00 00       	nop
+     70e:	00 00       	nop
+     710:	00 00       	nop
+     712:	00 80       	ld	r0, Z
+	...
+     71c:	01 00       	.word	0x0001	; ????
+     71e:	00 3c       	cpi	r16, 0xC0	; 192
+     720:	3c 3c       	cpi	r19, 0xCC	; 204
+     722:	3c 00       	.word	0x003c	; ????
+     724:	00 02       	muls	r16, r16
+     726:	00 7e       	andi	r16, 0xE0	; 224
+     728:	42 42       	sbci	r20, 0x22	; 34
+     72a:	42 42       	sbci	r20, 0x22	; 34
+     72c:	7e 00       	.word	0x007e	; ????
+     72e:	04 ff       	sbrs	r16, 4
+     730:	81 81       	ldd	r24, Z+1	; 0x01
+     732:	81 81       	ldd	r24, Z+1	; 0x01
+     734:	81 81       	ldd	r24, Z+1	; 0x01
+     736:	ff 08       	sbc	r15, r15
+	...
+     740:	10 00       	.word	0x0010	; ????
+     742:	00 00       	nop
+     744:	00 00       	nop
+     746:	00 00       	nop
+     748:	00 20       	and	r0, r0
+	...
+     752:	40 00       	.word	0x0040	; ????
+     754:	00 00       	nop
+     756:	00 00       	nop
+     758:	00 00       	nop
+     75a:	00 80       	ld	r0, Z
+	...
+     764:	01 00       	.word	0x0001	; ????
+     766:	00 3c       	cpi	r16, 0xC0	; 192
+     768:	24 24       	eor	r2, r4
+     76a:	3c 00       	.word	0x003c	; ????
+     76c:	00 02       	muls	r16, r16
+     76e:	00 7e       	andi	r16, 0xE0	; 224
+     770:	42 5a       	subi	r20, 0xA2	; 162
+     772:	5a 42       	sbci	r21, 0x2A	; 42
+     774:	7e 00       	.word	0x007e	; ????
+     776:	04 ff       	sbrs	r16, 4
+     778:	81 81       	ldd	r24, Z+1	; 0x01
+     77a:	81 81       	ldd	r24, Z+1	; 0x01
+     77c:	81 81       	ldd	r24, Z+1	; 0x01
+     77e:	ff 08       	sbc	r15, r15
+	...
+     788:	10 00       	.word	0x0010	; ????
+     78a:	00 00       	nop
+     78c:	00 00       	nop
+     78e:	00 00       	nop
+     790:	00 20       	and	r0, r0
+	...
+     79a:	40 00       	.word	0x0040	; ????
+     79c:	00 00       	nop
+     79e:	00 00       	nop
+     7a0:	00 00       	nop
+     7a2:	00 80       	ld	r0, Z
+	...
+     7ac:	01 00       	.word	0x0001	; ????
+     7ae:	00 00       	nop
+     7b0:	00 00       	nop
+     7b2:	00 00       	nop
+     7b4:	00 02       	muls	r16, r16
+     7b6:	00 7e       	andi	r16, 0xE0	; 224
+     7b8:	7e 66       	ori	r23, 0x6E	; 110
+     7ba:	66 7e       	andi	r22, 0xE6	; 230
+     7bc:	7e 00       	.word	0x007e	; ????
+     7be:	04 ff       	sbrs	r16, 4
+     7c0:	81 81       	ldd	r24, Z+1	; 0x01
+     7c2:	99 99       	sbic	0x13, 1	; 19
+     7c4:	81 81       	ldd	r24, Z+1	; 0x01
+     7c6:	ff 08       	sbc	r15, r15
+	...
+     7d0:	10 00       	.word	0x0010	; ????
+     7d2:	00 00       	nop
+     7d4:	00 00       	nop
+     7d6:	00 00       	nop
+     7d8:	00 20       	and	r0, r0
+	...
+     7e2:	40 00       	.word	0x0040	; ????
+     7e4:	00 00       	nop
+     7e6:	00 00       	nop
+     7e8:	00 00       	nop
+     7ea:	00 80       	ld	r0, Z
+	...
+     7f4:	01 00       	.word	0x0001	; ????
+     7f6:	00 00       	nop
+     7f8:	00 00       	nop
+     7fa:	00 00       	nop
+     7fc:	00 02       	muls	r16, r16
+     7fe:	00 7e       	andi	r16, 0xE0	; 224
+     800:	42 42       	sbci	r20, 0x22	; 34
+     802:	42 42       	sbci	r20, 0x22	; 34
+     804:	7e 00       	.word	0x007e	; ????
+     806:	04 ff       	sbrs	r16, 4
+     808:	81 bd       	out	0x21, r24	; 33
+     80a:	a5 a5       	ldd	r26, Z+45	; 0x2d
+     80c:	bd 81       	ldd	r27, Y+5	; 0x05
+     80e:	ff 08       	sbc	r15, r15
+     810:	00 00       	nop
+     812:	00 18       	sub	r0, r0
+     814:	18 00       	.word	0x0018	; ????
+     816:	00 00       	nop
+     818:	10 00       	.word	0x0010	; ????
+     81a:	00 00       	nop
+     81c:	00 00       	nop
+     81e:	00 00       	nop
+     820:	00 20       	and	r0, r0
+	...
+     82a:	40 00       	.word	0x0040	; ????
+     82c:	00 00       	nop
+     82e:	00 00       	nop
+     830:	00 00       	nop
+     832:	00 80       	ld	r0, Z
+	...
+     83c:	01 00       	.word	0x0001	; ????
+     83e:	00 00       	nop
+     840:	00 00       	nop
+     842:	00 00       	nop
+     844:	00 02       	muls	r16, r16
+	...
+     84e:	04 ff       	sbrs	r16, 4
+     850:	ff c3       	rjmp	.+2046   	; 0x1050 <animTHREE+0x1a4>
+     852:	c3 c3       	rjmp	.+1926   	; 0xfda <animTHREE+0x12e>
+     854:	c3 ff       	sbrs	r28, 3
+     856:	ff 08       	sbc	r15, r15
+     858:	00 00       	nop
+     85a:	3c 24       	eor	r3, r12
+     85c:	24 3c       	cpi	r18, 0xC4	; 196
+     85e:	00 00       	nop
+     860:	10 00       	.word	0x0010	; ????
+     862:	00 00       	nop
+     864:	18 18       	sub	r1, r8
+     866:	00 00       	nop
+     868:	00 20       	and	r0, r0
+	...
+     872:	40 00       	.word	0x0040	; ????
+     874:	00 00       	nop
+     876:	00 00       	nop
+     878:	00 00       	nop
+     87a:	00 80       	ld	r0, Z
+	...
+     884:	01 00       	.word	0x0001	; ????
+     886:	00 00       	nop
+     888:	00 00       	nop
+     88a:	00 00       	nop
+     88c:	00 02       	muls	r16, r16
+	...
+     896:	04 ff       	sbrs	r16, 4
+     898:	81 81       	ldd	r24, Z+1	; 0x01
+     89a:	81 81       	ldd	r24, Z+1	; 0x01
+     89c:	81 81       	ldd	r24, Z+1	; 0x01
+     89e:	ff 08       	sbc	r15, r15
+     8a0:	00 7e       	andi	r16, 0xE0	; 224
+     8a2:	42 42       	sbci	r20, 0x22	; 34
+     8a4:	42 42       	sbci	r20, 0x22	; 34
+     8a6:	7e 00       	.word	0x007e	; ????
+     8a8:	10 00       	.word	0x0010	; ????
+     8aa:	00 3c       	cpi	r16, 0xC0	; 192
+     8ac:	24 24       	eor	r2, r4
+     8ae:	3c 00       	.word	0x003c	; ????
+     8b0:	00 20       	and	r0, r0
+     8b2:	00 00       	nop
+     8b4:	00 18       	sub	r0, r0
+     8b6:	18 00       	.word	0x0018	; ????
+     8b8:	00 00       	nop
+     8ba:	40 00       	.word	0x0040	; ????
+     8bc:	00 00       	nop
+     8be:	00 00       	nop
+     8c0:	00 00       	nop
+     8c2:	00 80       	ld	r0, Z
+	...
+     8cc:	01 00       	.word	0x0001	; ????
+     8ce:	00 00       	nop
+     8d0:	00 00       	nop
+     8d2:	00 00       	nop
+     8d4:	00 02       	muls	r16, r16
+	...
+     8de:	04 00       	.word	0x0004	; ????
+     8e0:	00 00       	nop
+     8e2:	00 00       	nop
+     8e4:	00 00       	nop
+     8e6:	00 08       	sbc	r0, r0
+     8e8:	ff 81       	ldd	r31, Y+7	; 0x07
+     8ea:	81 81       	ldd	r24, Z+1	; 0x01
+     8ec:	81 81       	ldd	r24, Z+1	; 0x01
+     8ee:	81 ff       	sbrs	r24, 1
+     8f0:	10 00       	.word	0x0010	; ????
+     8f2:	7e 42       	sbci	r23, 0x2E	; 46
+     8f4:	42 42       	sbci	r20, 0x22	; 34
+     8f6:	42 7e       	andi	r20, 0xE2	; 226
+     8f8:	00 20       	and	r0, r0
+     8fa:	00 00       	nop
+     8fc:	3c 24       	eor	r3, r12
+     8fe:	24 3c       	cpi	r18, 0xC4	; 196
+     900:	00 00       	nop
+     902:	40 00       	.word	0x0040	; ????
+     904:	00 00       	nop
+     906:	18 18       	sub	r1, r8
+     908:	00 00       	nop
+     90a:	00 80       	ld	r0, Z
+	...
+     914:	01 00       	.word	0x0001	; ????
+     916:	00 00       	nop
+     918:	00 00       	nop
+     91a:	00 00       	nop
+     91c:	00 02       	muls	r16, r16
+	...
+     926:	04 00       	.word	0x0004	; ????
+     928:	00 00       	nop
+     92a:	00 00       	nop
+     92c:	00 00       	nop
+     92e:	00 08       	sbc	r0, r0
+     930:	ff 81       	ldd	r31, Y+7	; 0x07
+     932:	81 81       	ldd	r24, Z+1	; 0x01
+     934:	81 81       	ldd	r24, Z+1	; 0x01
+     936:	81 ff       	sbrs	r24, 1
+     938:	10 00       	.word	0x0010	; ????
+     93a:	7e 42       	sbci	r23, 0x2E	; 46
+     93c:	42 42       	sbci	r20, 0x22	; 34
+     93e:	42 7e       	andi	r20, 0xE2	; 226
+     940:	00 20       	and	r0, r0
+     942:	00 00       	nop
+     944:	3c 24       	eor	r3, r12
+     946:	24 3c       	cpi	r18, 0xC4	; 196
+     948:	00 00       	nop
+     94a:	40 00       	.word	0x0040	; ????
+     94c:	00 00       	nop
+     94e:	18 18       	sub	r1, r8
+     950:	00 00       	nop
+     952:	00 80       	ld	r0, Z
+	...
+     95c:	01 00       	.word	0x0001	; ????
+     95e:	00 00       	nop
+     960:	00 00       	nop
+     962:	00 00       	nop
+     964:	00 02       	muls	r16, r16
+	...
+     96e:	04 00       	.word	0x0004	; ????
+     970:	00 00       	nop
+     972:	00 00       	nop
+     974:	00 00       	nop
+     976:	00 08       	sbc	r0, r0
+     978:	ff 81       	ldd	r31, Y+7	; 0x07
+     97a:	81 81       	ldd	r24, Z+1	; 0x01
+     97c:	81 81       	ldd	r24, Z+1	; 0x01
+     97e:	81 ff       	sbrs	r24, 1
+     980:	10 00       	.word	0x0010	; ????
+     982:	7e 42       	sbci	r23, 0x2E	; 46
+     984:	42 42       	sbci	r20, 0x22	; 34
+     986:	42 7e       	andi	r20, 0xE2	; 226
+     988:	00 20       	and	r0, r0
+     98a:	00 00       	nop
+     98c:	3c 3c       	cpi	r19, 0xCC	; 204
+     98e:	3c 3c       	cpi	r19, 0xCC	; 204
+     990:	00 00       	nop
+     992:	40 00       	.word	0x0040	; ????
+     994:	00 00       	nop
+     996:	00 00       	nop
+     998:	00 00       	nop
+     99a:	00 80       	ld	r0, Z
+	...
+     9a4:	01 00       	.word	0x0001	; ????
+     9a6:	00 00       	nop
+     9a8:	00 00       	nop
+     9aa:	00 00       	nop
+     9ac:	00 02       	muls	r16, r16
+	...
+     9b6:	04 00       	.word	0x0004	; ????
+     9b8:	00 00       	nop
+     9ba:	00 00       	nop
+     9bc:	00 00       	nop
+     9be:	00 08       	sbc	r0, r0
+     9c0:	ff 81       	ldd	r31, Y+7	; 0x07
+     9c2:	81 81       	ldd	r24, Z+1	; 0x01
+     9c4:	81 81       	ldd	r24, Z+1	; 0x01
+     9c6:	81 ff       	sbrs	r24, 1
+     9c8:	10 00       	.word	0x0010	; ????
+     9ca:	7e 42       	sbci	r23, 0x2E	; 46
+     9cc:	5a 5a       	subi	r21, 0xAA	; 170
+     9ce:	42 7e       	andi	r20, 0xE2	; 226
+     9d0:	00 20       	and	r0, r0
+     9d2:	00 00       	nop
+     9d4:	3c 24       	eor	r3, r12
+     9d6:	24 3c       	cpi	r18, 0xC4	; 196
+     9d8:	00 00       	nop
+     9da:	40 00       	.word	0x0040	; ????
+     9dc:	00 00       	nop
+     9de:	00 00       	nop
+     9e0:	00 00       	nop
+     9e2:	00 80       	ld	r0, Z
+	...
+     9ec:	01 00       	.word	0x0001	; ????
+     9ee:	00 00       	nop
+     9f0:	00 00       	nop
+     9f2:	00 00       	nop
+     9f4:	00 02       	muls	r16, r16
+	...
+     9fe:	04 00       	.word	0x0004	; ????
+     a00:	00 00       	nop
+     a02:	00 00       	nop
+     a04:	00 00       	nop
+     a06:	00 08       	sbc	r0, r0
+     a08:	ff 81       	ldd	r31, Y+7	; 0x07
+     a0a:	81 99       	sbic	0x10, 1	; 16
+     a0c:	99 81       	ldd	r25, Y+1	; 0x01
+     a0e:	81 ff       	sbrs	r24, 1
+     a10:	10 00       	.word	0x0010	; ????
+     a12:	7e 7e       	andi	r23, 0xEE	; 238
+     a14:	66 66       	ori	r22, 0x66	; 102
+     a16:	7e 7e       	andi	r23, 0xEE	; 238
+     a18:	00 20       	and	r0, r0
+	...
+     a22:	40 00       	.word	0x0040	; ????
+     a24:	00 00       	nop
+     a26:	00 00       	nop
+     a28:	00 00       	nop
+     a2a:	00 80       	ld	r0, Z
+	...
+     a34:	01 00       	.word	0x0001	; ????
+     a36:	00 00       	nop
+     a38:	00 00       	nop
+     a3a:	00 00       	nop
+     a3c:	00 02       	muls	r16, r16
+	...
+     a46:	04 00       	.word	0x0004	; ????
+     a48:	00 00       	nop
+     a4a:	18 18       	sub	r1, r8
+     a4c:	00 00       	nop
+     a4e:	00 08       	sbc	r0, r0
+     a50:	ff 81       	ldd	r31, Y+7	; 0x07
+     a52:	bd a5       	ldd	r27, Y+45	; 0x2d
+     a54:	a5 bd       	out	0x25, r26	; 37
+     a56:	81 ff       	sbrs	r24, 1
+     a58:	10 00       	.word	0x0010	; ????
+     a5a:	7e 42       	sbci	r23, 0x2E	; 46
+     a5c:	42 42       	sbci	r20, 0x22	; 34
+     a5e:	42 7e       	andi	r20, 0xE2	; 226
+     a60:	00 20       	and	r0, r0
+	...
+     a6a:	40 00       	.word	0x0040	; ????
+     a6c:	00 00       	nop
+     a6e:	00 00       	nop
+     a70:	00 00       	nop
+     a72:	00 80       	ld	r0, Z
+	...
+     a7c:	01 00       	.word	0x0001	; ????
+     a7e:	00 00       	nop
+     a80:	00 00       	nop
+     a82:	00 00       	nop
+     a84:	00 02       	muls	r16, r16
+     a86:	00 00       	nop
+     a88:	00 18       	sub	r0, r0
+     a8a:	18 00       	.word	0x0018	; ????
+     a8c:	00 00       	nop
+     a8e:	04 00       	.word	0x0004	; ????
+     a90:	00 3c       	cpi	r16, 0xC0	; 192
+     a92:	24 24       	eor	r2, r4
+     a94:	3c 00       	.word	0x003c	; ????
+     a96:	00 08       	sbc	r0, r0
+     a98:	ff ff       	.word	0xffff	; ????
+     a9a:	c3 c3       	rjmp	.+1926   	; 0x1222 <animTHREE+0x376>
+     a9c:	c3 c3       	rjmp	.+1926   	; 0x1224 <animTHREE+0x378>
+     a9e:	ff ff       	.word	0xffff	; ????
+     aa0:	10 00       	.word	0x0010	; ????
+     aa2:	00 00       	nop
+     aa4:	00 00       	nop
+     aa6:	00 00       	nop
+     aa8:	00 20       	and	r0, r0
+	...
+     ab2:	40 00       	.word	0x0040	; ????
+     ab4:	00 00       	nop
+     ab6:	00 00       	nop
+     ab8:	00 00       	nop
+     aba:	00 80       	ld	r0, Z
+	...
+     ac4:	01 00       	.word	0x0001	; ????
+     ac6:	00 00       	nop
+     ac8:	18 18       	sub	r1, r8
+     aca:	00 00       	nop
+     acc:	00 02       	muls	r16, r16
+     ace:	00 00       	nop
+     ad0:	3c 24       	eor	r3, r12
+     ad2:	24 3c       	cpi	r18, 0xC4	; 196
+     ad4:	00 00       	nop
+     ad6:	04 00       	.word	0x0004	; ????
+     ad8:	7e 42       	sbci	r23, 0x2E	; 46
+     ada:	42 42       	sbci	r20, 0x22	; 34
+     adc:	42 7e       	andi	r20, 0xE2	; 226
+     ade:	00 08       	sbc	r0, r0
+     ae0:	ff 81       	ldd	r31, Y+7	; 0x07
+     ae2:	81 81       	ldd	r24, Z+1	; 0x01
+     ae4:	81 81       	ldd	r24, Z+1	; 0x01
+     ae6:	81 ff       	sbrs	r24, 1
+     ae8:	10 00       	.word	0x0010	; ????
+     aea:	00 00       	nop
+     aec:	00 00       	nop
+     aee:	00 00       	nop
+     af0:	00 20       	and	r0, r0
+	...
+     afa:	40 00       	.word	0x0040	; ????
+     afc:	00 00       	nop
+     afe:	00 00       	nop
+     b00:	00 00       	nop
+     b02:	00 80       	ld	r0, Z
+     b04:	00 00       	nop
+     b06:	00 18       	sub	r0, r0
+     b08:	18 00       	.word	0x0018	; ????
+     b0a:	00 00       	nop
+     b0c:	01 00       	.word	0x0001	; ????
+     b0e:	00 3c       	cpi	r16, 0xC0	; 192
+     b10:	24 24       	eor	r2, r4
+     b12:	3c 00       	.word	0x003c	; ????
+     b14:	00 02       	muls	r16, r16
+     b16:	00 7e       	andi	r16, 0xE0	; 224
+     b18:	42 42       	sbci	r20, 0x22	; 34
+     b1a:	42 42       	sbci	r20, 0x22	; 34
+     b1c:	7e 00       	.word	0x007e	; ????
+     b1e:	04 ff       	sbrs	r16, 4
+     b20:	81 81       	ldd	r24, Z+1	; 0x01
+     b22:	81 81       	ldd	r24, Z+1	; 0x01
+     b24:	81 81       	ldd	r24, Z+1	; 0x01
+     b26:	ff 08       	sbc	r15, r15
+	...
+     b30:	10 00       	.word	0x0010	; ????
+     b32:	00 00       	nop
+     b34:	00 00       	nop
+     b36:	00 00       	nop
+     b38:	00 20       	and	r0, r0
+	...
+     b42:	40 00       	.word	0x0040	; ????
+     b44:	00 00       	nop
+     b46:	00 00       	nop
+     b48:	00 00       	nop
+     b4a:	00 80       	ld	r0, Z
+     b4c:	00 00       	nop
+     b4e:	00 18       	sub	r0, r0
+     b50:	18 00       	.word	0x0018	; ????
+     b52:	00 00       	nop
+     b54:	01 00       	.word	0x0001	; ????
+     b56:	00 3c       	cpi	r16, 0xC0	; 192
+     b58:	24 24       	eor	r2, r4
+     b5a:	3c 00       	.word	0x003c	; ????
+     b5c:	00 02       	muls	r16, r16
+     b5e:	00 7e       	andi	r16, 0xE0	; 224
+     b60:	42 42       	sbci	r20, 0x22	; 34
+     b62:	42 42       	sbci	r20, 0x22	; 34
+     b64:	7e 00       	.word	0x007e	; ????
+     b66:	04 ff       	sbrs	r16, 4
+     b68:	81 81       	ldd	r24, Z+1	; 0x01
+     b6a:	81 81       	ldd	r24, Z+1	; 0x01
+     b6c:	81 81       	ldd	r24, Z+1	; 0x01
+     b6e:	ff 08       	sbc	r15, r15
+	...
+     b78:	10 00       	.word	0x0010	; ????
+     b7a:	00 00       	nop
+     b7c:	00 00       	nop
+     b7e:	00 00       	nop
+     b80:	00 20       	and	r0, r0
+	...
+     b8a:	40 00       	.word	0x0040	; ????
+     b8c:	00 00       	nop
+     b8e:	00 00       	nop
+     b90:	00 00       	nop
+     b92:	00 80       	ld	r0, Z
+	...
+     b9c:	01 00       	.word	0x0001	; ????
+     b9e:	00 3c       	cpi	r16, 0xC0	; 192
+     ba0:	3c 3c       	cpi	r19, 0xCC	; 204
+     ba2:	3c 00       	.word	0x003c	; ????
+     ba4:	00 02       	muls	r16, r16
+     ba6:	00 7e       	andi	r16, 0xE0	; 224
+     ba8:	42 42       	sbci	r20, 0x22	; 34
+     baa:	42 42       	sbci	r20, 0x22	; 34
+     bac:	7e 00       	.word	0x007e	; ????
+     bae:	04 ff       	sbrs	r16, 4
+     bb0:	81 81       	ldd	r24, Z+1	; 0x01
+     bb2:	81 81       	ldd	r24, Z+1	; 0x01
+     bb4:	81 81       	ldd	r24, Z+1	; 0x01
+     bb6:	ff 08       	sbc	r15, r15
+	...
+     bc0:	10 00       	.word	0x0010	; ????
+     bc2:	00 00       	nop
+     bc4:	00 00       	nop
+     bc6:	00 00       	nop
+     bc8:	00 20       	and	r0, r0
+	...
+     bd2:	40 00       	.word	0x0040	; ????
+     bd4:	00 00       	nop
+     bd6:	00 00       	nop
+     bd8:	00 00       	nop
+     bda:	00 80       	ld	r0, Z
+	...
+     be4:	01 00       	.word	0x0001	; ????
+     be6:	00 3c       	cpi	r16, 0xC0	; 192
+     be8:	24 24       	eor	r2, r4
+     bea:	3c 00       	.word	0x003c	; ????
+     bec:	00 02       	muls	r16, r16
+     bee:	00 7e       	andi	r16, 0xE0	; 224
+     bf0:	42 5a       	subi	r20, 0xA2	; 162
+     bf2:	5a 42       	sbci	r21, 0x2A	; 42
+     bf4:	7e 00       	.word	0x007e	; ????
+     bf6:	04 ff       	sbrs	r16, 4
+     bf8:	81 81       	ldd	r24, Z+1	; 0x01
+     bfa:	81 81       	ldd	r24, Z+1	; 0x01
+     bfc:	81 81       	ldd	r24, Z+1	; 0x01
+     bfe:	ff 08       	sbc	r15, r15
+	...
+     c08:	10 00       	.word	0x0010	; ????
+     c0a:	00 00       	nop
+     c0c:	00 00       	nop
+     c0e:	00 00       	nop
+     c10:	00 20       	and	r0, r0
+	...
+     c1a:	40 00       	.word	0x0040	; ????
+     c1c:	00 00       	nop
+     c1e:	00 00       	nop
+     c20:	00 00       	nop
+     c22:	00 80       	ld	r0, Z
+	...
+     c2c:	01 00       	.word	0x0001	; ????
+     c2e:	00 00       	nop
+     c30:	00 00       	nop
+     c32:	00 00       	nop
+     c34:	00 02       	muls	r16, r16
+     c36:	00 7e       	andi	r16, 0xE0	; 224
+     c38:	7e 66       	ori	r23, 0x6E	; 110
+     c3a:	66 7e       	andi	r22, 0xE6	; 230
+     c3c:	7e 00       	.word	0x007e	; ????
+     c3e:	04 ff       	sbrs	r16, 4
+     c40:	81 81       	ldd	r24, Z+1	; 0x01
+     c42:	99 99       	sbic	0x13, 1	; 19
+     c44:	81 81       	ldd	r24, Z+1	; 0x01
+     c46:	ff 08       	sbc	r15, r15
+	...
+     c50:	10 00       	.word	0x0010	; ????
+     c52:	00 00       	nop
+     c54:	00 00       	nop
+     c56:	00 00       	nop
+     c58:	00 20       	and	r0, r0
+	...
+     c62:	40 00       	.word	0x0040	; ????
+     c64:	00 00       	nop
+     c66:	00 00       	nop
+     c68:	00 00       	nop
+     c6a:	00 80       	ld	r0, Z
+	...
+     c74:	01 00       	.word	0x0001	; ????
+     c76:	00 00       	nop
+     c78:	00 00       	nop
+     c7a:	00 00       	nop
+     c7c:	00 02       	muls	r16, r16
+     c7e:	00 7e       	andi	r16, 0xE0	; 224
+     c80:	42 42       	sbci	r20, 0x22	; 34
+     c82:	42 42       	sbci	r20, 0x22	; 34
+     c84:	7e 00       	.word	0x007e	; ????
+     c86:	04 ff       	sbrs	r16, 4
+     c88:	81 bd       	out	0x21, r24	; 33
+     c8a:	a5 a5       	ldd	r26, Z+45	; 0x2d
+     c8c:	bd 81       	ldd	r27, Y+5	; 0x05
+     c8e:	ff 08       	sbc	r15, r15
+     c90:	00 00       	nop
+     c92:	00 18       	sub	r0, r0
+     c94:	18 00       	.word	0x0018	; ????
+     c96:	00 00       	nop
+     c98:	10 00       	.word	0x0010	; ????
+     c9a:	00 00       	nop
+     c9c:	00 00       	nop
+     c9e:	00 00       	nop
+     ca0:	00 20       	and	r0, r0
+	...
+     caa:	40 00       	.word	0x0040	; ????
+     cac:	00 00       	nop
+     cae:	00 00       	nop
+     cb0:	00 00       	nop
+     cb2:	00 80       	ld	r0, Z
+	...
+     cbc:	01 00       	.word	0x0001	; ????
+     cbe:	00 00       	nop
+     cc0:	00 00       	nop
+     cc2:	00 00       	nop
+     cc4:	00 02       	muls	r16, r16
+	...
+     cce:	04 ff       	sbrs	r16, 4
+     cd0:	ff c3       	rjmp	.+2046   	; 0x14d0 <animTHREE+0x624>
+     cd2:	c3 c3       	rjmp	.+1926   	; 0x145a <animTHREE+0x5ae>
+     cd4:	c3 ff       	sbrs	r28, 3
+     cd6:	ff 08       	sbc	r15, r15
+     cd8:	00 00       	nop
+     cda:	3c 24       	eor	r3, r12
+     cdc:	24 3c       	cpi	r18, 0xC4	; 196
+     cde:	00 00       	nop
+     ce0:	10 00       	.word	0x0010	; ????
+     ce2:	00 00       	nop
+     ce4:	18 18       	sub	r1, r8
+     ce6:	00 00       	nop
+     ce8:	00 20       	and	r0, r0
+	...
+     cf2:	40 00       	.word	0x0040	; ????
+     cf4:	00 00       	nop
+     cf6:	00 00       	nop
+     cf8:	00 00       	nop
+     cfa:	00 80       	ld	r0, Z
+	...
+     d04:	01 00       	.word	0x0001	; ????
+     d06:	00 00       	nop
+     d08:	00 00       	nop
+     d0a:	00 00       	nop
+     d0c:	00 02       	muls	r16, r16
+	...
+     d16:	04 ff       	sbrs	r16, 4
+     d18:	81 81       	ldd	r24, Z+1	; 0x01
+     d1a:	81 81       	ldd	r24, Z+1	; 0x01
+     d1c:	81 81       	ldd	r24, Z+1	; 0x01
+     d1e:	ff 08       	sbc	r15, r15
+     d20:	00 7e       	andi	r16, 0xE0	; 224
+     d22:	42 42       	sbci	r20, 0x22	; 34
+     d24:	42 42       	sbci	r20, 0x22	; 34
+     d26:	7e 00       	.word	0x007e	; ????
+     d28:	10 00       	.word	0x0010	; ????
+     d2a:	00 3c       	cpi	r16, 0xC0	; 192
+     d2c:	24 24       	eor	r2, r4
+     d2e:	3c 00       	.word	0x003c	; ????
+     d30:	00 20       	and	r0, r0
+     d32:	00 00       	nop
+     d34:	00 18       	sub	r0, r0
+     d36:	18 00       	.word	0x0018	; ????
+     d38:	00 00       	nop
+     d3a:	40 00       	.word	0x0040	; ????
+     d3c:	00 00       	nop
+     d3e:	00 00       	nop
+     d40:	00 00       	nop
+     d42:	00 80       	ld	r0, Z
+	...
+     d4c:	01 00       	.word	0x0001	; ????
+     d4e:	00 00       	nop
+     d50:	00 00       	nop
+     d52:	00 00       	nop
+     d54:	00 02       	muls	r16, r16
+	...
+     d5e:	04 00       	.word	0x0004	; ????
+     d60:	00 00       	nop
+     d62:	00 00       	nop
+     d64:	00 00       	nop
+     d66:	00 08       	sbc	r0, r0
+     d68:	ff 81       	ldd	r31, Y+7	; 0x07
+     d6a:	81 81       	ldd	r24, Z+1	; 0x01
+     d6c:	81 81       	ldd	r24, Z+1	; 0x01
+     d6e:	81 ff       	sbrs	r24, 1
+     d70:	10 00       	.word	0x0010	; ????
+     d72:	7e 42       	sbci	r23, 0x2E	; 46
+     d74:	42 42       	sbci	r20, 0x22	; 34
+     d76:	42 7e       	andi	r20, 0xE2	; 226
+     d78:	00 20       	and	r0, r0
+     d7a:	00 00       	nop
+     d7c:	3c 24       	eor	r3, r12
+     d7e:	24 3c       	cpi	r18, 0xC4	; 196
+     d80:	00 00       	nop
+     d82:	40 00       	.word	0x0040	; ????
+     d84:	00 00       	nop
+     d86:	18 18       	sub	r1, r8
+     d88:	00 00       	nop
+     d8a:	00 80       	ld	r0, Z
+	...
+     d94:	01 00       	.word	0x0001	; ????
+     d96:	00 00       	nop
+     d98:	00 00       	nop
+     d9a:	00 00       	nop
+     d9c:	00 02       	muls	r16, r16
+	...
+     da6:	04 00       	.word	0x0004	; ????
+     da8:	00 00       	nop
+     daa:	00 00       	nop
+     dac:	00 00       	nop
+     dae:	00 08       	sbc	r0, r0
+	...
+     db8:	10 ff       	sbrs	r17, 0
+     dba:	81 81       	ldd	r24, Z+1	; 0x01
+     dbc:	81 81       	ldd	r24, Z+1	; 0x01
+     dbe:	81 81       	ldd	r24, Z+1	; 0x01
+     dc0:	ff 20       	and	r15, r15
+     dc2:	00 7e       	andi	r16, 0xE0	; 224
+     dc4:	42 42       	sbci	r20, 0x22	; 34
+     dc6:	42 42       	sbci	r20, 0x22	; 34
+     dc8:	7e 00       	.word	0x007e	; ????
+     dca:	40 00       	.word	0x0040	; ????
+     dcc:	00 3c       	cpi	r16, 0xC0	; 192
+     dce:	24 24       	eor	r2, r4
+     dd0:	3c 00       	.word	0x003c	; ????
+     dd2:	00 80       	ld	r0, Z
+	...
+     ddc:	01 00       	.word	0x0001	; ????
+     dde:	00 00       	nop
+     de0:	00 00       	nop
+     de2:	00 00       	nop
+     de4:	00 02       	muls	r16, r16
+	...
+     dee:	04 00       	.word	0x0004	; ????
+     df0:	00 00       	nop
+     df2:	00 00       	nop
+     df4:	00 00       	nop
+     df6:	00 08       	sbc	r0, r0
+	...
+     e00:	10 00       	.word	0x0010	; ????
+     e02:	00 00       	nop
+     e04:	00 00       	nop
+     e06:	00 00       	nop
+     e08:	00 20       	and	r0, r0
+     e0a:	ff 81       	ldd	r31, Y+7	; 0x07
+     e0c:	81 81       	ldd	r24, Z+1	; 0x01
+     e0e:	81 81       	ldd	r24, Z+1	; 0x01
+     e10:	81 ff       	sbrs	r24, 1
+     e12:	40 00       	.word	0x0040	; ????
+     e14:	7e 42       	sbci	r23, 0x2E	; 46
+     e16:	42 42       	sbci	r20, 0x22	; 34
+     e18:	42 7e       	andi	r20, 0xE2	; 226
+     e1a:	00 80       	ld	r0, Z
+	...
+     e24:	01 00       	.word	0x0001	; ????
+     e26:	00 00       	nop
+     e28:	00 00       	nop
+     e2a:	00 00       	nop
+     e2c:	00 02       	muls	r16, r16
+	...
+     e36:	04 00       	.word	0x0004	; ????
+     e38:	00 00       	nop
+     e3a:	00 00       	nop
+     e3c:	00 00       	nop
+     e3e:	00 08       	sbc	r0, r0
+	...
+     e48:	10 00       	.word	0x0010	; ????
+     e4a:	00 00       	nop
+     e4c:	00 00       	nop
+     e4e:	00 00       	nop
+     e50:	00 20       	and	r0, r0
+	...
+     e5a:	40 ff       	sbrs	r20, 0
+     e5c:	81 81       	ldd	r24, Z+1	; 0x01
+     e5e:	81 81       	ldd	r24, Z+1	; 0x01
+     e60:	81 81       	ldd	r24, Z+1	; 0x01
+     e62:	ff 80       	ldd	r15, Y+7	; 0x07
+	...
+     e6c:	01 00       	.word	0x0001	; ????
+     e6e:	00 00       	nop
+     e70:	00 00       	nop
+     e72:	00 00       	nop
+     e74:	00 02       	muls	r16, r16
+	...
+     e7e:	04 00       	.word	0x0004	; ????
+     e80:	00 00       	nop
+     e82:	00 00       	nop
+     e84:	00 00       	nop
+     e86:	00 08       	sbc	r0, r0
+	...
+     e90:	10 00       	.word	0x0010	; ????
+     e92:	00 00       	nop
+     e94:	00 00       	nop
+     e96:	00 00       	nop
+     e98:	00 20       	and	r0, r0
+	...
+     ea2:	40 00       	.word	0x0040	; ????
+     ea4:	00 00       	nop
+     ea6:	00 00       	nop
+     ea8:	00 00       	nop
+     eaa:	00 80       	ld	r0, Z
 
-00000444 <anim4>:
-	...
-     44c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     45c:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-     46c:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     47c:	00 00 00 00 00 00 40 00 00 00 18 18 00 00 00 80     ......@.........
-	...
-     494:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     4a4:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-     4b4:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     4c4:	00 18 18 00 00 00 40 00 00 3c 24 24 3c 00 00 80     ......@..<$$<...
-	...
-     4dc:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     4ec:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-     4fc:	00 00 00 00 10 00 00 00 18 18 00 00 00 20 00 00     ............. ..
-     50c:	3c 24 24 3c 00 00 40 00 7e 42 42 42 42 7e 00 80     <$$<..@.~BBBB~..
-	...
-     524:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     534:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 18     ................
-     544:	18 00 00 00 10 00 00 3c 24 24 3c 00 00 20 00 7e     .......<$$<.. .~
-     554:	42 42 42 42 7e 00 40 ff 81 81 81 81 81 81 ff 80     BBBB~.@.........
-	...
-     56c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     57c:	00 00 04 00 00 00 18 18 00 00 00 08 00 00 3c 24     ..............<$
-     58c:	24 3c 00 00 10 00 7e 42 42 42 42 7e 00 20 ff 81     $<....~BBBB~. ..
-     59c:	81 81 81 81 81 ff 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     5b4:	01 00 00 00 00 00 00 00 00 02 00 00 00 18 18 00     ................
-     5c4:	00 00 04 00 00 3c 24 24 3c 00 00 08 00 7e 42 42     .....<$$<....~BB
-     5d4:	42 42 7e 00 10 ff 81 81 81 81 81 81 ff 20 00 00     BB~.......... ..
-     5e4:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     5fc:	01 00 00 00 18 18 00 00 00 02 00 00 3c 24 24 3c     ............<$$<
-     60c:	00 00 04 00 7e 42 42 42 42 7e 00 08 ff 81 81 81     ....~BBBB~......
-     61c:	81 81 81 ff 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     62c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-     63c:	00 00 00 18 18 00 00 00 01 00 00 3c 24 24 3c 00     ...........<$$<.
-     64c:	00 02 00 7e 42 42 42 42 7e 00 04 ff 81 81 81 81     ...~BBBB~.......
-     65c:	81 81 ff 08 00 00 00 00 00 00 00 00 10 00 00 00     ................
-     66c:	00 00 00 00 00 20 00 00 00 00 00 00 00 00 40 00     ..... ........@.
-     67c:	00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 00     ................
-     68c:	01 00 00 3c 3c 3c 3c 00 00 02 00 7e 42 42 42 42     ...<<<<....~BBBB
-     69c:	7e 00 04 ff 81 81 81 81 81 81 ff 08 00 00 00 00     ~...............
-     6ac:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     6bc:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     6d4:	01 00 00 3c 24 24 3c 00 00 02 00 7e 42 5a 5a 42     ...<$$<....~BZZB
-     6e4:	7e 00 04 ff 81 81 81 81 81 81 ff 08 00 00 00 00     ~...............
-     6f4:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     704:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     71c:	01 00 00 00 00 00 00 00 00 02 00 7e 7e 66 66 7e     ...........~~ff~
-     72c:	7e 00 04 ff 81 81 99 99 81 81 ff 08 00 00 00 00     ~...............
-     73c:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     74c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     764:	01 00 00 00 00 00 00 00 00 02 00 7e 42 42 42 42     ...........~BBBB
-     774:	7e 00 04 ff 81 bd a5 a5 bd 81 ff 08 00 00 00 18     ~...............
-     784:	18 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     794:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     7ac:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     7bc:	00 00 04 ff ff c3 c3 c3 c3 ff ff 08 00 00 3c 24     ..............<$
-     7cc:	24 3c 00 00 10 00 00 00 18 18 00 00 00 20 00 00     $<........... ..
-     7dc:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     7f4:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     804:	00 00 04 ff 81 81 81 81 81 81 ff 08 00 7e 42 42     .............~BB
-     814:	42 42 7e 00 10 00 00 3c 24 24 3c 00 00 20 00 00     BB~....<$$<.. ..
-     824:	00 18 18 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     83c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     84c:	00 00 04 00 00 00 00 00 00 00 00 08 ff 81 81 81     ................
-     85c:	81 81 81 ff 10 00 7e 42 42 42 42 7e 00 20 00 00     ......~BBBB~. ..
-     86c:	3c 24 24 3c 00 00 40 00 00 00 18 18 00 00 00 80     <$$<..@.........
-	...
-     884:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     894:	00 00 04 00 00 00 00 00 00 00 00 08 ff 81 81 81     ................
-     8a4:	81 81 81 ff 10 00 7e 42 42 42 42 7e 00 20 00 00     ......~BBBB~. ..
-     8b4:	3c 24 24 3c 00 00 40 00 00 00 18 18 00 00 00 80     <$$<..@.........
-	...
-     8cc:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     8dc:	00 00 04 00 00 00 00 00 00 00 00 08 ff 81 81 81     ................
-     8ec:	81 81 81 ff 10 00 7e 42 42 42 42 7e 00 20 00 00     ......~BBBB~. ..
-     8fc:	3c 3c 3c 3c 00 00 40 00 00 00 00 00 00 00 00 80     <<<<..@.........
-	...
-     914:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     924:	00 00 04 00 00 00 00 00 00 00 00 08 ff 81 81 81     ................
-     934:	81 81 81 ff 10 00 7e 42 5a 5a 42 7e 00 20 00 00     ......~BZZB~. ..
-     944:	3c 24 24 3c 00 00 40 00 00 00 00 00 00 00 00 80     <$$<..@.........
-	...
-     95c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     96c:	00 00 04 00 00 00 00 00 00 00 00 08 ff 81 81 99     ................
-     97c:	99 81 81 ff 10 00 7e 7e 66 66 7e 7e 00 20 00 00     ......~~ff~~. ..
-     98c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     9a4:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     9b4:	00 00 04 00 00 00 18 18 00 00 00 08 ff 81 bd a5     ................
-     9c4:	a5 bd 81 ff 10 00 7e 42 42 42 42 7e 00 20 00 00     ......~BBBB~. ..
-     9d4:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     9ec:	01 00 00 00 00 00 00 00 00 02 00 00 00 18 18 00     ................
-     9fc:	00 00 04 00 00 3c 24 24 3c 00 00 08 ff ff c3 c3     .....<$$<.......
-     a0c:	c3 c3 ff ff 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     a1c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     a34:	01 00 00 00 18 18 00 00 00 02 00 00 3c 24 24 3c     ............<$$<
-     a44:	00 00 04 00 7e 42 42 42 42 7e 00 08 ff 81 81 81     ....~BBBB~......
-     a54:	81 81 81 ff 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     a64:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-     a74:	00 00 00 18 18 00 00 00 01 00 00 3c 24 24 3c 00     ...........<$$<.
-     a84:	00 02 00 7e 42 42 42 42 7e 00 04 ff 81 81 81 81     ...~BBBB~.......
-     a94:	81 81 ff 08 00 00 00 00 00 00 00 00 10 00 00 00     ................
-     aa4:	00 00 00 00 00 20 00 00 00 00 00 00 00 00 40 00     ..... ........@.
-     ab4:	00 00 00 00 00 00 00 80 00 00 00 18 18 00 00 00     ................
-     ac4:	01 00 00 3c 24 24 3c 00 00 02 00 7e 42 42 42 42     ...<$$<....~BBBB
-     ad4:	7e 00 04 ff 81 81 81 81 81 81 ff 08 00 00 00 00     ~...............
-     ae4:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     af4:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     b0c:	01 00 00 3c 3c 3c 3c 00 00 02 00 7e 42 42 42 42     ...<<<<....~BBBB
-     b1c:	7e 00 04 ff 81 81 81 81 81 81 ff 08 00 00 00 00     ~...............
-     b2c:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     b3c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     b54:	01 00 00 3c 24 24 3c 00 00 02 00 7e 42 5a 5a 42     ...<$$<....~BZZB
-     b64:	7e 00 04 ff 81 81 81 81 81 81 ff 08 00 00 00 00     ~...............
-     b74:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     b84:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     b9c:	01 00 00 00 00 00 00 00 00 02 00 7e 7e 66 66 7e     ...........~~ff~
-     bac:	7e 00 04 ff 81 81 99 99 81 81 ff 08 00 00 00 00     ~...............
-     bbc:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     bcc:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     be4:	01 00 00 00 00 00 00 00 00 02 00 7e 42 42 42 42     ...........~BBBB
-     bf4:	7e 00 04 ff 81 bd a5 a5 bd 81 ff 08 00 00 00 18     ~...............
-     c04:	18 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     c14:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     c2c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     c3c:	00 00 04 ff ff c3 c3 c3 c3 ff ff 08 00 00 3c 24     ..............<$
-     c4c:	24 3c 00 00 10 00 00 00 18 18 00 00 00 20 00 00     $<........... ..
-     c5c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     c74:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     c84:	00 00 04 ff 81 81 81 81 81 81 ff 08 00 7e 42 42     .............~BB
-     c94:	42 42 7e 00 10 00 00 3c 24 24 3c 00 00 20 00 00     BB~....<$$<.. ..
-     ca4:	00 18 18 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     cbc:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     ccc:	00 00 04 00 00 00 00 00 00 00 00 08 ff 81 81 81     ................
-     cdc:	81 81 81 ff 10 00 7e 42 42 42 42 7e 00 20 00 00     ......~BBBB~. ..
-     cec:	3c 24 24 3c 00 00 40 00 00 00 18 18 00 00 00 80     <$$<..@.........
-	...
-     d04:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     d14:	00 00 04 00 00 00 00 00 00 00 00 08 ff 81 81 81     ................
-     d24:	81 81 81 ff 10 00 7e 42 42 42 42 7e 00 20 00 00     ......~BBBB~. ..
-     d34:	3c 24 24 3c 00 00 40 00 00 00 18 18 00 00 00 80     <$$<..@.........
-	...
-     d4c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     d5c:	00 00 04 00 00 00 00 00 00 00 00 08 ff 81 81 81     ................
-     d6c:	81 81 81 ff 10 00 7e 42 42 42 42 7e 00 20 00 00     ......~BBBB~. ..
-     d7c:	3c 3c 3c 3c 00 00 40 00 00 00 00 00 00 00 00 80     <<<<..@.........
-	...
-     d94:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     da4:	00 00 04 00 00 00 00 00 00 00 00 08 ff 81 81 81     ................
-     db4:	81 81 81 ff 10 00 7e 42 5a 5a 42 7e 00 20 00 00     ......~BZZB~. ..
-     dc4:	3c 24 24 3c 00 00 40 00 00 00 00 00 00 00 00 80     <$$<..@.........
-	...
-     ddc:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     dec:	00 00 04 00 00 00 00 00 00 00 00 08 ff 81 81 99     ................
-     dfc:	99 81 81 ff 10 00 7e 7e 66 66 7e 7e 00 20 00 00     ......~~ff~~. ..
-     e0c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     e24:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-     e34:	00 00 04 00 00 00 18 18 00 00 00 08 ff 81 bd a5     ................
-     e44:	a5 bd 81 ff 10 00 7e 42 42 42 42 7e 00 20 00 00     ......~BBBB~. ..
-     e54:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     e6c:	01 00 00 00 00 00 00 00 00 02 00 00 00 18 18 00     ................
-     e7c:	00 00 04 00 00 3c 24 24 3c 00 00 08 ff ff c3 c3     .....<$$<.......
-     e8c:	c3 c3 ff ff 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     e9c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     eb4:	01 00 00 00 18 18 00 00 00 02 00 00 3c 24 24 3c     ............<$$<
-     ec4:	00 00 04 00 7e 42 42 42 42 7e 00 08 ff 81 81 81     ....~BBBB~......
-     ed4:	81 81 81 ff 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     ee4:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-     ef4:	00 00 00 18 18 00 00 00 01 00 00 3c 24 24 3c 00     ...........<$$<.
-     f04:	00 02 00 7e 42 42 42 42 7e 00 04 ff 81 81 81 81     ...~BBBB~.......
-     f14:	81 81 ff 08 00 00 00 00 00 00 00 00 10 00 00 00     ................
-     f24:	00 00 00 00 00 20 00 00 00 00 00 00 00 00 40 00     ..... ........@.
-     f34:	00 00 00 00 00 00 00 80 00 00 00 18 18 00 00 00     ................
-     f44:	01 00 00 3c 24 24 3c 00 00 02 00 7e 42 42 42 42     ...<$$<....~BBBB
-     f54:	7e 00 04 ff 81 81 81 81 81 81 ff 08 00 00 00 00     ~...............
-     f64:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-     f74:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     f8c:	01 00 00 3c 3c 3c 3c 00 00 02 00 7e 42 42 42 42     ...<<<<....~BBBB
-     f9c:	7e 00 04 ff 81 81 81 81 81 81 ff 08 00 00 00 00     ~...............
+00000eac <animTHREE>:
+     eac:	ff 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00     ................
+     ebc:	00 02 00 00 00 00 00 00 00 00 04 00 00 00 00 00     ................
+     ecc:	00 00 00 08 00 00 00 00 00 00 00 00 10 00 00 00     ................
+     edc:	00 00 00 00 00 20 00 00 00 00 00 00 00 00 40 00     ..... ........@.
+     eec:	00 00 00 00 00 00 00 80 00 ff 00 00 00 00 00 00     ................
+     efc:	01 ff 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+     f0c:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
+     f1c:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
+     f2c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+     f3c:	00 00 ff 00 00 00 00 00 01 00 ff 00 00 00 00 00     ................
+     f4c:	00 02 ff 00 00 00 00 00 00 00 04 00 00 00 00 00     ................
+     f5c:	00 00 00 08 00 00 00 00 00 00 00 00 10 00 00 00     ................
+     f6c:	00 00 00 00 00 20 00 00 00 00 00 00 00 00 40 00     ..... ........@.
+     f7c:	00 00 00 00 00 00 00 80 00 00 00 ff 00 00 00 00     ................
+     f8c:	01 00 00 ff 00 00 00 00 00 02 00 ff 00 00 00 00     ................
+     f9c:	00 00 04 ff 00 00 00 00 00 00 00 08 00 00 00 00     ................
      fac:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
      fbc:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-     fd4:	01 00 00 3c 24 24 3c 00 00 02 00 7e 42 5a 5a 42     ...<$$<....~BZZB
-     fe4:	7e 00 04 ff 81 81 81 81 81 81 ff 08 00 00 00 00     ~...............
-     ff4:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-    1004:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-    101c:	01 00 00 00 00 00 00 00 00 02 00 7e 7e 66 66 7e     ...........~~ff~
-    102c:	7e 00 04 ff 81 81 99 99 81 81 ff 08 00 00 00 00     ~...............
-    103c:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
+     fcc:	00 00 00 00 ff 00 00 00 01 00 00 00 ff 00 00 00     ................
+     fdc:	00 02 00 00 ff 00 00 00 00 00 04 00 ff 00 00 00     ................
+     fec:	00 00 00 08 ff 00 00 00 00 00 00 00 10 00 00 00     ................
+     ffc:	00 00 00 00 00 20 00 00 00 00 00 00 00 00 40 00     ..... ........@.
+    100c:	00 00 00 00 00 00 00 80 00 00 00 00 00 ff 00 00     ................
+    101c:	01 00 00 00 00 ff 00 00 00 02 00 00 00 ff 00 00     ................
+    102c:	00 00 04 00 00 ff 00 00 00 00 00 08 00 ff 00 00     ................
+    103c:	00 00 00 00 10 ff 00 00 00 00 00 00 00 20 00 00     ............. ..
     104c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    105c:	00 00 00 00 00 00 ff 00 01 00 00 00 00 00 ff 00     ................
+    106c:	00 02 00 00 00 00 ff 00 00 00 04 00 00 00 ff 00     ................
+    107c:	00 00 00 08 00 00 ff 00 00 00 00 00 10 00 ff 00     ................
+    108c:	00 00 00 00 00 20 ff 00 00 00 00 00 00 00 40 00     ..... ........@.
+    109c:	00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 ff     ................
+    10ac:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
+    10bc:	00 00 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
+    10cc:	00 00 00 00 10 00 00 ff 00 00 00 00 00 20 00 ff     ............. ..
+    10dc:	00 00 00 00 00 00 40 ff 00 00 00 00 00 00 00 80     ......@.........
 	...
-    1064:	01 00 00 00 00 00 00 00 00 02 00 7e 42 42 42 42     ...........~BBBB
-    1074:	7e 00 04 ff 81 bd a5 a5 bd 81 ff 08 00 00 00 18     ~...............
-    1084:	18 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-    1094:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    10f4:	01 00 00 00 00 00 00 ff ff 02 00 00 00 00 00 ff     ................
+    1104:	00 00 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
+    1114:	00 00 00 00 10 00 00 ff 00 00 00 00 00 20 ff ff     ............. ..
+    1124:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    10ac:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    10bc:	00 00 04 ff ff c3 c3 c3 c3 ff ff 08 00 00 3c 24     ..............<$
-    10cc:	24 3c 00 00 10 00 00 00 18 18 00 00 00 20 00 00     $<........... ..
-    10dc:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    113c:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
+    114c:	00 ff 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
+    115c:	00 00 00 00 10 ff 00 ff 00 00 00 00 00 20 00 ff     ............. ..
+    116c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    10f4:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    1104:	00 00 04 ff 81 81 81 81 81 81 ff 08 00 7e 42 42     .............~BB
-    1114:	42 42 7e 00 10 00 00 3c 24 24 3c 00 00 20 00 00     BB~....<$$<.. ..
-    1124:	00 18 18 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1184:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 ff     ................
+    1194:	ff 00 04 00 00 00 00 ff 00 00 ff 08 ff 00 00 ff     ................
+    11a4:	00 00 00 00 10 00 ff ff 00 00 00 00 00 20 00 00     ............. ..
+    11b4:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    113c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    114c:	00 00 04 00 00 00 00 00 00 00 00 08 ff 81 81 81     ................
-    115c:	81 81 81 ff 10 00 7e 42 42 42 42 7e 00 20 00 00     ......~BBBB~. ..
-    116c:	3c 24 24 3c 00 00 40 00 00 00 18 18 00 00 00 80     <$$<..@.........
+    11cc:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 ff     ................
+    11dc:	00 00 04 ff 00 00 00 ff 00 ff 00 08 00 ff 00 ff     ................
+    11ec:	00 00 00 ff 10 00 00 ff 00 00 00 00 00 20 00 00     ............. ..
+    11fc:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    1184:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    1194:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-    11a4:	00 00 00 00 10 ff 81 81 81 81 81 81 ff 20 00 7e     ............. .~
-    11b4:	42 42 42 42 7e 00 40 00 00 3c 24 24 3c 00 00 80     BBBB~.@..<$$<...
+    1214:	01 00 00 00 00 00 00 00 00 02 ff 00 00 00 00 00     ................
+    1224:	00 00 04 00 ff 00 00 ff ff 00 00 08 00 00 ff ff     ................
+    1234:	00 00 ff 00 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
+    1244:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    11cc:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    11dc:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-    11ec:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 ff 81     ............. ..
-    11fc:	81 81 81 81 81 ff 40 00 7e 42 42 42 42 7e 00 80     ......@.~BBBB~..
+    125c:	01 ff 00 00 00 00 00 00 00 02 00 ff 00 00 00 00     ................
+    126c:	00 00 04 00 00 ff 00 ff 00 00 00 08 00 00 00 ff     ................
+    127c:	00 ff 00 00 10 00 00 00 00 00 00 ff 00 20 00 00     ............. ..
+    128c:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 00 80     ......@.........
+    129c:	ff 00 00 00 00 00 00 00 01 00 ff 00 00 00 00 00     ................
+    12ac:	00 02 00 00 ff 00 00 00 00 00 04 00 00 00 ff 00     ................
+    12bc:	00 00 00 08 00 00 00 00 ff 00 00 00 10 00 00 00     ................
+    12cc:	00 00 ff 00 ff 20 00 00 00 00 00 00 ff 00 40 00     ..... ........@.
+    12dc:	00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 00     ................
+    12ec:	01 ff 00 00 00 00 00 00 00 02 00 ff 00 00 00 00     ................
+    12fc:	00 00 04 00 00 ff 00 00 00 00 00 08 00 00 00 ff     ................
+    130c:	00 00 00 ff 10 00 00 00 00 ff 00 ff 00 20 00 00     ............. ..
+    131c:	00 00 00 ff 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    1214:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    1224:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-    1234:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-    1244:	00 00 00 00 00 00 40 ff 81 81 81 81 81 81 ff 80     ......@.........
+    1334:	01 00 00 00 00 00 00 00 00 02 ff 00 00 00 00 00     ................
+    1344:	00 00 04 00 ff 00 00 00 00 00 ff 08 00 00 ff 00     ................
+    1354:	00 00 ff 00 10 00 00 00 ff 00 ff 00 00 20 00 00     ............. ..
+    1364:	00 00 ff 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    125c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    126c:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-    127c:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-    128c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-
-0000129c <anim3>:
-    129c:	ff 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00     ................
-    12ac:	00 02 00 00 00 00 00 00 00 00 04 00 00 00 00 00     ................
-    12bc:	00 00 00 08 00 00 00 00 00 00 00 00 10 00 00 00     ................
-    12cc:	00 00 00 00 00 20 00 00 00 00 00 00 00 00 40 00     ..... ........@.
-    12dc:	00 00 00 00 00 00 00 80 00 ff 00 00 00 00 00 00     ................
-    12ec:	01 ff 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    12fc:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-    130c:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-    131c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-    132c:	00 00 ff 00 00 00 00 00 01 00 ff 00 00 00 00 00     ................
-    133c:	00 02 ff 00 00 00 00 00 00 00 04 00 00 00 00 00     ................
-    134c:	00 00 00 08 00 00 00 00 00 00 00 00 10 00 00 00     ................
-    135c:	00 00 00 00 00 20 00 00 00 00 00 00 00 00 40 00     ..... ........@.
-    136c:	00 00 00 00 00 00 00 80 00 00 00 ff 00 00 00 00     ................
-    137c:	01 00 00 ff 00 00 00 00 00 02 00 ff 00 00 00 00     ................
-    138c:	00 00 04 ff 00 00 00 00 00 00 00 08 00 00 00 00     ................
-    139c:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-    13ac:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-    13bc:	00 00 00 00 ff 00 00 00 01 00 00 00 ff 00 00 00     ................
-    13cc:	00 02 00 00 ff 00 00 00 00 00 04 00 ff 00 00 00     ................
-    13dc:	00 00 00 08 ff 00 00 00 00 00 00 00 10 00 00 00     ................
-    13ec:	00 00 00 00 00 20 00 00 00 00 00 00 00 00 40 00     ..... ........@.
-    13fc:	00 00 00 00 00 00 00 80 00 00 00 00 00 ff 00 00     ................
-    140c:	01 00 00 00 00 ff 00 00 00 02 00 00 00 ff 00 00     ................
-    141c:	00 00 04 00 00 ff 00 00 00 00 00 08 00 ff 00 00     ................
-    142c:	00 00 00 00 10 ff 00 00 00 00 00 00 00 20 00 00     ............. ..
-    143c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-    144c:	00 00 00 00 00 00 ff 00 01 00 00 00 00 00 ff 00     ................
-    145c:	00 02 00 00 00 00 ff 00 00 00 04 00 00 00 ff 00     ................
-    146c:	00 00 00 08 00 00 ff 00 00 00 00 00 10 00 ff 00     ................
-    147c:	00 00 00 00 00 20 ff 00 00 00 00 00 00 00 40 00     ..... ........@.
-    148c:	00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 ff     ................
-    149c:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
+    137c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    138c:	00 ff 04 ff 00 00 00 00 00 ff 00 08 00 ff 00 00     ................
+    139c:	00 ff 00 00 10 00 00 ff 00 ff 00 00 00 20 00 00     ............. ..
+    13ac:	00 ff 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+	...
+    13c4:	01 00 00 00 00 00 00 00 ff 02 00 00 00 00 00 00     ................
+    13d4:	ff 00 04 00 00 00 00 00 ff 00 00 08 ff 00 00 00     ................
+    13e4:	ff 00 00 00 10 00 ff 00 ff 00 00 00 00 20 00 00     ............. ..
+    13f4:	ff 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1404:	00 00 00 00 00 00 00 ff 01 00 00 00 00 00 00 ff     ................
+    1414:	00 02 00 00 00 00 00 ff 00 00 04 00 00 00 00 ff     ................
+    1424:	00 00 00 08 00 00 00 ff 00 00 00 00 10 ff 00 ff     ................
+    1434:	00 00 00 00 00 20 00 ff 00 00 00 00 00 00 40 00     ..... ........@.
+    1444:	00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 ff     ................
+    1454:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
+    1464:	00 00 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
+    1474:	00 00 00 00 10 00 00 ff 00 00 00 00 00 20 00 ff     ............. ..
+    1484:	00 00 00 00 00 00 40 ff 00 00 00 00 00 00 00 80     ......@.........
+	...
+    149c:	01 00 00 00 00 00 00 ff ff 02 00 00 00 00 00 ff     ................
     14ac:	00 00 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
-    14bc:	00 00 00 00 10 00 00 ff 00 00 00 00 00 20 00 ff     ............. ..
-    14cc:	00 00 00 00 00 00 40 ff 00 00 00 00 00 00 00 80     ......@.........
+    14bc:	00 00 00 00 10 00 00 ff 00 00 00 00 00 20 ff ff     ............. ..
+    14cc:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    14e4:	01 00 00 00 00 00 00 ff ff 02 00 00 00 00 00 ff     ................
-    14f4:	00 00 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
-    1504:	00 00 00 00 10 00 00 ff 00 00 00 00 00 20 ff ff     ............. ..
+    14e4:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
+    14f4:	00 ff 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
+    1504:	00 00 00 00 10 ff 00 ff 00 00 00 00 00 20 00 ff     ............. ..
     1514:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    152c:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
-    153c:	00 ff 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
-    154c:	00 00 00 00 10 ff 00 ff 00 00 00 00 00 20 00 ff     ............. ..
+    152c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 ff     ................
+    153c:	ff 00 04 00 00 00 00 ff 00 00 ff 08 ff 00 00 ff     ................
+    154c:	00 00 00 00 10 00 ff ff 00 00 00 00 00 20 00 00     ............. ..
     155c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
     1574:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 ff     ................
-    1584:	ff 00 04 00 00 00 00 ff 00 00 ff 08 ff 00 00 ff     ................
-    1594:	00 00 00 00 10 00 ff ff 00 00 00 00 00 20 00 00     ............. ..
+    1584:	00 00 04 ff 00 00 00 ff 00 ff 00 08 00 ff 00 ff     ................
+    1594:	00 00 00 ff 10 00 00 ff 00 00 00 00 00 20 00 00     ............. ..
     15a4:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    15bc:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 ff     ................
-    15cc:	00 00 04 ff 00 00 00 ff 00 ff 00 08 00 ff 00 ff     ................
-    15dc:	00 00 00 ff 10 00 00 ff 00 00 00 00 00 20 00 00     ............. ..
+    15bc:	01 00 00 00 00 00 00 00 00 02 ff 00 00 00 00 00     ................
+    15cc:	00 00 04 00 ff 00 00 ff ff 00 00 08 00 00 ff ff     ................
+    15dc:	00 00 ff 00 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
     15ec:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    1604:	01 00 00 00 00 00 00 00 00 02 ff 00 00 00 00 00     ................
-    1614:	00 00 04 00 ff 00 00 ff ff 00 00 08 00 00 ff ff     ................
-    1624:	00 00 ff 00 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
-    1634:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1604:	01 ff 00 00 00 00 00 00 00 02 00 ff 00 00 00 00     ................
+    1614:	00 00 04 00 00 ff 00 ff 00 00 00 08 00 00 00 ff     ................
+    1624:	00 ff 00 00 10 00 00 00 00 00 00 ff 00 20 00 00     ............. ..
+    1634:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1644:	ff 00 00 00 00 00 00 00 01 00 ff 00 00 00 00 00     ................
+    1654:	00 02 00 00 ff 00 00 00 00 00 04 00 00 00 ff 00     ................
+    1664:	00 00 00 08 00 00 00 00 ff 00 00 00 10 00 00 00     ................
+    1674:	00 00 ff 00 ff 20 00 00 00 00 00 00 ff 00 40 00     ..... ........@.
+    1684:	00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 00     ................
+    1694:	01 ff 00 00 00 00 00 00 00 02 00 ff 00 00 00 00     ................
+    16a4:	00 00 04 00 00 ff 00 00 00 00 00 08 00 00 00 ff     ................
+    16b4:	00 00 00 ff 10 00 00 00 00 ff 00 ff 00 20 00 00     ............. ..
+    16c4:	00 00 00 ff 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    164c:	01 ff 00 00 00 00 00 00 00 02 00 ff 00 00 00 00     ................
-    165c:	00 00 04 00 00 ff 00 ff 00 00 00 08 00 00 00 ff     ................
-    166c:	00 ff 00 00 10 00 00 00 00 00 00 ff 00 20 00 00     ............. ..
-    167c:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 00 80     ......@.........
-    168c:	ff 00 00 00 00 00 00 00 01 00 ff 00 00 00 00 00     ................
-    169c:	00 02 00 00 ff 00 00 00 00 00 04 00 00 00 ff 00     ................
-    16ac:	00 00 00 08 00 00 00 00 ff 00 00 00 10 00 00 00     ................
-    16bc:	00 00 ff 00 ff 20 00 00 00 00 00 00 ff 00 40 00     ..... ........@.
-    16cc:	00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 00     ................
-    16dc:	01 ff 00 00 00 00 00 00 00 02 00 ff 00 00 00 00     ................
-    16ec:	00 00 04 00 00 ff 00 00 00 00 00 08 00 00 00 ff     ................
-    16fc:	00 00 00 ff 10 00 00 00 00 ff 00 ff 00 20 00 00     ............. ..
-    170c:	00 00 00 ff 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    16dc:	01 00 00 00 00 00 00 00 00 02 ff 00 00 00 00 00     ................
+    16ec:	00 00 04 00 ff 00 00 00 00 00 ff 08 00 00 ff 00     ................
+    16fc:	00 00 ff 00 10 00 00 00 ff 00 ff 00 00 20 00 00     ............. ..
+    170c:	00 00 ff 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    1724:	01 00 00 00 00 00 00 00 00 02 ff 00 00 00 00 00     ................
-    1734:	00 00 04 00 ff 00 00 00 00 00 ff 08 00 00 ff 00     ................
-    1744:	00 00 ff 00 10 00 00 00 ff 00 ff 00 00 20 00 00     ............. ..
-    1754:	00 00 ff 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1724:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    1734:	00 ff 04 ff 00 00 00 00 00 ff 00 08 00 ff 00 00     ................
+    1744:	00 ff 00 00 10 00 00 ff 00 ff 00 00 00 20 00 00     ............. ..
+    1754:	00 ff 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    176c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    177c:	00 ff 04 ff 00 00 00 00 00 ff 00 08 00 ff 00 00     ................
-    178c:	00 ff 00 00 10 00 00 ff 00 ff 00 00 00 20 00 00     ............. ..
-    179c:	00 ff 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    176c:	01 00 00 00 00 00 00 00 ff 02 00 00 00 00 00 00     ................
+    177c:	ff 00 04 00 00 00 00 00 ff 00 00 08 ff 00 00 00     ................
+    178c:	ff 00 00 00 10 00 ff 00 ff 00 00 00 00 20 00 00     ............. ..
+    179c:	ff 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    17ac:	00 00 00 00 00 00 00 ff 01 00 00 00 00 00 00 ff     ................
+    17bc:	00 02 00 00 00 00 00 ff 00 00 04 00 00 00 00 ff     ................
+    17cc:	00 00 00 08 00 00 00 ff 00 00 00 00 10 ff 00 ff     ................
+    17dc:	00 00 00 00 00 20 00 ff 00 00 00 00 00 00 40 00     ..... ........@.
+    17ec:	00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 ff     ................
+    17fc:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
+    180c:	00 00 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
+    181c:	00 00 00 00 10 00 00 ff 00 00 00 00 00 20 00 ff     ............. ..
+    182c:	00 00 00 00 00 00 40 ff 00 00 00 00 00 00 00 80     ......@.........
 	...
-    17b4:	01 00 00 00 00 00 00 00 ff 02 00 00 00 00 00 00     ................
-    17c4:	ff 00 04 00 00 00 00 00 ff 00 00 08 ff 00 00 00     ................
-    17d4:	ff 00 00 00 10 00 ff 00 ff 00 00 00 00 20 00 00     ............. ..
-    17e4:	ff 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-    17f4:	00 00 00 00 00 00 00 ff 01 00 00 00 00 00 00 ff     ................
-    1804:	00 02 00 00 00 00 00 ff 00 00 04 00 00 00 00 ff     ................
-    1814:	00 00 00 08 00 00 00 ff 00 00 00 00 10 ff 00 ff     ................
-    1824:	00 00 00 00 00 20 00 ff 00 00 00 00 00 00 40 00     ..... ........@.
-    1834:	00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 ff     ................
-    1844:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
+    1844:	01 00 00 00 00 00 00 ff ff 02 00 00 00 00 00 ff     ................
     1854:	00 00 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
-    1864:	00 00 00 00 10 00 00 ff 00 00 00 00 00 20 00 ff     ............. ..
-    1874:	00 00 00 00 00 00 40 ff 00 00 00 00 00 00 00 80     ......@.........
+    1864:	00 00 00 00 10 00 00 ff 00 00 00 00 00 20 ff ff     ............. ..
+    1874:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    188c:	01 00 00 00 00 00 00 ff ff 02 00 00 00 00 00 ff     ................
-    189c:	00 00 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
-    18ac:	00 00 00 00 10 00 00 ff 00 00 00 00 00 20 ff ff     ............. ..
+    188c:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
+    189c:	00 ff 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
+    18ac:	00 00 00 00 10 ff 00 ff 00 00 00 00 00 20 00 ff     ............. ..
     18bc:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    18d4:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
-    18e4:	00 ff 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
-    18f4:	00 00 00 00 10 ff 00 ff 00 00 00 00 00 20 00 ff     ............. ..
+    18d4:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 ff     ................
+    18e4:	ff 00 04 00 00 00 00 ff 00 00 ff 08 ff 00 00 ff     ................
+    18f4:	00 00 00 00 10 00 ff ff 00 00 00 00 00 20 00 00     ............. ..
     1904:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
     191c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 ff     ................
-    192c:	ff 00 04 00 00 00 00 ff 00 00 ff 08 ff 00 00 ff     ................
-    193c:	00 00 00 00 10 00 ff ff 00 00 00 00 00 20 00 00     ............. ..
+    192c:	00 00 04 ff 00 00 00 ff 00 ff 00 08 00 ff 00 ff     ................
+    193c:	00 00 00 ff 10 00 00 ff 00 00 00 00 00 20 00 00     ............. ..
     194c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    1964:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 ff     ................
-    1974:	00 00 04 ff 00 00 00 ff 00 ff 00 08 00 ff 00 ff     ................
-    1984:	00 00 00 ff 10 00 00 ff 00 00 00 00 00 20 00 00     ............. ..
+    1964:	01 00 00 00 00 00 00 00 00 02 ff 00 00 00 00 00     ................
+    1974:	00 00 04 00 ff 00 00 ff ff 00 00 08 00 00 ff ff     ................
+    1984:	00 00 ff 00 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
     1994:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    19ac:	01 00 00 00 00 00 00 00 00 02 ff 00 00 00 00 00     ................
-    19bc:	00 00 04 00 ff 00 00 ff ff 00 00 08 00 00 ff ff     ................
-    19cc:	00 00 ff 00 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
-    19dc:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    19ac:	01 ff 00 00 00 00 00 00 00 02 00 ff 00 00 00 00     ................
+    19bc:	00 00 04 00 00 ff 00 ff 00 00 00 08 00 00 00 ff     ................
+    19cc:	00 ff 00 00 10 00 00 00 00 00 00 ff 00 20 00 00     ............. ..
+    19dc:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 00 80     ......@.........
+    19ec:	ff 00 00 00 00 00 00 00 01 00 ff 00 00 00 00 00     ................
+    19fc:	00 02 00 00 ff 00 00 00 00 00 04 00 00 00 ff 00     ................
+    1a0c:	00 00 00 08 00 00 00 00 ff 00 00 00 10 00 00 00     ................
+    1a1c:	00 00 ff 00 ff 20 00 00 00 00 00 00 ff 00 40 00     ..... ........@.
+    1a2c:	00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 00     ................
+    1a3c:	01 ff 00 00 00 00 00 00 00 02 00 ff 00 00 00 00     ................
+    1a4c:	00 00 04 00 00 ff 00 00 00 00 00 08 00 00 00 ff     ................
+    1a5c:	00 00 00 ff 10 00 00 00 00 ff 00 ff 00 20 00 00     ............. ..
+    1a6c:	00 00 00 ff 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    19f4:	01 ff 00 00 00 00 00 00 00 02 00 ff 00 00 00 00     ................
-    1a04:	00 00 04 00 00 ff 00 ff 00 00 00 08 00 00 00 ff     ................
-    1a14:	00 ff 00 00 10 00 00 00 00 00 00 ff 00 20 00 00     ............. ..
-    1a24:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 00 80     ......@.........
-    1a34:	ff 00 00 00 00 00 00 00 01 00 ff 00 00 00 00 00     ................
-    1a44:	00 02 00 00 ff 00 00 00 00 00 04 00 00 00 ff 00     ................
-    1a54:	00 00 00 08 00 00 00 00 ff 00 00 00 10 00 00 00     ................
-    1a64:	00 00 ff 00 ff 20 00 00 00 00 00 00 ff 00 40 00     ..... ........@.
-    1a74:	00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 00     ................
-    1a84:	01 ff 00 00 00 00 00 00 00 02 00 ff 00 00 00 00     ................
-    1a94:	00 00 04 00 00 ff 00 00 00 00 00 08 00 00 00 ff     ................
-    1aa4:	00 00 00 ff 10 00 00 00 00 ff 00 ff 00 20 00 00     ............. ..
-    1ab4:	00 00 00 ff 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1a84:	01 00 00 00 00 00 00 00 00 02 ff 00 00 00 00 00     ................
+    1a94:	00 00 04 00 ff 00 00 00 00 00 ff 08 00 00 ff 00     ................
+    1aa4:	00 00 ff 00 10 00 00 00 ff 00 ff 00 00 20 00 00     ............. ..
+    1ab4:	00 00 ff 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    1acc:	01 00 00 00 00 00 00 00 00 02 ff 00 00 00 00 00     ................
-    1adc:	00 00 04 00 ff 00 00 00 00 00 ff 08 00 00 ff 00     ................
-    1aec:	00 00 ff 00 10 00 00 00 ff 00 ff 00 00 20 00 00     ............. ..
-    1afc:	00 00 ff 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1acc:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    1adc:	00 ff 04 ff 00 00 00 00 00 ff 00 08 00 ff 00 00     ................
+    1aec:	00 ff 00 00 10 00 00 ff 00 ff 00 00 00 20 00 00     ............. ..
+    1afc:	00 ff 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    1b14:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    1b24:	00 ff 04 ff 00 00 00 00 00 ff 00 08 00 ff 00 00     ................
-    1b34:	00 ff 00 00 10 00 00 ff 00 ff 00 00 00 20 00 00     ............. ..
-    1b44:	00 ff 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1b14:	01 00 00 00 00 00 00 00 ff 02 00 00 00 00 00 00     ................
+    1b24:	ff 00 04 00 00 00 00 00 ff 00 00 08 ff 00 00 00     ................
+    1b34:	ff 00 00 00 10 00 ff 00 ff 00 00 00 00 20 00 00     ............. ..
+    1b44:	ff 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1b54:	00 00 00 00 00 00 00 ff 01 00 00 00 00 00 00 ff     ................
+    1b64:	00 02 00 00 00 00 00 ff 00 00 04 00 00 00 00 ff     ................
+    1b74:	00 00 00 08 00 00 00 ff 00 00 00 00 10 ff 00 ff     ................
+    1b84:	00 00 00 00 00 20 00 ff 00 00 00 00 00 00 40 00     ..... ........@.
+    1b94:	00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 ff     ................
+    1ba4:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
+    1bb4:	00 00 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
+    1bc4:	00 00 00 00 10 00 00 ff 00 00 00 00 00 20 00 ff     ............. ..
+    1bd4:	00 00 00 00 00 00 40 ff 00 00 00 00 00 00 00 80     ......@.........
 	...
-    1b5c:	01 00 00 00 00 00 00 00 ff 02 00 00 00 00 00 00     ................
-    1b6c:	ff 00 04 00 00 00 00 00 ff 00 00 08 ff 00 00 00     ................
-    1b7c:	ff 00 00 00 10 00 ff 00 ff 00 00 00 00 20 00 00     ............. ..
-    1b8c:	ff 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-    1b9c:	00 00 00 00 00 00 00 ff 01 00 00 00 00 00 00 ff     ................
-    1bac:	00 02 00 00 00 00 00 ff 00 00 04 00 00 00 00 ff     ................
-    1bbc:	00 00 00 08 00 00 00 ff 00 00 00 00 10 ff 00 ff     ................
-    1bcc:	00 00 00 00 00 20 00 ff 00 00 00 00 00 00 40 00     ..... ........@.
-    1bdc:	00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 ff     ................
-    1bec:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
-    1bfc:	00 00 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
-    1c0c:	00 00 00 00 10 00 00 ff 00 00 00 00 00 20 00 ff     ............. ..
-    1c1c:	00 00 00 00 00 00 40 ff 00 00 00 00 00 00 00 80     ......@.........
+    1bec:	01 00 00 00 00 00 00 00 ff 02 00 00 00 00 00 00     ................
+    1bfc:	ff 00 04 00 00 00 00 00 ff 00 00 08 00 00 00 00     ................
+    1c0c:	ff 00 00 00 10 00 00 00 ff 00 00 00 00 20 00 00     ............. ..
+    1c1c:	ff 00 00 00 00 00 40 00 ff 00 00 00 00 00 00 80     ......@.........
 	...
-    1c34:	01 00 00 00 00 00 00 ff ff 02 00 00 00 00 00 ff     ................
-    1c44:	00 00 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
-    1c54:	00 00 00 00 10 00 00 ff 00 00 00 00 00 20 ff ff     ............. ..
-    1c64:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1c34:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    1c44:	00 ff 04 00 00 00 00 00 00 ff 00 08 00 00 00 00     ................
+    1c54:	00 ff 00 00 10 00 00 00 00 ff 00 00 00 20 00 00     ............. ..
+    1c64:	00 ff 00 00 00 00 40 00 00 ff 00 00 00 00 00 80     ......@.........
 	...
-    1c7c:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
-    1c8c:	00 ff 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
-    1c9c:	00 00 00 00 10 ff 00 ff 00 00 00 00 00 20 00 ff     ............. ..
-    1cac:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1c7c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    1c8c:	00 00 04 00 00 00 00 00 00 00 ff 08 00 00 00 00     ................
+    1c9c:	00 00 ff 00 10 00 00 00 00 00 ff 00 00 20 00 00     ............. ..
+    1cac:	00 00 ff 00 00 00 40 00 00 00 ff 00 00 00 00 80     ......@.........
 	...
-    1cc4:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 ff     ................
-    1cd4:	ff 00 04 00 00 00 00 ff 00 00 ff 08 ff 00 00 ff     ................
-    1ce4:	00 00 00 00 10 00 ff ff 00 00 00 00 00 20 00 00     ............. ..
-    1cf4:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1cc4:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    1cd4:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
+    1ce4:	00 00 00 ff 10 00 00 00 00 00 00 ff 00 20 00 00     ............. ..
+    1cf4:	00 00 00 ff 00 00 40 00 00 00 00 ff 00 00 00 80     ......@.........
 	...
-    1d0c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 ff     ................
-    1d1c:	00 00 04 ff 00 00 00 ff 00 ff 00 08 00 ff 00 ff     ................
-    1d2c:	00 00 00 ff 10 00 00 ff 00 00 00 00 00 20 00 00     ............. ..
-    1d3c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1d0c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    1d1c:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
+    1d2c:	00 00 00 00 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
+    1d3c:	00 00 00 00 ff 00 40 00 00 00 00 00 ff 00 00 80     ......@.........
 	...
-    1d54:	01 00 00 00 00 00 00 00 00 02 ff 00 00 00 00 00     ................
-    1d64:	00 00 04 00 ff 00 00 ff ff 00 00 08 00 00 ff ff     ................
-    1d74:	00 00 ff 00 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
-    1d84:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1d54:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    1d64:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
+    1d74:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
+    1d84:	00 00 00 00 00 ff 40 00 00 00 00 00 00 ff 00 80     ......@.........
 	...
-    1d9c:	01 ff 00 00 00 00 00 00 00 02 00 ff 00 00 00 00     ................
-    1dac:	00 00 04 00 00 ff 00 ff 00 00 00 08 00 00 00 ff     ................
-    1dbc:	00 ff 00 00 10 00 00 00 00 00 00 ff 00 20 00 00     ............. ..
-    1dcc:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 00 80     ......@.........
-    1ddc:	ff 00 00 00 00 00 00 00 01 00 ff 00 00 00 00 00     ................
-    1dec:	00 02 00 00 ff 00 00 00 00 00 04 00 00 00 ff 00     ................
-    1dfc:	00 00 00 08 00 00 00 00 ff 00 00 00 10 00 00 00     ................
-    1e0c:	00 00 ff 00 ff 20 00 00 00 00 00 00 ff 00 40 00     ..... ........@.
-    1e1c:	00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 00     ................
-    1e2c:	01 ff 00 00 00 00 00 00 00 02 00 ff 00 00 00 00     ................
-    1e3c:	00 00 04 00 00 ff 00 00 00 00 00 08 00 00 00 ff     ................
-    1e4c:	00 00 00 ff 10 00 00 00 00 ff 00 ff 00 20 00 00     ............. ..
-    1e5c:	00 00 00 ff 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1d9c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    1dac:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
+    1dbc:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
+    1dcc:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 ff 80     ......@.........
 	...
-    1e74:	01 00 00 00 00 00 00 00 00 02 ff 00 00 00 00 00     ................
-    1e84:	00 00 04 00 ff 00 00 00 00 00 ff 08 00 00 ff 00     ................
-    1e94:	00 00 ff 00 10 00 00 00 ff 00 ff 00 00 20 00 00     ............. ..
-    1ea4:	00 00 ff 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1de4:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    1df4:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
+    1e04:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
+    1e14:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+
+00001e24 <animTWO>:
+	...
+    1e2c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    1e3c:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
+    1e4c:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
+    1e5c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 ff 80     ......@.........
+	...
+    1e74:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    1e84:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
+    1e94:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
+    1ea4:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
 	...
     1ebc:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    1ecc:	00 ff 04 ff 00 00 00 00 00 ff 00 08 00 ff 00 00     ................
-    1edc:	00 ff 00 00 10 00 00 ff 00 ff 00 00 00 20 00 00     ............. ..
-    1eec:	00 ff 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    1ecc:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
+    1edc:	00 00 00 00 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
+    1eec:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
 	...
-    1f04:	01 00 00 00 00 00 00 00 ff 02 00 00 00 00 00 00     ................
-    1f14:	ff 00 04 00 00 00 00 00 ff 00 00 08 ff 00 00 00     ................
-    1f24:	ff 00 00 00 10 00 ff 00 ff 00 00 00 00 20 00 00     ............. ..
-    1f34:	ff 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-    1f44:	00 00 00 00 00 00 00 ff 01 00 00 00 00 00 00 ff     ................
-    1f54:	00 02 00 00 00 00 00 ff 00 00 04 00 00 00 00 ff     ................
-    1f64:	00 00 00 08 00 00 00 ff 00 00 00 00 10 ff 00 ff     ................
-    1f74:	00 00 00 00 00 20 00 ff 00 00 00 00 00 00 40 00     ..... ........@.
-    1f84:	00 00 00 00 00 00 00 80 00 00 00 00 00 00 00 ff     ................
-    1f94:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
-    1fa4:	00 00 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
-    1fb4:	00 00 00 00 10 00 00 ff 00 00 00 00 00 20 00 ff     ............. ..
-    1fc4:	00 00 00 00 00 00 40 ff 00 00 00 00 00 00 00 80     ......@.........
+    1f04:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    1f14:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
+    1f24:	00 00 00 ff 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
+    1f34:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
 	...
-    1fdc:	01 00 00 00 00 00 00 00 ff 02 00 00 00 00 00 00     ................
-    1fec:	ff 00 04 00 00 00 00 00 ff 00 00 08 00 00 00 00     ................
-    1ffc:	ff 00 00 00 10 00 00 00 ff 00 00 00 00 20 00 00     ............. ..
-    200c:	ff 00 00 00 00 00 40 00 ff 00 00 00 00 00 00 80     ......@.........
+    1f4c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    1f5c:	00 00 04 00 00 00 00 00 00 00 ff 08 00 00 00 00     ................
+    1f6c:	00 00 00 ff 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
+    1f7c:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
+	...
+    1f94:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    1fa4:	00 ff 04 00 00 00 00 00 00 00 ff 08 00 00 00 00     ................
+    1fb4:	00 00 00 ff 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
+    1fc4:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
+	...
+    1fdc:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    1fec:	ff ff 04 00 00 00 00 00 00 00 ff 08 00 00 00 00     ................
+    1ffc:	00 00 00 ff 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
+    200c:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
 	...
     2024:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    2034:	00 ff 04 00 00 00 00 00 00 ff 00 08 00 00 00 00     ................
-    2044:	00 ff 00 00 10 00 00 00 00 ff 00 00 00 20 00 00     ............. ..
-    2054:	00 ff 00 00 00 00 40 00 00 ff 00 00 00 00 00 80     ......@.........
+    2034:	ff ff 04 00 00 00 00 00 ff 00 ff 08 00 00 00 00     ................
+    2044:	00 00 00 ff 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
+    2054:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
 	...
     206c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    207c:	00 00 04 00 00 00 00 00 00 00 ff 08 00 00 00 00     ................
-    208c:	00 00 ff 00 10 00 00 00 00 00 ff 00 00 20 00 00     ............. ..
-    209c:	00 00 ff 00 00 00 40 00 00 00 ff 00 00 00 00 80     ......@.........
+    207c:	ff ff 04 00 00 00 00 00 ff 00 ff 08 00 00 00 00     ................
+    208c:	ff 00 00 ff 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
+    209c:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
 	...
     20b4:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    20c4:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-    20d4:	00 00 00 ff 10 00 00 00 00 00 00 ff 00 20 00 00     ............. ..
-    20e4:	00 00 00 ff 00 00 40 00 00 00 00 ff 00 00 00 80     ......@.........
+    20c4:	ff ff 04 00 00 00 00 00 ff 00 ff 08 00 00 00 00     ................
+    20d4:	ff 00 00 ff 10 00 00 00 ff 00 00 00 ff 20 00 00     ............. ..
+    20e4:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
     20fc:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    210c:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-    211c:	00 00 00 00 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
-    212c:	00 00 00 00 ff 00 40 00 00 00 00 00 ff 00 00 80     ......@.........
+    210c:	ff ff 04 00 00 00 00 00 ff 00 ff 08 00 00 00 00     ................
+    211c:	ff 00 00 ff 10 00 00 00 ff 00 00 00 ff 20 00 00     ............. ..
+    212c:	ff 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
     2144:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    2154:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-    2164:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-    2174:	00 00 00 00 00 ff 40 00 00 00 00 00 00 ff 00 80     ......@.........
+    2154:	ff ff 04 00 00 00 00 00 ff 00 ff 08 00 00 00 00     ................
+    2164:	ff 00 00 ff 10 00 ff 00 ff 00 00 00 00 20 00 00     ............. ..
+    2174:	ff 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
     218c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    219c:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-    21ac:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-    21bc:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 ff 80     ......@.........
+    219c:	ff ff 04 00 00 00 00 00 ff 00 ff 08 ff 00 00 00     ................
+    21ac:	ff 00 00 00 10 00 ff 00 ff 00 00 00 00 20 00 00     ............. ..
+    21bc:	ff 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    21d4:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    21e4:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-    21f4:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
+    21d4:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
+    21e4:	00 ff 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
+    21f4:	00 00 00 00 10 ff 00 ff 00 00 00 00 00 20 00 ff     ............. ..
     2204:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+	...
+    221c:	01 00 00 00 00 00 ff 00 00 02 00 00 00 00 ff 00     ................
+    222c:	ff 00 04 00 00 00 ff 00 00 00 ff 08 00 00 ff 00     ................
+    223c:	00 00 00 00 10 00 ff 00 00 00 00 00 00 20 ff 00     ............. ..
+    224c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+	...
+    2264:	01 00 00 00 00 ff 00 00 00 02 00 00 00 ff 00 ff     ................
+    2274:	00 00 04 00 00 ff 00 00 00 ff 00 08 00 ff 00 00     ................
+    2284:	00 00 00 ff 10 ff 00 00 00 00 00 00 00 20 00 00     ............. ..
+    2294:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+	...
+    22ac:	01 00 00 00 ff 00 00 00 00 02 00 00 ff 00 ff 00     ................
+    22bc:	00 00 04 00 ff 00 00 00 ff 00 00 08 ff 00 00 00     ................
+    22cc:	00 00 ff 00 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
+    22dc:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+	...
+    22f4:	01 00 00 ff 00 00 00 00 00 02 00 ff 00 ff 00 00     ................
+    2304:	00 00 04 ff 00 00 00 ff 00 00 00 08 00 00 00 00     ................
+    2314:	00 ff 00 00 10 00 00 00 00 00 00 ff 00 20 00 00     ............. ..
+    2324:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 00 80     ......@.........
+	...
+    233c:	01 00 ff 00 00 00 00 00 00 02 ff 00 ff 00 00 00     ................
+    234c:	00 00 04 00 00 00 ff 00 00 00 00 08 00 00 00 00     ................
+    235c:	ff 00 00 00 10 00 00 00 00 00 ff 00 ff 20 00 00     ............. ..
+    236c:	00 00 00 00 ff 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 
-00002214 <anim2>:
-	...
-    221c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    222c:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-    223c:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-    224c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 ff 80     ......@.........
-	...
-    2264:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    2274:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-    2284:	00 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-    2294:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
-	...
-    22ac:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    22bc:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-    22cc:	00 00 00 00 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
-    22dc:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
-	...
-    22f4:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    2304:	00 00 04 00 00 00 00 00 00 00 00 08 00 00 00 00     ................
-    2314:	00 00 00 ff 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
-    2324:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
-	...
-    233c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    234c:	00 00 04 00 00 00 00 00 00 00 ff 08 00 00 00 00     ................
-    235c:	00 00 00 ff 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
-    236c:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
+0000237c <animONE>:
 	...
     2384:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    2394:	00 ff 04 00 00 00 00 00 00 00 ff 08 00 00 00 00     ................
-    23a4:	00 00 00 ff 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
-    23b4:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
+    2394:	00 00 04 00 00 00 18 18 00 00 00 08 00 00 00 18     ................
+    23a4:	18 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
+    23b4:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    23cc:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    23dc:	ff ff 04 00 00 00 00 00 00 00 ff 08 00 00 00 00     ................
-    23ec:	00 00 00 ff 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
-    23fc:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
+    23cc:	01 00 00 00 00 00 00 00 00 02 00 00 00 18 18 00     ................
+    23dc:	00 00 04 00 00 18 3c 3c 18 00 00 08 00 00 18 3c     ......<<.......<
+    23ec:	3c 18 00 00 10 00 00 00 18 18 00 00 00 20 00 00     <............ ..
+    23fc:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    2414:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    2424:	ff ff 04 00 00 00 00 00 ff 00 ff 08 00 00 00 00     ................
-    2434:	00 00 00 ff 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
-    2444:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
+    2414:	01 00 00 00 18 18 00 00 00 02 00 00 18 3c 3c 18     .............<<.
+    2424:	00 00 04 00 18 3c 7e 7e 3c 18 00 08 00 18 3c 7e     .....<~~<.....<~
+    2434:	7e 3c 18 00 10 00 00 18 3c 3c 18 00 00 20 00 00     ~<......<<... ..
+    2444:	00 18 18 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+    2454:	00 00 00 18 18 00 00 00 01 00 00 18 3c 3c 18 00     ............<<..
+    2464:	00 02 00 18 3c 7e 7e 3c 18 00 04 18 3c 7e ff ff     ....<~~<....<~..
+    2474:	7e 3c 18 08 18 3c 7e ff ff 7e 3c 18 10 00 18 3c     ~<...<~..~<....<
+    2484:	7e 7e 3c 18 00 20 00 00 18 3c 3c 18 00 00 40 00     ~~<.. ...<<...@.
+    2494:	00 00 18 18 00 00 00 80 00 00 00 18 18 00 00 00     ................
+    24a4:	01 00 00 18 3c 3c 18 00 00 02 00 18 3c 7e 7e 3c     ....<<......<~~<
+    24b4:	18 00 04 18 3c 7e ff ff 7e 3c 18 08 18 3c 7e ff     ....<~..~<...<~.
+    24c4:	ff 7e 3c 18 10 00 18 3c 7e 7e 3c 18 00 20 00 00     .~<....<~~<.. ..
+    24d4:	18 3c 3c 18 00 00 40 00 00 00 18 18 00 00 00 80     .<<...@.........
+    24e4:	00 00 00 18 18 00 00 00 01 00 00 18 3c 3c 18 00     ............<<..
+    24f4:	00 02 00 18 3c 7e 7e 3c 18 00 04 18 3c 7e ff ff     ....<~~<....<~..
+    2504:	7e 3c 18 08 18 3c 7e ff ff 7e 3c 18 10 00 18 3c     ~<...<~..~<....<
+    2514:	7e 7e 3c 18 00 20 00 00 18 3c 3c 18 00 00 40 00     ~~<.. ...<<...@.
+    2524:	00 00 18 18 00 00 00 80 00 00 00 00 00 00 00 00     ................
+    2534:	01 00 00 00 18 18 00 00 00 02 00 00 18 3c 3c 18     .............<<.
+    2544:	00 00 04 00 18 3c 7e 7e 3c 18 00 08 00 18 3c 7e     .....<~~<.....<~
+    2554:	7e 3c 18 00 10 00 00 18 3c 3c 18 00 00 20 00 00     ~<......<<... ..
+    2564:	00 18 18 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    245c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    246c:	ff ff 04 00 00 00 00 00 ff 00 ff 08 00 00 00 00     ................
-    247c:	ff 00 00 ff 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
-    248c:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 ff 80     ......@.........
+    257c:	01 00 00 00 00 00 00 00 00 02 00 00 00 18 18 00     ................
+    258c:	00 00 04 00 00 18 3c 3c 18 00 00 08 00 00 18 3c     ......<<.......<
+    259c:	3c 18 00 00 10 00 00 00 18 18 00 00 00 20 00 00     <............ ..
+    25ac:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    24a4:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    24b4:	ff ff 04 00 00 00 00 00 ff 00 ff 08 00 00 00 00     ................
-    24c4:	ff 00 00 ff 10 00 00 00 ff 00 00 00 ff 20 00 00     ............. ..
-    24d4:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-    24ec:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    24fc:	ff ff 04 00 00 00 00 00 ff 00 ff 08 00 00 00 00     ................
-    250c:	ff 00 00 ff 10 00 00 00 ff 00 00 00 ff 20 00 00     ............. ..
-    251c:	ff 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-    2534:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    2544:	ff ff 04 00 00 00 00 00 ff 00 ff 08 00 00 00 00     ................
-    2554:	ff 00 00 ff 10 00 ff 00 ff 00 00 00 00 20 00 00     ............. ..
-    2564:	ff 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-    257c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    258c:	ff ff 04 00 00 00 00 00 ff 00 ff 08 ff 00 00 00     ................
-    259c:	ff 00 00 00 10 00 ff 00 ff 00 00 00 00 20 00 00     ............. ..
-    25ac:	ff 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-    25c4:	01 00 00 00 00 00 00 ff 00 02 00 00 00 00 00 ff     ................
-    25d4:	00 ff 04 00 00 00 00 ff 00 00 00 08 00 00 00 ff     ................
-    25e4:	00 00 00 00 10 ff 00 ff 00 00 00 00 00 20 00 ff     ............. ..
+    25c4:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    25d4:	00 00 04 00 00 00 18 18 00 00 00 08 00 00 00 18     ................
+    25e4:	18 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
     25f4:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 	...
-    260c:	01 00 00 00 00 00 ff 00 00 02 00 00 00 00 ff 00     ................
-    261c:	ff 00 04 00 00 00 ff 00 00 00 ff 08 00 00 ff 00     ................
-    262c:	00 00 00 00 10 00 ff 00 00 00 00 00 00 20 ff 00     ............. ..
+    260c:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
+    261c:	00 00 04 00 00 00 18 18 00 00 00 08 00 00 00 18     ................
+    262c:	18 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
     263c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-    2654:	01 00 00 00 00 ff 00 00 00 02 00 00 00 ff 00 ff     ................
-    2664:	00 00 04 00 00 ff 00 00 00 ff 00 08 00 ff 00 00     ................
-    2674:	00 00 00 ff 10 ff 00 00 00 00 00 00 00 20 00 00     ............. ..
-    2684:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-    269c:	01 00 00 00 ff 00 00 00 00 02 00 00 ff 00 ff 00     ................
-    26ac:	00 00 04 00 ff 00 00 00 ff 00 00 08 ff 00 00 00     ................
-    26bc:	00 00 ff 00 10 00 00 00 00 00 00 00 ff 20 00 00     ............. ..
-    26cc:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-    26e4:	01 00 00 ff 00 00 00 00 00 02 00 ff 00 ff 00 00     ................
-    26f4:	00 00 04 ff 00 00 00 ff 00 00 00 08 00 00 00 00     ................
-    2704:	00 ff 00 00 10 00 00 00 00 00 00 ff 00 20 00 00     ............. ..
-    2714:	00 00 00 00 00 ff 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-    272c:	01 00 ff 00 00 00 00 00 00 02 ff 00 ff 00 00 00     ................
-    273c:	00 00 04 00 00 00 ff 00 00 00 00 08 00 00 00 00     ................
-    274c:	ff 00 00 00 10 00 00 00 00 00 ff 00 ff 20 00 00     ............. ..
-    275c:	00 00 00 00 ff 00 40 00 00 00 00 00 00 00 00 80     ......@.........
 
-0000276c <anim1>:
-	...
-    2774:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    2784:	00 00 04 00 00 00 18 18 00 00 00 08 00 00 00 18     ................
-    2794:	18 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-    27a4:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-    27bc:	01 00 00 00 00 00 00 00 00 02 00 00 00 18 18 00     ................
-    27cc:	00 00 04 00 00 18 3c 3c 18 00 00 08 00 00 18 3c     ......<<.......<
-    27dc:	3c 18 00 00 10 00 00 00 18 18 00 00 00 20 00 00     <............ ..
-    27ec:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-    2804:	01 00 00 00 18 18 00 00 00 02 00 00 18 3c 3c 18     .............<<.
-    2814:	00 00 04 00 18 3c 7e 7e 3c 18 00 08 00 18 3c 7e     .....<~~<.....<~
-    2824:	7e 3c 18 00 10 00 00 18 3c 3c 18 00 00 20 00 00     ~<......<<... ..
-    2834:	00 18 18 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-    2844:	00 00 00 18 18 00 00 00 01 00 00 18 3c 3c 18 00     ............<<..
-    2854:	00 02 00 18 3c 7e 7e 3c 18 00 04 18 3c 7e ff ff     ....<~~<....<~..
-    2864:	7e 3c 18 08 18 3c 7e ff ff 7e 3c 18 10 00 18 3c     ~<...<~..~<....<
-    2874:	7e 7e 3c 18 00 20 00 00 18 3c 3c 18 00 00 40 00     ~~<.. ...<<...@.
-    2884:	00 00 18 18 00 00 00 80 00 00 00 18 18 00 00 00     ................
-    2894:	01 00 00 18 3c 3c 18 00 00 02 00 18 3c 7e 7e 3c     ....<<......<~~<
-    28a4:	18 00 04 18 3c 7e ff ff 7e 3c 18 08 18 3c 7e ff     ....<~..~<...<~.
-    28b4:	ff 7e 3c 18 10 00 18 3c 7e 7e 3c 18 00 20 00 00     .~<....<~~<.. ..
-    28c4:	18 3c 3c 18 00 00 40 00 00 00 18 18 00 00 00 80     .<<...@.........
-    28d4:	00 00 00 18 18 00 00 00 01 00 00 18 3c 3c 18 00     ............<<..
-    28e4:	00 02 00 18 3c 7e 7e 3c 18 00 04 18 3c 7e ff ff     ....<~~<....<~..
-    28f4:	7e 3c 18 08 18 3c 7e ff ff 7e 3c 18 10 00 18 3c     ~<...<~..~<....<
-    2904:	7e 7e 3c 18 00 20 00 00 18 3c 3c 18 00 00 40 00     ~~<.. ...<<...@.
-    2914:	00 00 18 18 00 00 00 80 00 00 00 00 00 00 00 00     ................
-    2924:	01 00 00 00 18 18 00 00 00 02 00 00 18 3c 3c 18     .............<<.
-    2934:	00 00 04 00 18 3c 7e 7e 3c 18 00 08 00 18 3c 7e     .....<~~<.....<~
-    2944:	7e 3c 18 00 10 00 00 18 3c 3c 18 00 00 20 00 00     ~<......<<... ..
-    2954:	00 18 18 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-    296c:	01 00 00 00 00 00 00 00 00 02 00 00 00 18 18 00     ................
-    297c:	00 00 04 00 00 18 3c 3c 18 00 00 08 00 00 18 3c     ......<<.......<
-    298c:	3c 18 00 00 10 00 00 00 18 18 00 00 00 20 00 00     <............ ..
-    299c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-    29b4:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    29c4:	00 00 04 00 00 00 18 18 00 00 00 08 00 00 00 18     ................
-    29d4:	18 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-    29e4:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
-	...
-    29fc:	01 00 00 00 00 00 00 00 00 02 00 00 00 00 00 00     ................
-    2a0c:	00 00 04 00 00 00 18 18 00 00 00 08 00 00 00 18     ................
-    2a1c:	18 00 00 00 10 00 00 00 00 00 00 00 00 20 00 00     ............. ..
-    2a2c:	00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 80     ......@.........
+0000264c <__ctors_end>:
+    264c:	11 24       	eor	r1, r1
+    264e:	1f be       	out	0x3f, r1	; 63
+    2650:	cf e5       	ldi	r28, 0x5F	; 95
+    2652:	d8 e0       	ldi	r29, 0x08	; 8
+    2654:	de bf       	out	0x3e, r29	; 62
+    2656:	cd bf       	out	0x3d, r28	; 61
 
-00002a3c <__ctors_end>:
-    2a3c:	11 24       	eor	r1, r1
-    2a3e:	1f be       	out	0x3f, r1	; 63
-    2a40:	cf e5       	ldi	r28, 0x5F	; 95
-    2a42:	d8 e0       	ldi	r29, 0x08	; 8
-    2a44:	de bf       	out	0x3e, r29	; 62
-    2a46:	cd bf       	out	0x3d, r28	; 61
+00002658 <__do_copy_data>:
+    2658:	10 e0       	ldi	r17, 0x00	; 0
+    265a:	a0 e6       	ldi	r26, 0x60	; 96
+    265c:	b0 e0       	ldi	r27, 0x00	; 0
+    265e:	e2 e5       	ldi	r30, 0x52	; 82
+    2660:	fa e2       	ldi	r31, 0x2A	; 42
+    2662:	02 c0       	rjmp	.+4      	; 0x2668 <__do_copy_data+0x10>
+    2664:	05 90       	lpm	r0, Z+
+    2666:	0d 92       	st	X+, r0
+    2668:	aa 36       	cpi	r26, 0x6A	; 106
+    266a:	b1 07       	cpc	r27, r17
+    266c:	d9 f7       	brne	.-10     	; 0x2664 <__do_copy_data+0xc>
 
-00002a48 <__do_copy_data>:
-    2a48:	10 e0       	ldi	r17, 0x00	; 0
-    2a4a:	a0 e6       	ldi	r26, 0x60	; 96
-    2a4c:	b0 e0       	ldi	r27, 0x00	; 0
-    2a4e:	ec e6       	ldi	r30, 0x6C	; 108
-    2a50:	fe e2       	ldi	r31, 0x2E	; 46
-    2a52:	02 c0       	rjmp	.+4      	; 0x2a58 <__do_copy_data+0x10>
-    2a54:	05 90       	lpm	r0, Z+
-    2a56:	0d 92       	st	X+, r0
-    2a58:	a0 37       	cpi	r26, 0x70	; 112
-    2a5a:	b1 07       	cpc	r27, r17
-    2a5c:	d9 f7       	brne	.-10     	; 0x2a54 <__do_copy_data+0xc>
+0000266e <__do_clear_bss>:
+    266e:	20 e0       	ldi	r18, 0x00	; 0
+    2670:	aa e6       	ldi	r26, 0x6A	; 106
+    2672:	b0 e0       	ldi	r27, 0x00	; 0
+    2674:	01 c0       	rjmp	.+2      	; 0x2678 <.do_clear_bss_start>
 
-00002a5e <__do_clear_bss>:
-    2a5e:	20 e0       	ldi	r18, 0x00	; 0
-    2a60:	a0 e7       	ldi	r26, 0x70	; 112
-    2a62:	b0 e0       	ldi	r27, 0x00	; 0
-    2a64:	01 c0       	rjmp	.+2      	; 0x2a68 <.do_clear_bss_start>
+00002676 <.do_clear_bss_loop>:
+    2676:	1d 92       	st	X+, r1
 
-00002a66 <.do_clear_bss_loop>:
-    2a66:	1d 92       	st	X+, r1
+00002678 <.do_clear_bss_start>:
+    2678:	ae 36       	cpi	r26, 0x6E	; 110
+    267a:	b2 07       	cpc	r27, r18
+    267c:	e1 f7       	brne	.-8      	; 0x2676 <.do_clear_bss_loop>
+    267e:	0e 94 a5 14 	call	0x294a	; 0x294a <main>
+    2682:	0c 94 27 15 	jmp	0x2a4e	; 0x2a4e <_exit>
 
-00002a68 <.do_clear_bss_start>:
-    2a68:	a5 37       	cpi	r26, 0x75	; 117
-    2a6a:	b2 07       	cpc	r27, r18
-    2a6c:	e1 f7       	brne	.-8      	; 0x2a66 <.do_clear_bss_loop>
-    2a6e:	0e 94 3d 15 	call	0x2a7a	; 0x2a7a <main>
-    2a72:	0c 94 34 17 	jmp	0x2e68	; 0x2e68 <_exit>
+00002686 <__bad_interrupt>:
+    2686:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
 
-00002a76 <__bad_interrupt>:
-    2a76:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+0000268a <anim1>:
+		
+	};
+void anim1(void)
+{
+	const uint8_t anim_frames=10, frame_in_anim_repeats=20, repeats_of_anim=3;
+	position++;
+    268a:	80 91 68 00 	lds	r24, 0x0068	; 0x800068 <position>
+    268e:	8f 5f       	subi	r24, 0xFF	; 255
+    2690:	80 93 68 00 	sts	0x0068, r24	; 0x800068 <position>
+	if (position>=9)
+    2694:	89 30       	cpi	r24, 0x09	; 9
+    2696:	60 f1       	brcs	.+88     	; 0x26f0 <anim1+0x66>
+	{
+		layer++;
+    2698:	80 91 6c 00 	lds	r24, 0x006C	; 0x80006c <layer>
+    269c:	8f 5f       	subi	r24, 0xFF	; 255
+		if (layer>=8)
+    269e:	88 30       	cpi	r24, 0x08	; 8
+    26a0:	08 f4       	brcc	.+2      	; 0x26a4 <anim1+0x1a>
+    26a2:	45 c0       	rjmp	.+138    	; 0x272e <anim1+0xa4>
+		{
+			layer=0;
+    26a4:	10 92 6c 00 	sts	0x006C, r1	; 0x80006c <layer>
+			frame_repeats++;
+    26a8:	80 91 6b 00 	lds	r24, 0x006B	; 0x80006b <frame_repeats>
+    26ac:	8f 5f       	subi	r24, 0xFF	; 255
+			if (frame_repeats>=frame_in_anim_repeats)
+    26ae:	84 31       	cpi	r24, 0x14	; 20
+    26b0:	18 f4       	brcc	.+6      	; 0x26b8 <anim1+0x2e>
+	{
+		layer++;
+		if (layer>=8)
+		{
+			layer=0;
+			frame_repeats++;
+    26b2:	80 93 6b 00 	sts	0x006B, r24	; 0x80006b <frame_repeats>
+    26b6:	3d c0       	rjmp	.+122    	; 0x2732 <anim1+0xa8>
+			if (frame_repeats>=frame_in_anim_repeats)
+			{
+				frame_repeats=0;
+    26b8:	10 92 6b 00 	sts	0x006B, r1	; 0x80006b <frame_repeats>
+				frame++;
+    26bc:	80 91 6d 00 	lds	r24, 0x006D	; 0x80006d <frame>
+    26c0:	8f 5f       	subi	r24, 0xFF	; 255
+				if (frame==anim_frames)
+    26c2:	8a 30       	cpi	r24, 0x0A	; 10
+    26c4:	19 f0       	breq	.+6      	; 0x26cc <anim1+0x42>
+			layer=0;
+			frame_repeats++;
+			if (frame_repeats>=frame_in_anim_repeats)
+			{
+				frame_repeats=0;
+				frame++;
+    26c6:	80 93 6d 00 	sts	0x006D, r24	; 0x80006d <frame>
+    26ca:	33 c0       	rjmp	.+102    	; 0x2732 <anim1+0xa8>
+				if (frame==anim_frames)
+				{
+					frame=0;
+    26cc:	10 92 6d 00 	sts	0x006D, r1	; 0x80006d <frame>
+					anim_repeats++;
+    26d0:	80 91 6a 00 	lds	r24, 0x006A	; 0x80006a <__data_end>
+    26d4:	8f 5f       	subi	r24, 0xFF	; 255
+					if (anim_repeats==repeats_of_anim)
+    26d6:	83 30       	cpi	r24, 0x03	; 3
+    26d8:	19 f0       	breq	.+6      	; 0x26e0 <anim1+0x56>
+				frame_repeats=0;
+				frame++;
+				if (frame==anim_frames)
+				{
+					frame=0;
+					anim_repeats++;
+    26da:	80 93 6a 00 	sts	0x006A, r24	; 0x80006a <__data_end>
+    26de:	29 c0       	rjmp	.+82     	; 0x2732 <anim1+0xa8>
+					if (anim_repeats==repeats_of_anim)
+					{
+						anim_repeats=0;
+    26e0:	10 92 6a 00 	sts	0x006A, r1	; 0x80006a <__data_end>
+						anim=anim%COUNT_OF_ANIMS;
+    26e4:	80 91 69 00 	lds	r24, 0x0069	; 0x800069 <anim>
+    26e8:	83 70       	andi	r24, 0x03	; 3
+    26ea:	80 93 69 00 	sts	0x0069, r24	; 0x800069 <anim>
+    26ee:	21 c0       	rjmp	.+66     	; 0x2732 <anim1+0xa8>
+			}
+		}
+	}
+	if (position<9)
+	{
+		SPI_set_SS_line(1);
+    26f0:	81 e0       	ldi	r24, 0x01	; 1
+    26f2:	0e 94 af 14 	call	0x295e	; 0x295e <SPI_set_SS_line>
+		SPDR=animONE[frame][layer][position];
+    26f6:	80 91 6c 00 	lds	r24, 0x006C	; 0x80006c <layer>
+    26fa:	90 e0       	ldi	r25, 0x00	; 0
+    26fc:	30 91 6d 00 	lds	r19, 0x006D	; 0x80006d <frame>
+    2700:	20 91 68 00 	lds	r18, 0x0068	; 0x800068 <position>
+    2704:	fc 01       	movw	r30, r24
+    2706:	ee 0f       	add	r30, r30
+    2708:	ff 1f       	adc	r31, r31
+    270a:	ee 0f       	add	r30, r30
+    270c:	ff 1f       	adc	r31, r31
+    270e:	ee 0f       	add	r30, r30
+    2710:	ff 1f       	adc	r31, r31
+    2712:	e8 0f       	add	r30, r24
+    2714:	f9 1f       	adc	r31, r25
+    2716:	88 e4       	ldi	r24, 0x48	; 72
+    2718:	38 9f       	mul	r19, r24
+    271a:	e0 0d       	add	r30, r0
+    271c:	f1 1d       	adc	r31, r1
+    271e:	11 24       	eor	r1, r1
+    2720:	e4 58       	subi	r30, 0x84	; 132
+    2722:	fc 4d       	sbci	r31, 0xDC	; 220
+    2724:	e2 0f       	add	r30, r18
+    2726:	f1 1d       	adc	r31, r1
+    2728:	84 91       	lpm	r24, Z
+    272a:	8f b9       	out	0x0f, r24	; 15
+    272c:	08 95       	ret
+{
+	const uint8_t anim_frames=10, frame_in_anim_repeats=20, repeats_of_anim=3;
+	position++;
+	if (position>=9)
+	{
+		layer++;
+    272e:	80 93 6c 00 	sts	0x006C, r24	; 0x80006c <layer>
+	}
+	if (position<9)
+	{
+		SPI_set_SS_line(1);
+		SPDR=animONE[frame][layer][position];
+}else position=-1;
+    2732:	8f ef       	ldi	r24, 0xFF	; 255
+    2734:	80 93 68 00 	sts	0x0068, r24	; 0x800068 <position>
+    2738:	08 95       	ret
 
-00002a7a <main>:
+0000273a <anim2>:
+
+void anim2(void)
+{
+	const uint8_t anim_frames=19, frame_in_anim_repeats=19, repeats_of_anim=1;
+
+	position++;
+    273a:	80 91 68 00 	lds	r24, 0x0068	; 0x800068 <position>
+    273e:	8f 5f       	subi	r24, 0xFF	; 255
+    2740:	80 93 68 00 	sts	0x0068, r24	; 0x800068 <position>
+	if (position>=9)
+    2744:	89 30       	cpi	r24, 0x09	; 9
+    2746:	60 f1       	brcs	.+88     	; 0x27a0 <anim2+0x66>
+	{
+		layer++;
+    2748:	80 91 6c 00 	lds	r24, 0x006C	; 0x80006c <layer>
+    274c:	8f 5f       	subi	r24, 0xFF	; 255
+		if (layer>=8)
+    274e:	88 30       	cpi	r24, 0x08	; 8
+    2750:	08 f4       	brcc	.+2      	; 0x2754 <anim2+0x1a>
+    2752:	45 c0       	rjmp	.+138    	; 0x27de <anim2+0xa4>
+		{
+			layer=0;
+    2754:	10 92 6c 00 	sts	0x006C, r1	; 0x80006c <layer>
+			frame_repeats++;
+    2758:	80 91 6b 00 	lds	r24, 0x006B	; 0x80006b <frame_repeats>
+    275c:	8f 5f       	subi	r24, 0xFF	; 255
+			if (frame_repeats>=frame_in_anim_repeats)
+    275e:	83 31       	cpi	r24, 0x13	; 19
+    2760:	18 f4       	brcc	.+6      	; 0x2768 <anim2+0x2e>
+	{
+		layer++;
+		if (layer>=8)
+		{
+			layer=0;
+			frame_repeats++;
+    2762:	80 93 6b 00 	sts	0x006B, r24	; 0x80006b <frame_repeats>
+    2766:	3d c0       	rjmp	.+122    	; 0x27e2 <anim2+0xa8>
+			if (frame_repeats>=frame_in_anim_repeats)
+			{
+				frame_repeats=0;
+    2768:	10 92 6b 00 	sts	0x006B, r1	; 0x80006b <frame_repeats>
+				frame++;
+    276c:	80 91 6d 00 	lds	r24, 0x006D	; 0x80006d <frame>
+    2770:	8f 5f       	subi	r24, 0xFF	; 255
+				if (frame==anim_frames)
+    2772:	83 31       	cpi	r24, 0x13	; 19
+    2774:	19 f0       	breq	.+6      	; 0x277c <anim2+0x42>
+			layer=0;
+			frame_repeats++;
+			if (frame_repeats>=frame_in_anim_repeats)
+			{
+				frame_repeats=0;
+				frame++;
+    2776:	80 93 6d 00 	sts	0x006D, r24	; 0x80006d <frame>
+    277a:	33 c0       	rjmp	.+102    	; 0x27e2 <anim2+0xa8>
+				if (frame==anim_frames)
+				{
+					frame=0;
+    277c:	10 92 6d 00 	sts	0x006D, r1	; 0x80006d <frame>
+					anim_repeats++;
+    2780:	80 91 6a 00 	lds	r24, 0x006A	; 0x80006a <__data_end>
+    2784:	8f 5f       	subi	r24, 0xFF	; 255
+					if (anim_repeats==repeats_of_anim)
+    2786:	81 30       	cpi	r24, 0x01	; 1
+    2788:	19 f0       	breq	.+6      	; 0x2790 <anim2+0x56>
+				frame_repeats=0;
+				frame++;
+				if (frame==anim_frames)
+				{
+					frame=0;
+					anim_repeats++;
+    278a:	80 93 6a 00 	sts	0x006A, r24	; 0x80006a <__data_end>
+    278e:	29 c0       	rjmp	.+82     	; 0x27e2 <anim2+0xa8>
+					if (anim_repeats==repeats_of_anim)
+					{
+						anim_repeats=0;
+    2790:	10 92 6a 00 	sts	0x006A, r1	; 0x80006a <__data_end>
+						anim=anim%COUNT_OF_ANIMS;
+    2794:	80 91 69 00 	lds	r24, 0x0069	; 0x800069 <anim>
+    2798:	83 70       	andi	r24, 0x03	; 3
+    279a:	80 93 69 00 	sts	0x0069, r24	; 0x800069 <anim>
+    279e:	21 c0       	rjmp	.+66     	; 0x27e2 <anim2+0xa8>
+			}
+		}
+	}
+	if (position<9)
+	{
+		SPI_set_SS_line(1);
+    27a0:	81 e0       	ldi	r24, 0x01	; 1
+    27a2:	0e 94 af 14 	call	0x295e	; 0x295e <SPI_set_SS_line>
+		SPDR=animTWO[frame][layer][position];
+    27a6:	80 91 6c 00 	lds	r24, 0x006C	; 0x80006c <layer>
+    27aa:	90 e0       	ldi	r25, 0x00	; 0
+    27ac:	30 91 6d 00 	lds	r19, 0x006D	; 0x80006d <frame>
+    27b0:	20 91 68 00 	lds	r18, 0x0068	; 0x800068 <position>
+    27b4:	fc 01       	movw	r30, r24
+    27b6:	ee 0f       	add	r30, r30
+    27b8:	ff 1f       	adc	r31, r31
+    27ba:	ee 0f       	add	r30, r30
+    27bc:	ff 1f       	adc	r31, r31
+    27be:	ee 0f       	add	r30, r30
+    27c0:	ff 1f       	adc	r31, r31
+    27c2:	e8 0f       	add	r30, r24
+    27c4:	f9 1f       	adc	r31, r25
+    27c6:	88 e4       	ldi	r24, 0x48	; 72
+    27c8:	38 9f       	mul	r19, r24
+    27ca:	e0 0d       	add	r30, r0
+    27cc:	f1 1d       	adc	r31, r1
+    27ce:	11 24       	eor	r1, r1
+    27d0:	ec 5d       	subi	r30, 0xDC	; 220
+    27d2:	f1 4e       	sbci	r31, 0xE1	; 225
+    27d4:	e2 0f       	add	r30, r18
+    27d6:	f1 1d       	adc	r31, r1
+    27d8:	84 91       	lpm	r24, Z
+    27da:	8f b9       	out	0x0f, r24	; 15
+    27dc:	08 95       	ret
+	const uint8_t anim_frames=19, frame_in_anim_repeats=19, repeats_of_anim=1;
+
+	position++;
+	if (position>=9)
+	{
+		layer++;
+    27de:	80 93 6c 00 	sts	0x006C, r24	; 0x80006c <layer>
+	if (position<9)
+	{
+		SPI_set_SS_line(1);
+		SPDR=animTWO[frame][layer][position];
+	}else
+		position=-1;
+    27e2:	8f ef       	ldi	r24, 0xFF	; 255
+    27e4:	80 93 68 00 	sts	0x0068, r24	; 0x800068 <position>
+    27e8:	08 95       	ret
+
+000027ea <anim3>:
+
+void anim3(void)
+{
+	const uint8_t anim_frames=55, frame_in_anim_repeats=25, repeats_of_anim=1;
+	
+	position++;
+    27ea:	80 91 68 00 	lds	r24, 0x0068	; 0x800068 <position>
+    27ee:	8f 5f       	subi	r24, 0xFF	; 255
+    27f0:	80 93 68 00 	sts	0x0068, r24	; 0x800068 <position>
+	if (position>=9)
+    27f4:	89 30       	cpi	r24, 0x09	; 9
+    27f6:	60 f1       	brcs	.+88     	; 0x2850 <anim3+0x66>
+	{
+		layer++;
+    27f8:	80 91 6c 00 	lds	r24, 0x006C	; 0x80006c <layer>
+    27fc:	8f 5f       	subi	r24, 0xFF	; 255
+		if (layer>=8)
+    27fe:	88 30       	cpi	r24, 0x08	; 8
+    2800:	08 f4       	brcc	.+2      	; 0x2804 <anim3+0x1a>
+    2802:	45 c0       	rjmp	.+138    	; 0x288e <anim3+0xa4>
+		{
+			layer=0;
+    2804:	10 92 6c 00 	sts	0x006C, r1	; 0x80006c <layer>
+			frame_repeats++;
+    2808:	80 91 6b 00 	lds	r24, 0x006B	; 0x80006b <frame_repeats>
+    280c:	8f 5f       	subi	r24, 0xFF	; 255
+			if (frame_repeats>=frame_in_anim_repeats)
+    280e:	89 31       	cpi	r24, 0x19	; 25
+    2810:	18 f4       	brcc	.+6      	; 0x2818 <anim3+0x2e>
+	{
+		layer++;
+		if (layer>=8)
+		{
+			layer=0;
+			frame_repeats++;
+    2812:	80 93 6b 00 	sts	0x006B, r24	; 0x80006b <frame_repeats>
+    2816:	3d c0       	rjmp	.+122    	; 0x2892 <anim3+0xa8>
+			if (frame_repeats>=frame_in_anim_repeats)
+			{
+				frame_repeats=0;
+    2818:	10 92 6b 00 	sts	0x006B, r1	; 0x80006b <frame_repeats>
+				frame++;
+    281c:	80 91 6d 00 	lds	r24, 0x006D	; 0x80006d <frame>
+    2820:	8f 5f       	subi	r24, 0xFF	; 255
+				if (frame==anim_frames)
+    2822:	87 33       	cpi	r24, 0x37	; 55
+    2824:	19 f0       	breq	.+6      	; 0x282c <anim3+0x42>
+			layer=0;
+			frame_repeats++;
+			if (frame_repeats>=frame_in_anim_repeats)
+			{
+				frame_repeats=0;
+				frame++;
+    2826:	80 93 6d 00 	sts	0x006D, r24	; 0x80006d <frame>
+    282a:	33 c0       	rjmp	.+102    	; 0x2892 <anim3+0xa8>
+				if (frame==anim_frames)
+				{
+					frame=0;
+    282c:	10 92 6d 00 	sts	0x006D, r1	; 0x80006d <frame>
+					anim_repeats++;
+    2830:	80 91 6a 00 	lds	r24, 0x006A	; 0x80006a <__data_end>
+    2834:	8f 5f       	subi	r24, 0xFF	; 255
+					if (anim_repeats==repeats_of_anim)
+    2836:	81 30       	cpi	r24, 0x01	; 1
+    2838:	19 f0       	breq	.+6      	; 0x2840 <anim3+0x56>
+				frame_repeats=0;
+				frame++;
+				if (frame==anim_frames)
+				{
+					frame=0;
+					anim_repeats++;
+    283a:	80 93 6a 00 	sts	0x006A, r24	; 0x80006a <__data_end>
+    283e:	29 c0       	rjmp	.+82     	; 0x2892 <anim3+0xa8>
+					if (anim_repeats==repeats_of_anim)
+					{
+						anim_repeats=0;
+    2840:	10 92 6a 00 	sts	0x006A, r1	; 0x80006a <__data_end>
+						anim=anim%COUNT_OF_ANIMS;
+    2844:	80 91 69 00 	lds	r24, 0x0069	; 0x800069 <anim>
+    2848:	83 70       	andi	r24, 0x03	; 3
+    284a:	80 93 69 00 	sts	0x0069, r24	; 0x800069 <anim>
+    284e:	21 c0       	rjmp	.+66     	; 0x2892 <anim3+0xa8>
+			}
+		}
+	}
+	if (position<9)
+	{
+		SPI_set_SS_line(1);
+    2850:	81 e0       	ldi	r24, 0x01	; 1
+    2852:	0e 94 af 14 	call	0x295e	; 0x295e <SPI_set_SS_line>
+		SPDR=animTHREE[frame][layer][position];
+    2856:	80 91 6c 00 	lds	r24, 0x006C	; 0x80006c <layer>
+    285a:	90 e0       	ldi	r25, 0x00	; 0
+    285c:	30 91 6d 00 	lds	r19, 0x006D	; 0x80006d <frame>
+    2860:	20 91 68 00 	lds	r18, 0x0068	; 0x800068 <position>
+    2864:	fc 01       	movw	r30, r24
+    2866:	ee 0f       	add	r30, r30
+    2868:	ff 1f       	adc	r31, r31
+    286a:	ee 0f       	add	r30, r30
+    286c:	ff 1f       	adc	r31, r31
+    286e:	ee 0f       	add	r30, r30
+    2870:	ff 1f       	adc	r31, r31
+    2872:	e8 0f       	add	r30, r24
+    2874:	f9 1f       	adc	r31, r25
+    2876:	88 e4       	ldi	r24, 0x48	; 72
+    2878:	38 9f       	mul	r19, r24
+    287a:	e0 0d       	add	r30, r0
+    287c:	f1 1d       	adc	r31, r1
+    287e:	11 24       	eor	r1, r1
+    2880:	e4 55       	subi	r30, 0x54	; 84
+    2882:	f1 4f       	sbci	r31, 0xF1	; 241
+    2884:	e2 0f       	add	r30, r18
+    2886:	f1 1d       	adc	r31, r1
+    2888:	84 91       	lpm	r24, Z
+    288a:	8f b9       	out	0x0f, r24	; 15
+    288c:	08 95       	ret
+	const uint8_t anim_frames=55, frame_in_anim_repeats=25, repeats_of_anim=1;
+	
+	position++;
+	if (position>=9)
+	{
+		layer++;
+    288e:	80 93 6c 00 	sts	0x006C, r24	; 0x80006c <layer>
+	if (position<9)
+	{
+		SPI_set_SS_line(1);
+		SPDR=animTHREE[frame][layer][position];
+	}else
+		position=-1;
+    2892:	8f ef       	ldi	r24, 0xFF	; 255
+    2894:	80 93 68 00 	sts	0x0068, r24	; 0x800068 <position>
+    2898:	08 95       	ret
+
+0000289a <anim4>:
+
+void anim4(void)
+{
+	const uint8_t anim_frames=51, frame_in_anim_repeats=18, repeats_of_anim=1;
+	
+	position++;
+    289a:	80 91 68 00 	lds	r24, 0x0068	; 0x800068 <position>
+    289e:	8f 5f       	subi	r24, 0xFF	; 255
+    28a0:	80 93 68 00 	sts	0x0068, r24	; 0x800068 <position>
+	if (position>=9)
+    28a4:	89 30       	cpi	r24, 0x09	; 9
+    28a6:	60 f1       	brcs	.+88     	; 0x2900 <anim4+0x66>
+	{
+		layer++;
+    28a8:	80 91 6c 00 	lds	r24, 0x006C	; 0x80006c <layer>
+    28ac:	8f 5f       	subi	r24, 0xFF	; 255
+		if (layer>=8)
+    28ae:	88 30       	cpi	r24, 0x08	; 8
+    28b0:	08 f4       	brcc	.+2      	; 0x28b4 <anim4+0x1a>
+    28b2:	45 c0       	rjmp	.+138    	; 0x293e <anim4+0xa4>
+		{
+			layer=0;
+    28b4:	10 92 6c 00 	sts	0x006C, r1	; 0x80006c <layer>
+			frame_repeats++;
+    28b8:	80 91 6b 00 	lds	r24, 0x006B	; 0x80006b <frame_repeats>
+    28bc:	8f 5f       	subi	r24, 0xFF	; 255
+			if (frame_repeats>=frame_in_anim_repeats)
+    28be:	82 31       	cpi	r24, 0x12	; 18
+    28c0:	18 f4       	brcc	.+6      	; 0x28c8 <anim4+0x2e>
+	{
+		layer++;
+		if (layer>=8)
+		{
+			layer=0;
+			frame_repeats++;
+    28c2:	80 93 6b 00 	sts	0x006B, r24	; 0x80006b <frame_repeats>
+    28c6:	3d c0       	rjmp	.+122    	; 0x2942 <anim4+0xa8>
+			if (frame_repeats>=frame_in_anim_repeats)
+			{
+				frame_repeats=0;
+    28c8:	10 92 6b 00 	sts	0x006B, r1	; 0x80006b <frame_repeats>
+				frame++;
+    28cc:	80 91 6d 00 	lds	r24, 0x006D	; 0x80006d <frame>
+    28d0:	8f 5f       	subi	r24, 0xFF	; 255
+				if (frame==anim_frames)
+    28d2:	83 33       	cpi	r24, 0x33	; 51
+    28d4:	19 f0       	breq	.+6      	; 0x28dc <anim4+0x42>
+			layer=0;
+			frame_repeats++;
+			if (frame_repeats>=frame_in_anim_repeats)
+			{
+				frame_repeats=0;
+				frame++;
+    28d6:	80 93 6d 00 	sts	0x006D, r24	; 0x80006d <frame>
+    28da:	33 c0       	rjmp	.+102    	; 0x2942 <anim4+0xa8>
+				if (frame==anim_frames)
+				{
+					frame=0;
+    28dc:	10 92 6d 00 	sts	0x006D, r1	; 0x80006d <frame>
+					anim_repeats++;
+    28e0:	80 91 6a 00 	lds	r24, 0x006A	; 0x80006a <__data_end>
+    28e4:	8f 5f       	subi	r24, 0xFF	; 255
+					if (anim_repeats==repeats_of_anim)
+    28e6:	81 30       	cpi	r24, 0x01	; 1
+    28e8:	19 f0       	breq	.+6      	; 0x28f0 <anim4+0x56>
+				frame_repeats=0;
+				frame++;
+				if (frame==anim_frames)
+				{
+					frame=0;
+					anim_repeats++;
+    28ea:	80 93 6a 00 	sts	0x006A, r24	; 0x80006a <__data_end>
+    28ee:	29 c0       	rjmp	.+82     	; 0x2942 <anim4+0xa8>
+					if (anim_repeats==repeats_of_anim)
+					{
+						anim_repeats=0;
+    28f0:	10 92 6a 00 	sts	0x006A, r1	; 0x80006a <__data_end>
+						anim=anim%COUNT_OF_ANIMS;
+    28f4:	80 91 69 00 	lds	r24, 0x0069	; 0x800069 <anim>
+    28f8:	83 70       	andi	r24, 0x03	; 3
+    28fa:	80 93 69 00 	sts	0x0069, r24	; 0x800069 <anim>
+    28fe:	21 c0       	rjmp	.+66     	; 0x2942 <anim4+0xa8>
+			}
+		}
+	}
+	if (position<9)
+	{
+		SPI_set_SS_line(1);
+    2900:	81 e0       	ldi	r24, 0x01	; 1
+    2902:	0e 94 af 14 	call	0x295e	; 0x295e <SPI_set_SS_line>
+		SPDR=animFOUR[frame][layer][position];
+    2906:	80 91 6c 00 	lds	r24, 0x006C	; 0x80006c <layer>
+    290a:	90 e0       	ldi	r25, 0x00	; 0
+    290c:	30 91 6d 00 	lds	r19, 0x006D	; 0x80006d <frame>
+    2910:	20 91 68 00 	lds	r18, 0x0068	; 0x800068 <position>
+    2914:	fc 01       	movw	r30, r24
+    2916:	ee 0f       	add	r30, r30
+    2918:	ff 1f       	adc	r31, r31
+    291a:	ee 0f       	add	r30, r30
+    291c:	ff 1f       	adc	r31, r31
+    291e:	ee 0f       	add	r30, r30
+    2920:	ff 1f       	adc	r31, r31
+    2922:	e8 0f       	add	r30, r24
+    2924:	f9 1f       	adc	r31, r25
+    2926:	88 e4       	ldi	r24, 0x48	; 72
+    2928:	38 9f       	mul	r19, r24
+    292a:	e0 0d       	add	r30, r0
+    292c:	f1 1d       	adc	r31, r1
+    292e:	11 24       	eor	r1, r1
+    2930:	ec 5a       	subi	r30, 0xAC	; 172
+    2932:	ff 4f       	sbci	r31, 0xFF	; 255
+    2934:	e2 0f       	add	r30, r18
+    2936:	f1 1d       	adc	r31, r1
+    2938:	84 91       	lpm	r24, Z
+    293a:	8f b9       	out	0x0f, r24	; 15
+    293c:	08 95       	ret
+	const uint8_t anim_frames=51, frame_in_anim_repeats=18, repeats_of_anim=1;
+	
+	position++;
+	if (position>=9)
+	{
+		layer++;
+    293e:	80 93 6c 00 	sts	0x006C, r24	; 0x80006c <layer>
+	if (position<9)
+	{
+		SPI_set_SS_line(1);
+		SPDR=animFOUR[frame][layer][position];
+	}else
+		position=-1;
+    2942:	8f ef       	ldi	r24, 0xFF	; 255
+    2944:	80 93 68 00 	sts	0x0068, r24	; 0x800068 <position>
+    2948:	08 95       	ret
+
+0000294a <main>:
 #include "SPI.h"
 #include "timer.h"
 
 int main (void)
 {	
 	DDRA=0xFF;
-    2a7a:	8f ef       	ldi	r24, 0xFF	; 255
-    2a7c:	8a bb       	out	0x1a, r24	; 26
+    294a:	8f ef       	ldi	r24, 0xFF	; 255
+    294c:	8a bb       	out	0x1a, r24	; 26
 	PORTA=0x01;
-    2a7e:	81 e0       	ldi	r24, 0x01	; 1
-    2a80:	8b bb       	out	0x1b, r24	; 27
+    294e:	81 e0       	ldi	r24, 0x01	; 1
+    2950:	8b bb       	out	0x1b, r24	; 27
 	timer_init();
-    2a82:	0e 94 2d 16 	call	0x2c5a	; 0x2c5a <timer_init>
+    2952:	0e 94 f1 14 	call	0x29e2	; 0x29e2 <timer_init>
 	SPI_master_init();
-    2a86:	0e 94 4e 15 	call	0x2a9c	; 0x2a9c <SPI_master_init>
+    2956:	0e 94 b6 14 	call	0x296c	; 0x296c <SPI_master_init>
 	sei();
-    2a8a:	78 94       	sei
-    2a8c:	ff cf       	rjmp	.-2      	; 0x2a8c <main+0x12>
+    295a:	78 94       	sei
+    295c:	ff cf       	rjmp	.-2      	; 0x295c <main+0x12>
 
-00002a8e <SPI_set_SS_line>:
+0000295e <SPI_set_SS_line>:
 }
 
 /*For the SPI: low on the SS line is ON, high is OFF	*/
 void SPI_set_SS_line(const bool x)	//	For x:
 {										//		0 - nothing is sending by SPI
 	if (x==0){							//		1 - set SS line
-    2a8e:	81 11       	cpse	r24, r1
-    2a90:	02 c0       	rjmp	.+4      	; 0x2a96 <SPI_set_SS_line+0x8>
+    295e:	81 11       	cpse	r24, r1
+    2960:	02 c0       	rjmp	.+4      	; 0x2966 <SPI_set_SS_line+0x8>
 		PORTB|=_BV(PB4);				
-    2a92:	c4 9a       	sbi	0x18, 4	; 24
-    2a94:	01 c0       	rjmp	.+2      	; 0x2a98 <SPI_set_SS_line+0xa>
+    2962:	c4 9a       	sbi	0x18, 4	; 24
+    2964:	01 c0       	rjmp	.+2      	; 0x2968 <SPI_set_SS_line+0xa>
 	}else if (x==1){
 		PORTB&=~(_BV(PB4));
-    2a96:	c4 98       	cbi	0x18, 4	; 24
+    2966:	c4 98       	cbi	0x18, 4	; 24
 	}
 	asm volatile ("nop");
-    2a98:	00 00       	nop
-    2a9a:	08 95       	ret
+    2968:	00 00       	nop
+    296a:	08 95       	ret
 
-00002a9c <SPI_master_init>:
+0000296c <SPI_master_init>:
 #include "animations.h"
 
 /*Enable SPI in master mode with interrupts*/
 void SPI_master_init(void)
 {
 	DDRB |= _BV(PB5) | _BV(PB7) | _BV(PB4);		//MOSI, SCK, SS are outputs
-    2a9c:	87 b3       	in	r24, 0x17	; 23
-    2a9e:	80 6b       	ori	r24, 0xB0	; 176
-    2aa0:	87 bb       	out	0x17, r24	; 23
+    296c:	87 b3       	in	r24, 0x17	; 23
+    296e:	80 6b       	ori	r24, 0xB0	; 176
+    2970:	87 bb       	out	0x17, r24	; 23
 	SPI_set_SS_line(0);
-    2aa2:	80 e0       	ldi	r24, 0x00	; 0
-    2aa4:	0e 94 47 15 	call	0x2a8e	; 0x2a8e <SPI_set_SS_line>
+    2972:	80 e0       	ldi	r24, 0x00	; 0
+    2974:	0e 94 af 14 	call	0x295e	; 0x295e <SPI_set_SS_line>
 	SPCR = _BV(SPE) | _BV(MSTR) | _BV(SPIE);		//Enable SPI, Master, Interrupts
-    2aa8:	80 ed       	ldi	r24, 0xD0	; 208
-    2aaa:	8d b9       	out	0x0d, r24	; 13
+    2978:	80 ed       	ldi	r24, 0xD0	; 208
+    297a:	8d b9       	out	0x0d, r24	; 13
 	SPSR;
-    2aac:	8e b1       	in	r24, 0x0e	; 14
+    297c:	8e b1       	in	r24, 0x0e	; 14
 	SPDR;	//Delete SPIF Flag
-    2aae:	8f b1       	in	r24, 0x0f	; 15
-    2ab0:	08 95       	ret
+    297e:	8f b1       	in	r24, 0x0f	; 15
+    2980:	08 95       	ret
 
-00002ab2 <__vector_12>:
+00002982 <__vector_12>:
 	asm volatile ("nop");
 }
 
 
 ISR(SPI_STC_vect)
 {
-    2ab2:	1f 92       	push	r1
-    2ab4:	0f 92       	push	r0
-    2ab6:	0f b6       	in	r0, 0x3f	; 63
-    2ab8:	0f 92       	push	r0
-    2aba:	11 24       	eor	r1, r1
-    2abc:	2f 93       	push	r18
-    2abe:	3f 93       	push	r19
-    2ac0:	4f 93       	push	r20
-    2ac2:	5f 93       	push	r21
-    2ac4:	6f 93       	push	r22
-    2ac6:	7f 93       	push	r23
-    2ac8:	8f 93       	push	r24
-    2aca:	9f 93       	push	r25
-    2acc:	af 93       	push	r26
-    2ace:	bf 93       	push	r27
-    2ad0:	ef 93       	push	r30
-    2ad2:	ff 93       	push	r31
+    2982:	1f 92       	push	r1
+    2984:	0f 92       	push	r0
+    2986:	0f b6       	in	r0, 0x3f	; 63
+    2988:	0f 92       	push	r0
+    298a:	11 24       	eor	r1, r1
+    298c:	2f 93       	push	r18
+    298e:	3f 93       	push	r19
+    2990:	4f 93       	push	r20
+    2992:	5f 93       	push	r21
+    2994:	6f 93       	push	r22
+    2996:	7f 93       	push	r23
+    2998:	8f 93       	push	r24
+    299a:	9f 93       	push	r25
+    299c:	af 93       	push	r26
+    299e:	bf 93       	push	r27
+    29a0:	ef 93       	push	r30
+    29a2:	ff 93       	push	r31
 	SPI_set_SS_line(0);
-    2ad4:	80 e0       	ldi	r24, 0x00	; 0
-    2ad6:	0e 94 47 15 	call	0x2a8e	; 0x2a8e <SPI_set_SS_line>
-	if (position>=9)
-    2ada:	80 91 72 00 	lds	r24, 0x0072	; 0x800072 <position>
-    2ade:	89 30       	cpi	r24, 0x09	; 9
-    2ae0:	30 f0       	brcs	.+12     	; 0x2aee <__vector_12+0x3c>
-	{
-		layer++;
-    2ae2:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <layer>
-    2ae6:	8f 5f       	subi	r24, 0xFF	; 255
-    2ae8:	80 93 73 00 	sts	0x0073, r24	; 0x800073 <layer>
-    2aec:	a0 c0       	rjmp	.+320    	; 0x2c2e <__vector_12+0x17c>
-	}else
-	{
-		SPI_set_SS_line(1);
-    2aee:	81 e0       	ldi	r24, 0x01	; 1
-    2af0:	0e 94 47 15 	call	0x2a8e	; 0x2a8e <SPI_set_SS_line>
-		switch(anim)
-    2af4:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__data_start>
-    2af8:	83 30       	cpi	r24, 0x03	; 3
-    2afa:	09 f4       	brne	.+2      	; 0x2afe <__vector_12+0x4c>
-    2afc:	45 c0       	rjmp	.+138    	; 0x2b88 <__vector_12+0xd6>
-    2afe:	28 f4       	brcc	.+10     	; 0x2b0a <__vector_12+0x58>
-    2b00:	81 30       	cpi	r24, 0x01	; 1
-    2b02:	51 f0       	breq	.+20     	; 0x2b18 <__vector_12+0x66>
-    2b04:	82 30       	cpi	r24, 0x02	; 2
-    2b06:	21 f1       	breq	.+72     	; 0x2b50 <__vector_12+0x9e>
-    2b08:	92 c0       	rjmp	.+292    	; 0x2c2e <__vector_12+0x17c>
-    2b0a:	84 30       	cpi	r24, 0x04	; 4
-    2b0c:	09 f4       	brne	.+2      	; 0x2b10 <__vector_12+0x5e>
-    2b0e:	58 c0       	rjmp	.+176    	; 0x2bc0 <__vector_12+0x10e>
-    2b10:	85 30       	cpi	r24, 0x05	; 5
-    2b12:	09 f4       	brne	.+2      	; 0x2b16 <__vector_12+0x64>
-    2b14:	71 c0       	rjmp	.+226    	; 0x2bf8 <__vector_12+0x146>
-    2b16:	8b c0       	rjmp	.+278    	; 0x2c2e <__vector_12+0x17c>
-		{
-			case 1:
-				SPDR=anim1[frame][layer][position];
-    2b18:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <layer>
-    2b1c:	90 e0       	ldi	r25, 0x00	; 0
-    2b1e:	30 91 74 00 	lds	r19, 0x0074	; 0x800074 <frame>
-    2b22:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <position>
-    2b26:	fc 01       	movw	r30, r24
-    2b28:	ee 0f       	add	r30, r30
-    2b2a:	ff 1f       	adc	r31, r31
-    2b2c:	ee 0f       	add	r30, r30
-    2b2e:	ff 1f       	adc	r31, r31
-    2b30:	ee 0f       	add	r30, r30
-    2b32:	ff 1f       	adc	r31, r31
-    2b34:	e8 0f       	add	r30, r24
-    2b36:	f9 1f       	adc	r31, r25
-    2b38:	88 e4       	ldi	r24, 0x48	; 72
-    2b3a:	38 9f       	mul	r19, r24
-    2b3c:	e0 0d       	add	r30, r0
-    2b3e:	f1 1d       	adc	r31, r1
-    2b40:	11 24       	eor	r1, r1
-    2b42:	e4 59       	subi	r30, 0x94	; 148
-    2b44:	f8 4d       	sbci	r31, 0xD8	; 216
-    2b46:	e2 0f       	add	r30, r18
-    2b48:	f1 1d       	adc	r31, r1
-    2b4a:	84 91       	lpm	r24, Z
-    2b4c:	8f b9       	out	0x0f, r24	; 15
-				break;
-    2b4e:	6f c0       	rjmp	.+222    	; 0x2c2e <__vector_12+0x17c>
-			case 2:
-				SPDR=anim2[frame][layer][position];
-    2b50:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <layer>
-    2b54:	90 e0       	ldi	r25, 0x00	; 0
-    2b56:	30 91 74 00 	lds	r19, 0x0074	; 0x800074 <frame>
-    2b5a:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <position>
-    2b5e:	fc 01       	movw	r30, r24
-    2b60:	ee 0f       	add	r30, r30
-    2b62:	ff 1f       	adc	r31, r31
-    2b64:	ee 0f       	add	r30, r30
-    2b66:	ff 1f       	adc	r31, r31
-    2b68:	ee 0f       	add	r30, r30
-    2b6a:	ff 1f       	adc	r31, r31
-    2b6c:	e8 0f       	add	r30, r24
-    2b6e:	f9 1f       	adc	r31, r25
-    2b70:	88 e4       	ldi	r24, 0x48	; 72
-    2b72:	38 9f       	mul	r19, r24
-    2b74:	e0 0d       	add	r30, r0
-    2b76:	f1 1d       	adc	r31, r1
-    2b78:	11 24       	eor	r1, r1
-    2b7a:	ec 5e       	subi	r30, 0xEC	; 236
-    2b7c:	fd 4d       	sbci	r31, 0xDD	; 221
-    2b7e:	e2 0f       	add	r30, r18
-    2b80:	f1 1d       	adc	r31, r1
-    2b82:	84 91       	lpm	r24, Z
-    2b84:	8f b9       	out	0x0f, r24	; 15
-				break;
-    2b86:	53 c0       	rjmp	.+166    	; 0x2c2e <__vector_12+0x17c>
-			case 3:
-				SPDR=anim3[frame][layer][position];
-    2b88:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <layer>
-    2b8c:	90 e0       	ldi	r25, 0x00	; 0
-    2b8e:	30 91 74 00 	lds	r19, 0x0074	; 0x800074 <frame>
-    2b92:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <position>
-    2b96:	fc 01       	movw	r30, r24
-    2b98:	ee 0f       	add	r30, r30
-    2b9a:	ff 1f       	adc	r31, r31
-    2b9c:	ee 0f       	add	r30, r30
-    2b9e:	ff 1f       	adc	r31, r31
-    2ba0:	ee 0f       	add	r30, r30
-    2ba2:	ff 1f       	adc	r31, r31
-    2ba4:	e8 0f       	add	r30, r24
-    2ba6:	f9 1f       	adc	r31, r25
-    2ba8:	88 e4       	ldi	r24, 0x48	; 72
-    2baa:	38 9f       	mul	r19, r24
-    2bac:	e0 0d       	add	r30, r0
-    2bae:	f1 1d       	adc	r31, r1
-    2bb0:	11 24       	eor	r1, r1
-    2bb2:	e4 56       	subi	r30, 0x64	; 100
-    2bb4:	fd 4e       	sbci	r31, 0xED	; 237
-    2bb6:	e2 0f       	add	r30, r18
-    2bb8:	f1 1d       	adc	r31, r1
-    2bba:	84 91       	lpm	r24, Z
-    2bbc:	8f b9       	out	0x0f, r24	; 15
-				break;
-    2bbe:	37 c0       	rjmp	.+110    	; 0x2c2e <__vector_12+0x17c>
-			case 4:
-				SPDR=anim4[frame][layer][position];
-    2bc0:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <layer>
-    2bc4:	90 e0       	ldi	r25, 0x00	; 0
-    2bc6:	30 91 74 00 	lds	r19, 0x0074	; 0x800074 <frame>
-    2bca:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <position>
-    2bce:	fc 01       	movw	r30, r24
-    2bd0:	ee 0f       	add	r30, r30
-    2bd2:	ff 1f       	adc	r31, r31
-    2bd4:	ee 0f       	add	r30, r30
-    2bd6:	ff 1f       	adc	r31, r31
-    2bd8:	ee 0f       	add	r30, r30
-    2bda:	ff 1f       	adc	r31, r31
-    2bdc:	e8 0f       	add	r30, r24
-    2bde:	f9 1f       	adc	r31, r25
-    2be0:	88 e4       	ldi	r24, 0x48	; 72
-    2be2:	38 9f       	mul	r19, r24
-    2be4:	e0 0d       	add	r30, r0
-    2be6:	f1 1d       	adc	r31, r1
-    2be8:	11 24       	eor	r1, r1
-    2bea:	ec 5b       	subi	r30, 0xBC	; 188
-    2bec:	fb 4f       	sbci	r31, 0xFB	; 251
-    2bee:	e2 0f       	add	r30, r18
-    2bf0:	f1 1d       	adc	r31, r1
-    2bf2:	84 91       	lpm	r24, Z
-    2bf4:	8f b9       	out	0x0f, r24	; 15
-				break;
-    2bf6:	1b c0       	rjmp	.+54     	; 0x2c2e <__vector_12+0x17c>
-			case 5:
-				SPDR=anim5[frame][layer][position];
-    2bf8:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <layer>
-    2bfc:	90 e0       	ldi	r25, 0x00	; 0
-    2bfe:	30 91 74 00 	lds	r19, 0x0074	; 0x800074 <frame>
-    2c02:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <position>
-    2c06:	fc 01       	movw	r30, r24
-    2c08:	ee 0f       	add	r30, r30
-    2c0a:	ff 1f       	adc	r31, r31
-    2c0c:	ee 0f       	add	r30, r30
-    2c0e:	ff 1f       	adc	r31, r31
-    2c10:	ee 0f       	add	r30, r30
-    2c12:	ff 1f       	adc	r31, r31
-    2c14:	e8 0f       	add	r30, r24
-    2c16:	f9 1f       	adc	r31, r25
-    2c18:	88 e4       	ldi	r24, 0x48	; 72
-    2c1a:	38 9f       	mul	r19, r24
-    2c1c:	e0 0d       	add	r30, r0
-    2c1e:	f1 1d       	adc	r31, r1
-    2c20:	11 24       	eor	r1, r1
-    2c22:	ec 5a       	subi	r30, 0xAC	; 172
-    2c24:	ff 4f       	sbci	r31, 0xFF	; 255
-    2c26:	e2 0f       	add	r30, r18
-    2c28:	f1 1d       	adc	r31, r1
-    2c2a:	84 91       	lpm	r24, Z
-    2c2c:	8f b9       	out	0x0f, r24	; 15
-				break;
-
-		}
-	}
-	position++;
-    2c2e:	80 91 72 00 	lds	r24, 0x0072	; 0x800072 <position>
-    2c32:	8f 5f       	subi	r24, 0xFF	; 255
-    2c34:	80 93 72 00 	sts	0x0072, r24	; 0x800072 <position>
-
+    29a4:	80 e0       	ldi	r24, 0x00	; 0
+    29a6:	0e 94 af 14 	call	0x295e	; 0x295e <SPI_set_SS_line>
+	anims[anim]();
+    29aa:	e0 91 69 00 	lds	r30, 0x0069	; 0x800069 <anim>
+    29ae:	f0 e0       	ldi	r31, 0x00	; 0
+    29b0:	ee 0f       	add	r30, r30
+    29b2:	ff 1f       	adc	r31, r31
+    29b4:	e0 5a       	subi	r30, 0xA0	; 160
+    29b6:	ff 4f       	sbci	r31, 0xFF	; 255
+    29b8:	01 90       	ld	r0, Z+
+    29ba:	f0 81       	ld	r31, Z
+    29bc:	e0 2d       	mov	r30, r0
+    29be:	09 95       	icall
 }
-    2c38:	ff 91       	pop	r31
-    2c3a:	ef 91       	pop	r30
-    2c3c:	bf 91       	pop	r27
-    2c3e:	af 91       	pop	r26
-    2c40:	9f 91       	pop	r25
-    2c42:	8f 91       	pop	r24
-    2c44:	7f 91       	pop	r23
-    2c46:	6f 91       	pop	r22
-    2c48:	5f 91       	pop	r21
-    2c4a:	4f 91       	pop	r20
-    2c4c:	3f 91       	pop	r19
-    2c4e:	2f 91       	pop	r18
-    2c50:	0f 90       	pop	r0
-    2c52:	0f be       	out	0x3f, r0	; 63
-    2c54:	0f 90       	pop	r0
-    2c56:	1f 90       	pop	r1
-    2c58:	18 95       	reti
+    29c0:	ff 91       	pop	r31
+    29c2:	ef 91       	pop	r30
+    29c4:	bf 91       	pop	r27
+    29c6:	af 91       	pop	r26
+    29c8:	9f 91       	pop	r25
+    29ca:	8f 91       	pop	r24
+    29cc:	7f 91       	pop	r23
+    29ce:	6f 91       	pop	r22
+    29d0:	5f 91       	pop	r21
+    29d2:	4f 91       	pop	r20
+    29d4:	3f 91       	pop	r19
+    29d6:	2f 91       	pop	r18
+    29d8:	0f 90       	pop	r0
+    29da:	0f be       	out	0x3f, r0	; 63
+    29dc:	0f 90       	pop	r0
+    29de:	1f 90       	pop	r1
+    29e0:	18 95       	reti
 
-00002c5a <timer_init>:
+000029e2 <timer_init>:
 #include "SPI.h"
 #include "animations.h"
 
 void timer_init(void)
 {
 	TCCR1B=_BV(WGM12) | (_BV(CS12)|_BV(CS10)) ;		//Set timer1 to the CTC mode with TOP described in OCR1A, prescaler=1024
-    2c5a:	8d e0       	ldi	r24, 0x0D	; 13
-    2c5c:	8e bd       	out	0x2e, r24	; 46
+    29e2:	8d e0       	ldi	r24, 0x0D	; 13
+    29e4:	8e bd       	out	0x2e, r24	; 46
 	OCR1A=0x0006;									//Set frequency of changing layers on the cube: 14745600/6(OCR1A)*1024=>2400/8=300Hz
-    2c5e:	86 e0       	ldi	r24, 0x06	; 6
-    2c60:	90 e0       	ldi	r25, 0x00	; 0
-    2c62:	9b bd       	out	0x2b, r25	; 43
-    2c64:	8a bd       	out	0x2a, r24	; 42
+    29e6:	86 e0       	ldi	r24, 0x06	; 6
+    29e8:	90 e0       	ldi	r25, 0x00	; 0
+    29ea:	9b bd       	out	0x2b, r25	; 43
+    29ec:	8a bd       	out	0x2a, r24	; 42
 	TIMSK=_BV(OCIE1A);								//Enable compare match Interrupts
-    2c66:	80 e1       	ldi	r24, 0x10	; 16
-    2c68:	89 bf       	out	0x39, r24	; 57
-    2c6a:	08 95       	ret
+    29ee:	80 e1       	ldi	r24, 0x10	; 16
+    29f0:	89 bf       	out	0x39, r24	; 57
+    29f2:	08 95       	ret
 
-00002c6c <__vector_7>:
+000029f4 <__vector_7>:
 }
 
 ISR(TIMER1_COMPA_vect)
 {
-    2c6c:	1f 92       	push	r1
-    2c6e:	0f 92       	push	r0
-    2c70:	0f b6       	in	r0, 0x3f	; 63
-    2c72:	0f 92       	push	r0
-    2c74:	11 24       	eor	r1, r1
-    2c76:	2f 93       	push	r18
-    2c78:	3f 93       	push	r19
-    2c7a:	4f 93       	push	r20
-    2c7c:	5f 93       	push	r21
-    2c7e:	6f 93       	push	r22
-    2c80:	7f 93       	push	r23
-    2c82:	8f 93       	push	r24
-    2c84:	9f 93       	push	r25
-    2c86:	af 93       	push	r26
-    2c88:	bf 93       	push	r27
-    2c8a:	ef 93       	push	r30
-    2c8c:	ff 93       	push	r31
-	position=0;
-    2c8e:	10 92 72 00 	sts	0x0072, r1	; 0x800072 <position>
-	if (layer>=8)
-    2c92:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <layer>
-    2c96:	88 30       	cpi	r24, 0x08	; 8
-    2c98:	88 f1       	brcs	.+98     	; 0x2cfc <__vector_7+0x90>
-	{
-		layer=0;
-    2c9a:	10 92 73 00 	sts	0x0073, r1	; 0x800073 <layer>
-		frame_repeats++;
-    2c9e:	80 91 71 00 	lds	r24, 0x0071	; 0x800071 <frame_repeats>
-    2ca2:	8f 5f       	subi	r24, 0xFF	; 255
-    2ca4:	80 93 71 00 	sts	0x0071, r24	; 0x800071 <frame_repeats>
-		if (frame_repeats>=frame_in_anim_repeats[anim])
-    2ca8:	90 91 60 00 	lds	r25, 0x0060	; 0x800060 <__data_start>
-    2cac:	29 2f       	mov	r18, r25
-    2cae:	30 e0       	ldi	r19, 0x00	; 0
-    2cb0:	f9 01       	movw	r30, r18
-    2cb2:	ea 59       	subi	r30, 0x9A	; 154
-    2cb4:	ff 4f       	sbci	r31, 0xFF	; 255
-    2cb6:	40 81       	ld	r20, Z
-    2cb8:	84 17       	cp	r24, r20
-    2cba:	00 f1       	brcs	.+64     	; 0x2cfc <__vector_7+0x90>
-		{
-			frame++;
-    2cbc:	80 91 74 00 	lds	r24, 0x0074	; 0x800074 <frame>
-    2cc0:	8f 5f       	subi	r24, 0xFF	; 255
-    2cc2:	80 93 74 00 	sts	0x0074, r24	; 0x800074 <frame>
-			if (frame==anims_frames[anim])
-    2cc6:	f9 01       	movw	r30, r18
-    2cc8:	e5 59       	subi	r30, 0x95	; 149
-    2cca:	ff 4f       	sbci	r31, 0xFF	; 255
-    2ccc:	40 81       	ld	r20, Z
-    2cce:	84 13       	cpse	r24, r20
-    2cd0:	13 c0       	rjmp	.+38     	; 0x2cf8 <__vector_7+0x8c>
-			{
-				frame=0;
-    2cd2:	10 92 74 00 	sts	0x0074, r1	; 0x800074 <frame>
-				anim_repeats++;
-    2cd6:	80 91 70 00 	lds	r24, 0x0070	; 0x800070 <__data_end>
-    2cda:	8f 5f       	subi	r24, 0xFF	; 255
-    2cdc:	80 93 70 00 	sts	0x0070, r24	; 0x800070 <__data_end>
-				if (anim_repeats==anims_repeats[anim])
-    2ce0:	f9 01       	movw	r30, r18
-    2ce2:	ef 59       	subi	r30, 0x9F	; 159
-    2ce4:	ff 4f       	sbci	r31, 0xFF	; 255
-    2ce6:	20 81       	ld	r18, Z
-    2ce8:	82 13       	cpse	r24, r18
-    2cea:	06 c0       	rjmp	.+12     	; 0x2cf8 <__vector_7+0x8c>
-				{
-					anim_repeats=0;
-    2cec:	10 92 70 00 	sts	0x0070, r1	; 0x800070 <__data_end>
-					anim=anim%count_of_anims+1;
-    2cf0:	93 70       	andi	r25, 0x03	; 3
-    2cf2:	9f 5f       	subi	r25, 0xFF	; 255
-    2cf4:	90 93 60 00 	sts	0x0060, r25	; 0x800060 <__data_start>
-
-				}
-			}
-			frame_repeats=0;
-    2cf8:	10 92 71 00 	sts	0x0071, r1	; 0x800071 <frame_repeats>
-		}
-	}
-	
-		
-	SPI_set_SS_line(1);
-    2cfc:	81 e0       	ldi	r24, 0x01	; 1
-    2cfe:	0e 94 47 15 	call	0x2a8e	; 0x2a8e <SPI_set_SS_line>
-	switch(anim)
-    2d02:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__data_start>
-    2d06:	83 30       	cpi	r24, 0x03	; 3
-    2d08:	09 f4       	brne	.+2      	; 0x2d0c <__vector_7+0xa0>
-    2d0a:	45 c0       	rjmp	.+138    	; 0x2d96 <__vector_7+0x12a>
-    2d0c:	28 f4       	brcc	.+10     	; 0x2d18 <__vector_7+0xac>
-    2d0e:	81 30       	cpi	r24, 0x01	; 1
-    2d10:	51 f0       	breq	.+20     	; 0x2d26 <__vector_7+0xba>
-    2d12:	82 30       	cpi	r24, 0x02	; 2
-    2d14:	21 f1       	breq	.+72     	; 0x2d5e <__vector_7+0xf2>
-    2d16:	92 c0       	rjmp	.+292    	; 0x2e3c <__vector_7+0x1d0>
-    2d18:	84 30       	cpi	r24, 0x04	; 4
-    2d1a:	09 f4       	brne	.+2      	; 0x2d1e <__vector_7+0xb2>
-    2d1c:	58 c0       	rjmp	.+176    	; 0x2dce <__vector_7+0x162>
-    2d1e:	85 30       	cpi	r24, 0x05	; 5
-    2d20:	09 f4       	brne	.+2      	; 0x2d24 <__vector_7+0xb8>
-    2d22:	71 c0       	rjmp	.+226    	; 0x2e06 <__vector_7+0x19a>
-    2d24:	8b c0       	rjmp	.+278    	; 0x2e3c <__vector_7+0x1d0>
-	{
-		case 1:
-			SPDR=anim1[frame][layer][position];
-    2d26:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <layer>
-    2d2a:	90 e0       	ldi	r25, 0x00	; 0
-    2d2c:	30 91 74 00 	lds	r19, 0x0074	; 0x800074 <frame>
-    2d30:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <position>
-    2d34:	fc 01       	movw	r30, r24
-    2d36:	ee 0f       	add	r30, r30
-    2d38:	ff 1f       	adc	r31, r31
-    2d3a:	ee 0f       	add	r30, r30
-    2d3c:	ff 1f       	adc	r31, r31
-    2d3e:	ee 0f       	add	r30, r30
-    2d40:	ff 1f       	adc	r31, r31
-    2d42:	e8 0f       	add	r30, r24
-    2d44:	f9 1f       	adc	r31, r25
-    2d46:	88 e4       	ldi	r24, 0x48	; 72
-    2d48:	38 9f       	mul	r19, r24
-    2d4a:	e0 0d       	add	r30, r0
-    2d4c:	f1 1d       	adc	r31, r1
-    2d4e:	11 24       	eor	r1, r1
-    2d50:	e4 59       	subi	r30, 0x94	; 148
-    2d52:	f8 4d       	sbci	r31, 0xD8	; 216
-    2d54:	e2 0f       	add	r30, r18
-    2d56:	f1 1d       	adc	r31, r1
-    2d58:	84 91       	lpm	r24, Z
-    2d5a:	8f b9       	out	0x0f, r24	; 15
-			break;
-    2d5c:	6f c0       	rjmp	.+222    	; 0x2e3c <__vector_7+0x1d0>
-		case 2:
-			SPDR=anim2[frame][layer][position];
-    2d5e:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <layer>
-    2d62:	90 e0       	ldi	r25, 0x00	; 0
-    2d64:	30 91 74 00 	lds	r19, 0x0074	; 0x800074 <frame>
-    2d68:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <position>
-    2d6c:	fc 01       	movw	r30, r24
-    2d6e:	ee 0f       	add	r30, r30
-    2d70:	ff 1f       	adc	r31, r31
-    2d72:	ee 0f       	add	r30, r30
-    2d74:	ff 1f       	adc	r31, r31
-    2d76:	ee 0f       	add	r30, r30
-    2d78:	ff 1f       	adc	r31, r31
-    2d7a:	e8 0f       	add	r30, r24
-    2d7c:	f9 1f       	adc	r31, r25
-    2d7e:	88 e4       	ldi	r24, 0x48	; 72
-    2d80:	38 9f       	mul	r19, r24
-    2d82:	e0 0d       	add	r30, r0
-    2d84:	f1 1d       	adc	r31, r1
-    2d86:	11 24       	eor	r1, r1
-    2d88:	ec 5e       	subi	r30, 0xEC	; 236
-    2d8a:	fd 4d       	sbci	r31, 0xDD	; 221
-    2d8c:	e2 0f       	add	r30, r18
-    2d8e:	f1 1d       	adc	r31, r1
-    2d90:	84 91       	lpm	r24, Z
-    2d92:	8f b9       	out	0x0f, r24	; 15
-			break;
-    2d94:	53 c0       	rjmp	.+166    	; 0x2e3c <__vector_7+0x1d0>
-		case 3:
-			SPDR=anim3[frame][layer][position];
-    2d96:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <layer>
-    2d9a:	90 e0       	ldi	r25, 0x00	; 0
-    2d9c:	30 91 74 00 	lds	r19, 0x0074	; 0x800074 <frame>
-    2da0:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <position>
-    2da4:	fc 01       	movw	r30, r24
-    2da6:	ee 0f       	add	r30, r30
-    2da8:	ff 1f       	adc	r31, r31
-    2daa:	ee 0f       	add	r30, r30
-    2dac:	ff 1f       	adc	r31, r31
-    2dae:	ee 0f       	add	r30, r30
-    2db0:	ff 1f       	adc	r31, r31
-    2db2:	e8 0f       	add	r30, r24
-    2db4:	f9 1f       	adc	r31, r25
-    2db6:	88 e4       	ldi	r24, 0x48	; 72
-    2db8:	38 9f       	mul	r19, r24
-    2dba:	e0 0d       	add	r30, r0
-    2dbc:	f1 1d       	adc	r31, r1
-    2dbe:	11 24       	eor	r1, r1
-    2dc0:	e4 56       	subi	r30, 0x64	; 100
-    2dc2:	fd 4e       	sbci	r31, 0xED	; 237
-    2dc4:	e2 0f       	add	r30, r18
-    2dc6:	f1 1d       	adc	r31, r1
-    2dc8:	84 91       	lpm	r24, Z
-    2dca:	8f b9       	out	0x0f, r24	; 15
-			break;
-    2dcc:	37 c0       	rjmp	.+110    	; 0x2e3c <__vector_7+0x1d0>
-		case 4:
-			SPDR=anim4[frame][layer][position];
-    2dce:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <layer>
-    2dd2:	90 e0       	ldi	r25, 0x00	; 0
-    2dd4:	30 91 74 00 	lds	r19, 0x0074	; 0x800074 <frame>
-    2dd8:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <position>
-    2ddc:	fc 01       	movw	r30, r24
-    2dde:	ee 0f       	add	r30, r30
-    2de0:	ff 1f       	adc	r31, r31
-    2de2:	ee 0f       	add	r30, r30
-    2de4:	ff 1f       	adc	r31, r31
-    2de6:	ee 0f       	add	r30, r30
-    2de8:	ff 1f       	adc	r31, r31
-    2dea:	e8 0f       	add	r30, r24
-    2dec:	f9 1f       	adc	r31, r25
-    2dee:	88 e4       	ldi	r24, 0x48	; 72
-    2df0:	38 9f       	mul	r19, r24
-    2df2:	e0 0d       	add	r30, r0
-    2df4:	f1 1d       	adc	r31, r1
-    2df6:	11 24       	eor	r1, r1
-    2df8:	ec 5b       	subi	r30, 0xBC	; 188
-    2dfa:	fb 4f       	sbci	r31, 0xFB	; 251
-    2dfc:	e2 0f       	add	r30, r18
-    2dfe:	f1 1d       	adc	r31, r1
-    2e00:	84 91       	lpm	r24, Z
-    2e02:	8f b9       	out	0x0f, r24	; 15
-			break;
-    2e04:	1b c0       	rjmp	.+54     	; 0x2e3c <__vector_7+0x1d0>
-		case 5:
-			SPDR=anim5[frame][layer][position];
-    2e06:	80 91 73 00 	lds	r24, 0x0073	; 0x800073 <layer>
-    2e0a:	90 e0       	ldi	r25, 0x00	; 0
-    2e0c:	30 91 74 00 	lds	r19, 0x0074	; 0x800074 <frame>
-    2e10:	20 91 72 00 	lds	r18, 0x0072	; 0x800072 <position>
-    2e14:	fc 01       	movw	r30, r24
-    2e16:	ee 0f       	add	r30, r30
-    2e18:	ff 1f       	adc	r31, r31
-    2e1a:	ee 0f       	add	r30, r30
-    2e1c:	ff 1f       	adc	r31, r31
-    2e1e:	ee 0f       	add	r30, r30
-    2e20:	ff 1f       	adc	r31, r31
-    2e22:	e8 0f       	add	r30, r24
-    2e24:	f9 1f       	adc	r31, r25
-    2e26:	88 e4       	ldi	r24, 0x48	; 72
-    2e28:	38 9f       	mul	r19, r24
-    2e2a:	e0 0d       	add	r30, r0
-    2e2c:	f1 1d       	adc	r31, r1
-    2e2e:	11 24       	eor	r1, r1
-    2e30:	ec 5a       	subi	r30, 0xAC	; 172
-    2e32:	ff 4f       	sbci	r31, 0xFF	; 255
-    2e34:	e2 0f       	add	r30, r18
-    2e36:	f1 1d       	adc	r31, r1
-    2e38:	84 91       	lpm	r24, Z
-    2e3a:	8f b9       	out	0x0f, r24	; 15
-			break;
-
-	}
-	position++;
-    2e3c:	80 91 72 00 	lds	r24, 0x0072	; 0x800072 <position>
-    2e40:	8f 5f       	subi	r24, 0xFF	; 255
-    2e42:	80 93 72 00 	sts	0x0072, r24	; 0x800072 <position>
+    29f4:	1f 92       	push	r1
+    29f6:	0f 92       	push	r0
+    29f8:	0f b6       	in	r0, 0x3f	; 63
+    29fa:	0f 92       	push	r0
+    29fc:	11 24       	eor	r1, r1
+    29fe:	2f 93       	push	r18
+    2a00:	3f 93       	push	r19
+    2a02:	4f 93       	push	r20
+    2a04:	5f 93       	push	r21
+    2a06:	6f 93       	push	r22
+    2a08:	7f 93       	push	r23
+    2a0a:	8f 93       	push	r24
+    2a0c:	9f 93       	push	r25
+    2a0e:	af 93       	push	r26
+    2a10:	bf 93       	push	r27
+    2a12:	ef 93       	push	r30
+    2a14:	ff 93       	push	r31
+	anims[anim]();
+    2a16:	e0 91 69 00 	lds	r30, 0x0069	; 0x800069 <anim>
+    2a1a:	f0 e0       	ldi	r31, 0x00	; 0
+    2a1c:	ee 0f       	add	r30, r30
+    2a1e:	ff 1f       	adc	r31, r31
+    2a20:	e0 5a       	subi	r30, 0xA0	; 160
+    2a22:	ff 4f       	sbci	r31, 0xFF	; 255
+    2a24:	01 90       	ld	r0, Z+
+    2a26:	f0 81       	ld	r31, Z
+    2a28:	e0 2d       	mov	r30, r0
+    2a2a:	09 95       	icall
 }
-    2e46:	ff 91       	pop	r31
-    2e48:	ef 91       	pop	r30
-    2e4a:	bf 91       	pop	r27
-    2e4c:	af 91       	pop	r26
-    2e4e:	9f 91       	pop	r25
-    2e50:	8f 91       	pop	r24
-    2e52:	7f 91       	pop	r23
-    2e54:	6f 91       	pop	r22
-    2e56:	5f 91       	pop	r21
-    2e58:	4f 91       	pop	r20
-    2e5a:	3f 91       	pop	r19
-    2e5c:	2f 91       	pop	r18
-    2e5e:	0f 90       	pop	r0
-    2e60:	0f be       	out	0x3f, r0	; 63
-    2e62:	0f 90       	pop	r0
-    2e64:	1f 90       	pop	r1
-    2e66:	18 95       	reti
+    2a2c:	ff 91       	pop	r31
+    2a2e:	ef 91       	pop	r30
+    2a30:	bf 91       	pop	r27
+    2a32:	af 91       	pop	r26
+    2a34:	9f 91       	pop	r25
+    2a36:	8f 91       	pop	r24
+    2a38:	7f 91       	pop	r23
+    2a3a:	6f 91       	pop	r22
+    2a3c:	5f 91       	pop	r21
+    2a3e:	4f 91       	pop	r20
+    2a40:	3f 91       	pop	r19
+    2a42:	2f 91       	pop	r18
+    2a44:	0f 90       	pop	r0
+    2a46:	0f be       	out	0x3f, r0	; 63
+    2a48:	0f 90       	pop	r0
+    2a4a:	1f 90       	pop	r1
+    2a4c:	18 95       	reti
 
-00002e68 <_exit>:
-    2e68:	f8 94       	cli
+00002a4e <_exit>:
+    2a4e:	f8 94       	cli
 
-00002e6a <__stop_program>:
-    2e6a:	ff cf       	rjmp	.-2      	; 0x2e6a <__stop_program>
+00002a50 <__stop_program>:
+    2a50:	ff cf       	rjmp	.-2      	; 0x2a50 <__stop_program>

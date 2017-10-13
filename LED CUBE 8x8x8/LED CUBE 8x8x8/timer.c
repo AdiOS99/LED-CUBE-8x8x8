@@ -18,50 +18,6 @@ void timer_init(void)
 
 ISR(TIMER1_COMPA_vect)
 {
-	position=0;
-	if (layer>=8)
-	{
-		layer=0;
-		frame_repeats++;
-		if (frame_repeats>=frame_in_anim_repeats[anim])
-		{
-			frame++;
-			if (frame==anims_frames[anim])
-			{
-				frame=0;
-				anim_repeats++;
-				if (anim_repeats==anims_repeats[anim])
-				{
-					anim_repeats=0;
-					anim=anim%count_of_anims+1;
-
-				}
-			}
-			frame_repeats=0;
-		}
-	}
-	
-		
-	SPI_set_SS_line(1);
-	switch(anim)
-	{
-		case 1:
-			SPDR=anim1[frame][layer][position];
-			break;
-		case 2:
-			SPDR=anim2[frame][layer][position];
-			break;
-		case 3:
-			SPDR=anim3[frame][layer][position];
-			break;
-		case 4:
-			SPDR=anim4[frame][layer][position];
-			break;
-		case 5:
-			SPDR=anim5[frame][layer][position];
-			break;
-
-	}
-	position++;
+	anims[anim]();
 }
 
