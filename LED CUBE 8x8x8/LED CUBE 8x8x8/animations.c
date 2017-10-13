@@ -9,7 +9,7 @@
 #include "SPI.h"
 
 	
-uint8_t anim=3/*number of animation*/,
+uint8_t anim=0/*number of animation*/,
 		frame=0/*frame in animation - first dimension in the animation array*/,
 		layer=0/*layer in the frame in animation - second dimension in the animation array*/,
 		position=-1/*position in row - data for shift register on the layer in animation (third dimension in the animation array*/,
@@ -146,6 +146,7 @@ void anim1(void)
 					if (anim_repeats==repeats_of_anim)
 					{
 						anim_repeats=0;
+						anim++;
 						anim=anim%COUNT_OF_ANIMS;
 					}
 				}
@@ -162,6 +163,7 @@ void anim1(void)
 	
 	
 }
+
 const uint8_t __flash animTWO[19][8][9]={
 	{
 		{0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01},
@@ -355,7 +357,6 @@ const uint8_t __flash animTWO[19][8][9]={
 	}
 	
 };
-
 void anim2(void)
 {
 	const uint8_t anim_frames=19, frame_in_anim_repeats=19, repeats_of_anim=1;
@@ -379,6 +380,7 @@ void anim2(void)
 					if (anim_repeats==repeats_of_anim)
 					{
 						anim_repeats=0;
+						anim++;
 						anim=anim%COUNT_OF_ANIMS;
 					}
 				}
@@ -394,6 +396,7 @@ void anim2(void)
 		/* value'-1' is to recompense incrementation before sending data to the shift register*/
 
 }
+
 	const uint8_t __flash animTHREE[55][8][9]={
 		{
 			{0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01},
@@ -995,7 +998,6 @@ void anim2(void)
 		}
 		
 	};
-
 void anim3(void)
 {
 	const uint8_t anim_frames=55, frame_in_anim_repeats=25, repeats_of_anim=1;
@@ -1019,6 +1021,7 @@ void anim3(void)
 					if (anim_repeats==repeats_of_anim)
 					{
 						anim_repeats=0;
+						anim++;
 						anim=anim%COUNT_OF_ANIMS;
 					}
 				}
@@ -1546,8 +1549,6 @@ void anim3(void)
 			{0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80}
 		},
 	};
-
-
 void anim4(void)
 {
 	const uint8_t anim_frames=51, frame_in_anim_repeats=18, repeats_of_anim=1;
@@ -1571,6 +1572,7 @@ void anim4(void)
 					if (anim_repeats==repeats_of_anim)
 					{
 						anim_repeats=0;
+						anim++;
 						anim=anim%COUNT_OF_ANIMS;
 					}
 				}
