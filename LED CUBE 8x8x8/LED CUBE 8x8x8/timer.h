@@ -2,7 +2,7 @@
  * timer.h
  *
  * Created: 26.07.2017 23:40:17
- *  Author: Admin
+ *  Author: AdiOS
  */ 
 
 

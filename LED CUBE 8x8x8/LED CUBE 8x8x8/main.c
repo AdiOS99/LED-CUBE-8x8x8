@@ -8,6 +8,8 @@
 #include "main.h"
 #include "SPI.h"
 #include "timer.h"
+#include "UART.h"
+#include "animations.h"
 
 int main (void)
 {	
@@ -15,10 +17,11 @@ int main (void)
 	PORTA=0x01;
 	timer_init();
 	SPI_master_init();
+	USART_Init(MYUBRR);
 	sei();
 	while (1)
 	{
-		;
+		;		
 	}
 }
 

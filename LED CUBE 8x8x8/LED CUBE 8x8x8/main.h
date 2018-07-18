@@ -14,6 +14,6 @@
 #include <avr/interrupt.h>
 #include <stdbool.h>
 
-#include "animations.h"
+
 
 #endif /* MAIN_H_ */
